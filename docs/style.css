@@ -170,11 +170,22 @@ input, select { font-family: inherit; font-size: 14px; }
 .dd.amber { background: var(--amber-bg); color: var(--amber); border-color: transparent; }
 .dd.past { background: var(--bg); color: var(--text-3); border-color: transparent; }
 .dd.none { visibility: hidden; }
+/* 마감일 없는 글: 카테고리 아이콘 */
+.dd.ci { background: transparent; border-color: transparent; padding: 0; display: flex; justify-content: center; align-items: center; }
+.dd.ci i { width: 30px; height: 30px; border-radius: 9px; display: flex; align-items: center; justify-content: center; color: var(--ci); background: color-mix(in srgb, var(--ci) 13%, transparent); }
+.dd.ci svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; }
+.dd.ci.haksa { --ci: #2b5fb8; } .dd.ci.janghak { --ci: #1f8a4c; } .dd.ci.job { --ci: #6b44c9; } .dd.ci.global { --ci: #0e8a92; }
+.dd.ci.event { --ci: #c7651a; } .dd.ci.life { --ci: #c23a5c; } .dd.ci.ext { --ci: #51607a; } .dd.ci.etc { --ci: #6b7280; }
+[data-theme="dark"] .dd.ci { background: transparent; }
+[data-theme="dark"] .dd.ci i { background: color-mix(in srgb, var(--ci) 26%, transparent); filter: brightness(1.35); }
+.row.read .dd.ci i { opacity: .55; }
 .row-main { flex: 1; min-width: 0; }
 .title { font-weight: 500; font-size: 15px; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
 .title .new { width: 6px; height: 6px; border-radius: 50%; background: var(--red); flex: none; }
 .title .kw { font-size: 11px; background: var(--accent-bg); color: var(--accent); padding: 1px 6px; border-radius: 4px; font-weight: 500; }
-.meta { color: var(--text-3); font-size: 12.5px; margin-top: 2px; display: flex; gap: 6px; flex-wrap: wrap; }
+.meta { color: var(--text-3); font-size: 12.5px; margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.meta .sep { margin: 0 5px; color: var(--line-strong); }
+.meta .dept { display: inline-block; max-width: 42%; overflow: hidden; text-overflow: ellipsis; vertical-align: bottom; }
 .meta .cat { color: var(--text-2); }
 .meta .scope-dept { color: var(--accent); }
 .meta .clip::before { content: "📎"; font-size: 11px; }
@@ -326,9 +337,20 @@ input, select { font-family: inherit; font-size: 14px; }
   .toolbar { padding: 10px 12px; }
   .dept-wrap { width: 100%; }
   .tb-right { margin-left: 0; width: 100%; justify-content: space-between; }
-  .row { padding: 10px 12px; gap: 10px; }
-  .title { font-size: 14.5px; }
+  .row { padding: 10px 10px 10px 8px; gap: 8px; }
+  .row .arrow { display: none; }
+  .row .star { padding: 4px 2px; }
+  .title { font-size: 14.5px; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; }
+  .title .flag, .title .kw { margin-right: 5px; vertical-align: 1px; }
+  .title .new { display: inline-block; margin-right: 5px; vertical-align: 2px; }
   .dd { min-width: 44px; }
+  .dd.ci i { width: 32px; height: 32px; }
+  .meta .dept { max-width: 36%; }
+  .sched-items { display: flex; overflow-x: auto; gap: 8px; scroll-snap-type: x mandatory; padding-bottom: 2px; scrollbar-width: none; }
+  .sched-items::-webkit-scrollbar { display: none; }
+  .sched-item { flex: 0 0 76%; scroll-snap-align: start; }
+  .sched-item .st { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .sched-item > div { min-width: 0; }
   .detail-body, .content, .ddbox, .attach { padding-left: 14px; padding-right: 14px; margin-left: 0; margin-right: 0; }
   .ddbox { margin: 10px 14px; }
   .detail-bar { flex-wrap: wrap; gap: 8px; }

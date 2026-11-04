@@ -54,6 +54,21 @@
     if (n <= 7) return { cls: "amber", label: "D-" + n, n };
     return { cls: "", label: "D-" + n, n };
   }
+  // 마감일이 없는 글은 D-day 자리에 카테고리 아이콘을 보여줌
+  const CAT_ICON = {
+    "수강·학사": ["haksa", '<path d="M12 4 2 9l10 5 10-5-10-5z"/><path d="M6 11.5V16c0 1.6 2.7 3 6 3s6-1.4 6-3v-4.5"/>'],
+    "장학·등록금": ["janghak", '<rect x="3" y="6" width="18" height="12" rx="2"/><circle cx="12" cy="12" r="2.6"/><path d="M6.5 9.5h.01M17.5 14.5h.01"/>'],
+    "취업·창업": ["job", '<rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12.5h18"/>'],
+    "국제·교환": ["global", '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.8 3 2.8 15 0 18M12 3c-2.8 3-2.8 15 0 18"/>'],
+    "행사·특강": ["event", '<path d="M3 10v4a1 1 0 0 0 1 1h3l6 4V5L7 9H4a1 1 0 0 0-1 1z"/><path d="M17 9a4.5 4.5 0 0 1 0 6"/>'],
+    "생활·시설": ["life", '<path d="M3 11 12 4l9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/>'],
+    "외부기관": ["ext", '<path d="M14 4h6v6M20 4l-9 9"/><path d="M19 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"/>'],
+    "기타": ["etc", '<circle cx="6" cy="12" r="1.6" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="1.6" fill="currentColor" stroke="none"/><circle cx="18" cy="12" r="1.6" fill="currentColor" stroke="none"/>'],
+  };
+  function catIcon(cat) {
+    const [cls, path] = CAT_ICON[cat] || CAT_ICON["기타"];
+    return `<span class="dd ci ${cls}" title="${esc(cat || "")}"><i><svg viewBox="0 0 24 24" aria-hidden="true">${path}</svg></i></span>`;
+  }
   function matchKeywords(n) {
     if (!state.keywords.length) return [];
     const hay = (n.title + " " + (n.dept || "") + " " + (n.unit || "")).toLowerCase();
@@ -338,7 +353,7 @@
       const n = daysUntil(s.start);
       const dd = n <= 0 ? { cls: "red", label: "진행중" } : ddInfo(s.start);
       const range = s.start === s.end ? fmtDate(s.start) : `${fmtDate(s.start)} ~ ${fmtDate(s.end)}`;
-      return `<li class="row sched-like"><span class="dd ${dd.cls}">${dd.label}</span><div class="row-main"><div class="title">${esc(s.title)}</div><div class="meta"><span class="cat">학사일정</span>·<span>${range}</span></div></div><a class="cal-btn" href="${gcalUrl(s.title, s.start, s.end, "경상국립대 학사일정")}" target="_blank" rel="noopener">캘린더 추가</a></li>`;
+      return `<li class="row sched-like"><span class="dd ${dd.cls}">${dd.label}</span><div class="row-main"><div class="title">${esc(s.title)}</div><div class="meta"><span class="cat">학사일정</span><span class="sep">·</span><span>${range}</span></div></div><a class="cal-btn" href="${gcalUrl(s.title, s.start, s.end, "경상국립대 학사일정")}" target="_blank" rel="noopener">캘린더 추가</a></li>`;
     }).join("");
   }
   function renderList() {
@@ -373,12 +388,12 @@
     const kws = matchKeywords(n);
     const scope = n.scope === "전체" ? "" : `<span class="scope-dept">${esc(n.unit || n.scope)}</span>`;
     const flags = (n.flags || []).map(f => `<span class="flag ${f === "중요" ? "imp" : "chg"}">${f}</span>`).join("");
-    const dup = n.dups && n.dups.length ? `·<span class="dup" title="${esc(n.dups.map(d => d.unit || d.board).join(", "))}">+${n.dups.length} 게시판</span>` : "";
+    const dup = n.dups && n.dups.length ? `<span class="sep">·</span><span class="dup" title="${esc(n.dups.map(d => d.unit || d.board).join(", "))}">+${n.dups.length} 게시판</span>` : "";
     return `<li class="row ${state.read.has(n.id) ? "read" : ""}" data-id="${esc(n.id)}">
-      <span class="dd ${dd.cls}" title="${esc(n.deadline_text || "")}">${dd.label}</span>
+      ${n.deadline ? `<span class="dd ${dd.cls}" title="${esc(n.deadline_text || "")}">${dd.label}</span>` : catIcon(n.category)}
       <div class="row-main">
         <div class="title">${isNew(n) ? '<span class="new" title="새 글"></span>' : ""}${flags}${esc(n.title)}${kws.length ? `<span class="kw">${esc(kws[0])}</span>` : ""}</div>
-        <div class="meta"><span class="cat">${esc(n.category)}</span>·<span>${esc(n.dept || n.board)}</span>${scope ? "·" + scope : ""}·<span>${fmtDate(n.date)}</span>${n.views != null ? `·<span>조회 ${n.views.toLocaleString()}</span>` : ""}${n.has_attachments ? '·<span class="clip"></span>' : ""}${dup}</div>
+        <div class="meta"><span class="cat">${esc(n.category)}</span><span class="sep">·</span><span class="dept">${esc(n.dept || n.board)}</span>${scope ? '<span class="sep">·</span>' + scope : ""}<span class="sep">·</span><span>${fmtDate(n.date)}</span>${dup}${n.has_attachments ? '<span class="sep">·</span><span class="clip"></span>' : ""}${n.views != null ? `<span class="sep">·</span><span>조회 ${n.views.toLocaleString()}</span>` : ""}</div>
       </div>
       <button class="star ${state.marks.has(n.id) ? "on" : ""}" data-mark="${esc(n.id)}" title="북마크" aria-label="북마크">${state.marks.has(n.id) ? "★" : "☆"}</button>
       <svg class="ico arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></li>`;
@@ -507,7 +522,7 @@
     const evs = calEvents().filter(e => e.start <= state.calSel && state.calSel <= e.end);
     const d = parseDate(state.calSel);
     box.innerHTML = `<div class="cal-day-list"><h3>${d.getMonth() + 1}월 ${d.getDate()}일 (${["일", "월", "화", "수", "목", "금", "토"][d.getDay()]})</h3>
-      ${evs.length ? evs.map(e => `<a class="row sched-like" href="${e.href}" style="text-decoration:none;color:inherit"><span class="dd ${e.kind === "sch" ? "" : (ddInfo(e.end).cls)}">${e.kind === "sch" ? "학사" : ddInfo(e.end).label}</span><div class="row-main"><div class="title">${esc(e.title)}</div><div class="meta"><span class="cat">${e.kind === "sch" ? "학사일정" : (e.kind === "mark" ? "북마크한 공지" : (e.scope === "전체" || !e.unit ? "전체 공지" : esc(e.unit) + " 공지"))}</span>·<span>${e.start === e.end ? fmtDate(e.start) : fmtDate(e.start) + " ~ " + fmtDate(e.end)}</span></div></div></a>`).join("")
+      ${evs.length ? evs.map(e => `<a class="row sched-like" href="${e.href}" style="text-decoration:none;color:inherit"><span class="dd ${e.kind === "sch" ? "" : (ddInfo(e.end).cls)}">${e.kind === "sch" ? "학사" : ddInfo(e.end).label}</span><div class="row-main"><div class="title">${esc(e.title)}</div><div class="meta"><span class="cat">${e.kind === "sch" ? "학사일정" : (e.kind === "mark" ? "북마크한 공지" : (e.scope === "전체" || !e.unit ? "전체 공지" : esc(e.unit) + " 공지"))}</span><span class="sep">·</span><span>${e.start === e.end ? fmtDate(e.start) : fmtDate(e.start) + " ~ " + fmtDate(e.end)}</span></div></div></a>`).join("")
         : '<p class="empty">이 날은 일정이 없어요.</p>'}</div>`;
   }
   async function openSubscribe() {
