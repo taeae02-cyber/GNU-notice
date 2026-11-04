@@ -1,0 +1,2040 @@
+{
+  "_설명": "수집할 게시판 목록. 학과 게시판을 추가하려면 tools/add_board.py 실행 또는 아래 형식으로 한 줄 추가.",
+  "_학과_예시": {
+    "id": "dept-ee",
+    "name": "전기공학과 공지",
+    "scope": "학과",
+    "unit": "전기공학과",
+    "college": "IT공과대학",
+    "url": "https://www.gnu.ac.kr/학과코드/na/ntt/selectNttList.do?mi=XXXX&bbsId=XXXX",
+    "default_category": null
+  },
+  "boards": [
+    {
+      "id": "main-notice",
+      "name": "공지사항(교내기관)",
+      "scope": "전체",
+      "unit": null,
+      "college": null,
+      "url": "https://www.gnu.ac.kr/main/na/ntt/selectNttList.do?mi=1126&bbsId=1028",
+      "default_category": null
+    },
+    {
+      "id": "main-haksa",
+      "name": "학사",
+      "scope": "전체",
+      "unit": null,
+      "college": null,
+      "url": "https://www.gnu.ac.kr/main/na/ntt/selectNttList.do?mi=1127&bbsId=1029",
+      "default_category": "수강·학사"
+    },
+    {
+      "id": "main-janghak",
+      "name": "장학",
+      "scope": "전체",
+      "unit": null,
+      "college": null,
+      "url": "https://www.gnu.ac.kr/main/na/ntt/selectNttList.do?mi=1376&bbsId=1075",
+      "default_category": "장학·등록금"
+    },
+    {
+      "id": "main-chaeyong",
+      "name": "교내채용",
+      "scope": "전체",
+      "unit": null,
+      "college": null,
+      "url": "https://www.gnu.ac.kr/main/na/ntt/selectNttList.do?mi=1129&bbsId=1030",
+      "default_category": "취업·창업"
+    },
+    {
+      "id": "main-event",
+      "name": "학술/행사",
+      "scope": "전체",
+      "unit": null,
+      "college": null,
+      "url": "https://www.gnu.ac.kr/main/na/ntt/selectNttList.do?mi=1131&bbsId=1032",
+      "default_category": "행사·특강"
+    },
+    {
+      "id": "main-external",
+      "name": "외부기관",
+      "scope": "전체",
+      "unit": null,
+      "college": null,
+      "url": "https://www.gnu.ac.kr/main/na/ntt/selectNttList.do?mi=1132&bbsId=1033",
+      "default_category": "외부기관",
+      "force_category": "외부기관"
+    },
+    {
+      "id": "inmun-1093",
+      "name": "인문대학 공지사항",
+      "scope": "단과대",
+      "unit": "인문대학",
+      "college": null,
+      "url": "https://www.gnu.ac.kr/inmun/na/ntt/selectNttList.do?mi=1468&bbsId=1093",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "inmun-1094",
+      "name": "인문대학 인문대학 새소식",
+      "scope": "단과대",
+      "unit": "인문대학",
+      "college": null,
+      "url": "https://www.gnu.ac.kr/inmun/na/ntt/selectNttList.do?mi=1473&bbsId=1094",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "english-2206",
+      "name": "영어영문학부 영어영문학전공 학부 공지사항",
+      "scope": "학과",
+      "unit": "영어영문학부 영어영문학전공",
+      "college": "인문대학",
+      "url": "https://www.gnu.ac.kr/english/na/ntt/selectNttList.do?mi=6166&bbsId=2206",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "english-4493",
+      "name": "영어영문학부 영어영문학전공 공지사항(장학)",
+      "scope": "학과",
+      "unit": "영어영문학부 영어영문학전공",
+      "college": "인문대학",
+      "url": "https://www.gnu.ac.kr/english/na/ntt/selectNttList.do?mi=16421&bbsId=4493",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "e-language-2219",
+      "name": "영어영문학부 영어전공 공지사항(학부)",
+      "scope": "학과",
+      "unit": "영어영문학부 영어전공",
+      "college": "인문대학",
+      "url": "https://www.gnu.ac.kr/e_language/na/ntt/selectNttList.do?mi=6201&bbsId=2219",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "korea-1340",
+      "name": "국어국문학과 공지 사항",
+      "scope": "학과",
+      "unit": "국어국문학과",
+      "college": "인문대학",
+      "url": "https://www.gnu.ac.kr/korea/na/ntt/selectNttList.do?mi=2879&bbsId=1340",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "russia-1463",
+      "name": "러시아학과 공지사항",
+      "scope": "학과",
+      "unit": "러시아학과",
+      "college": "인문대학",
+      "url": "https://www.gnu.ac.kr/russia/na/ntt/selectNttList.do?mi=3286&bbsId=1463",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "minsok-1629",
+      "name": "민속예술무용학과 공지사항",
+      "scope": "학과",
+      "unit": "민속예술무용학과",
+      "college": "인문대학",
+      "url": "https://www.gnu.ac.kr/minsok/na/ntt/selectNttList.do?mi=3863&bbsId=1629",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "france-1305",
+      "name": "불어불문학과 공지사항",
+      "scope": "학과",
+      "unit": "불어불문학과",
+      "college": "인문대학",
+      "url": "https://www.gnu.ac.kr/france/na/ntt/selectNttList.do?mi=2794&bbsId=1305",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "france-4955",
+      "name": "불어불문학과 학과공지사항",
+      "scope": "학과",
+      "unit": "불어불문학과",
+      "college": "인문대학",
+      "url": "https://www.gnu.ac.kr/france/na/ntt/selectNttList.do?mi=17775&bbsId=4955",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "france-1307",
+      "name": "불어불문학과 기관공지사항",
+      "scope": "학과",
+      "unit": "불어불문학과",
+      "college": "인문대학",
+      "url": "https://www.gnu.ac.kr/france/na/ntt/selectNttList.do?mi=2796&bbsId=1307",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "his-1348",
+      "name": "사학과 학부",
+      "scope": "학과",
+      "unit": "사학과",
+      "college": "인문대학",
+      "url": "https://www.gnu.ac.kr/his/na/ntt/selectNttList.do?mi=6780&bbsId=1348",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "china-2019",
+      "name": "중어중문학과 공지사항(학부)",
+      "scope": "학과",
+      "unit": "중어중문학과",
+      "college": "인문대학",
+      "url": "https://www.gnu.ac.kr/china/na/ntt/selectNttList.do?mi=5436&bbsId=2019",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "china-2020",
+      "name": "중어중문학과 학사안내공지",
+      "scope": "학과",
+      "unit": "중어중문학과",
+      "college": "인문대학",
+      "url": "https://www.gnu.ac.kr/china/na/ntt/selectNttList.do?mi=5437&bbsId=2020",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "china-2021",
+      "name": "중어중문학과 성적대체공지",
+      "scope": "학과",
+      "unit": "중어중문학과",
+      "college": "인문대학",
+      "url": "https://www.gnu.ac.kr/china/na/ntt/selectNttList.do?mi=5438&bbsId=2021",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "china-2026",
+      "name": "중어중문학과 학과소식",
+      "scope": "학과",
+      "unit": "중어중문학과",
+      "college": "인문대학",
+      "url": "https://www.gnu.ac.kr/china/na/ntt/selectNttList.do?mi=5445&bbsId=2026",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "sophia-1458",
+      "name": "철학과 공지사항",
+      "scope": "학과",
+      "unit": "철학과",
+      "college": "인문대학",
+      "url": "https://www.gnu.ac.kr/sophia/na/ntt/selectNttList.do?mi=3257&bbsId=1458",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "sophia-2704",
+      "name": "철학과 학과소식",
+      "scope": "학과",
+      "unit": "철학과",
+      "college": "인문대학",
+      "url": "https://www.gnu.ac.kr/sophia/na/ntt/selectNttList.do?mi=8124&bbsId=2704",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "hanmun-5082",
+      "name": "한문학과 학과소식",
+      "scope": "학과",
+      "unit": "한문학과",
+      "college": "인문대학",
+      "url": "https://www.gnu.ac.kr/hanmun/na/ntt/selectNttList.do?mi=18134&bbsId=5082",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "hanmun-3291",
+      "name": "한문학과 공지사항",
+      "scope": "학과",
+      "unit": "한문학과",
+      "college": "인문대학",
+      "url": "https://www.gnu.ac.kr/hanmun/na/ntt/selectNttList.do?mi=10507&bbsId=3291",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "hanmun-1495",
+      "name": "한문학과 학부공지",
+      "scope": "학과",
+      "unit": "한문학과",
+      "college": "인문대학",
+      "url": "https://www.gnu.ac.kr/hanmun/na/ntt/selectNttList.do?mi=3354&bbsId=1495",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "css-1261",
+      "name": "사회과학대학 새소식",
+      "scope": "단과대",
+      "unit": "사회과학대학",
+      "college": null,
+      "url": "https://www.gnu.ac.kr/css/na/ntt/selectNttList.do?mi=2587&bbsId=1261",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "economics-2402",
+      "name": "경제학부 공지사항",
+      "scope": "학과",
+      "unit": "경제학부",
+      "college": "사회과학대학",
+      "url": "https://www.gnu.ac.kr/economics/na/ntt/selectNttList.do?mi=6899&bbsId=2402",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "economics-2412",
+      "name": "경제학부 공지사항",
+      "scope": "학과",
+      "unit": "경제학부",
+      "college": "사회과학대학",
+      "url": "https://www.gnu.ac.kr/economics/na/ntt/selectNttList.do?mi=6915&bbsId=2412",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "economics-2419",
+      "name": "경제학부 공지사항",
+      "scope": "학과",
+      "unit": "경제학부",
+      "college": "사회과학대학",
+      "url": "https://www.gnu.ac.kr/economics/na/ntt/selectNttList.do?mi=6946&bbsId=2419",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "economics-2404",
+      "name": "경제학부 커뮤니티",
+      "scope": "학과",
+      "unit": "경제학부",
+      "college": "사회과학대학",
+      "url": "https://www.gnu.ac.kr/economics/na/ntt/selectNttList.do?mi=6901&bbsId=2404",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "socialwelfare-2252",
+      "name": "사회복지학부 공지사항",
+      "scope": "학과",
+      "unit": "사회복지학부",
+      "college": "사회과학대학",
+      "url": "https://www.gnu.ac.kr/socialwelfare/na/ntt/selectNttList.do?mi=6314&bbsId=2252",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "comm-4239",
+      "name": "미디어커뮤니케이션학과 학과공지",
+      "scope": "학과",
+      "unit": "미디어커뮤니케이션학과",
+      "college": "사회과학대학",
+      "url": "https://www.gnu.ac.kr/comm/na/ntt/selectNttList.do?mi=13874&bbsId=4239",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "socio-2256",
+      "name": "사회학과 공지사항",
+      "scope": "학과",
+      "unit": "사회학과",
+      "college": "사회과학대학",
+      "url": "https://www.gnu.ac.kr/socio/na/ntt/selectNttList.do?mi=6330&bbsId=2256",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "psychology-2061",
+      "name": "심리학과 공지사항",
+      "scope": "학과",
+      "unit": "심리학과",
+      "college": "사회과학대학",
+      "url": "https://www.gnu.ac.kr/psychology/na/ntt/selectNttList.do?mi=5603&bbsId=2061",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "cfc-1882",
+      "name": "아동가족학과 공지사항",
+      "scope": "학과",
+      "unit": "아동가족학과",
+      "college": "사회과학대학",
+      "url": "https://www.gnu.ac.kr/cfc/na/ntt/selectNttList.do?mi=4716&bbsId=1882",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "cfc-1029",
+      "name": "아동가족학과 학사공지",
+      "scope": "학과",
+      "unit": "아동가족학과",
+      "college": "사회과학대학",
+      "url": "https://www.gnu.ac.kr/main/na/ntt/selectNttList.do?bbsId=1029&mi=1127",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "polisci-1569",
+      "name": "정치외교학과 공지사항",
+      "scope": "학과",
+      "unit": "정치외교학과",
+      "college": "사회과학대학",
+      "url": "https://www.gnu.ac.kr/polisci/na/ntt/selectNttList.do?mi=3621&bbsId=1569",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "pa-1981",
+      "name": "행정학과 공지사항",
+      "scope": "학과",
+      "unit": "행정학과",
+      "college": "사회과학대학",
+      "url": "https://www.gnu.ac.kr/pa/na/ntt/selectNttList.do?mi=5174&bbsId=1981",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "pa-3345",
+      "name": "행정학과 교직 관련 공지",
+      "scope": "학과",
+      "unit": "행정학과",
+      "college": "사회과학대학",
+      "url": "https://www.gnu.ac.kr/pa/na/ntt/selectNttList.do?mi=10716&bbsId=3345",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "cns-1099",
+      "name": "자연과학대학 새소식",
+      "scope": "단과대",
+      "unit": "자연과학대학",
+      "college": null,
+      "url": "https://www.gnu.ac.kr/cns/na/ntt/selectNttList.do?mi=1572&bbsId=1099",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "ls-4048",
+      "name": "생명과학부 공지사항",
+      "scope": "학과",
+      "unit": "생명과학부",
+      "college": "자연과학대학",
+      "url": "https://www.gnu.ac.kr/ls/na/ntt/selectNttList.do?mi=2755&bbsId=4048",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "math-1666",
+      "name": "수학물리학부(수학전공) 공지사항",
+      "scope": "학과",
+      "unit": "수학물리학부(수학전공)",
+      "college": "자연과학대학",
+      "url": "https://www.gnu.ac.kr/math/na/ntt/selectNttList.do?mi=4006&bbsId=1666",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "math-1667",
+      "name": "수학물리학부(수학전공) 재학생게시판",
+      "scope": "학과",
+      "unit": "수학물리학부(수학전공)",
+      "college": "자연과학대학",
+      "url": "https://www.gnu.ac.kr/math/na/ntt/selectNttList.do?mi=4008&bbsId=1667",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "physics-1639",
+      "name": "수학물리학부(물리전공) 학사공지",
+      "scope": "학과",
+      "unit": "수학물리학부(물리전공)",
+      "college": "자연과학대학",
+      "url": "https://www.gnu.ac.kr/physics/na/ntt/selectNttList.do?mi=3937&bbsId=1639",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "physics-1644",
+      "name": "수학물리학부(물리전공) 학과소식",
+      "scope": "학과",
+      "unit": "수학물리학부(물리전공)",
+      "college": "자연과학대학",
+      "url": "https://www.gnu.ac.kr/physics/na/ntt/selectNttList.do?mi=3944&bbsId=1644",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "foodnutri-2434",
+      "name": "식품영양학과 공지사항",
+      "scope": "학과",
+      "unit": "식품영양학과",
+      "college": "자연과학대학",
+      "url": "https://www.gnu.ac.kr/foodnutri/na/ntt/selectNttList.do?mi=7048&bbsId=2434",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "foodnutri-2435",
+      "name": "식품영양학과 공지사항",
+      "scope": "학과",
+      "unit": "식품영양학과",
+      "college": "자연과학대학",
+      "url": "https://www.gnu.ac.kr/foodnutri/na/ntt/selectNttList.do?mi=7055&bbsId=2435",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "foodnutri-2439",
+      "name": "식품영양학과 공지사항",
+      "scope": "학과",
+      "unit": "식품영양학과",
+      "college": "자연과학대학",
+      "url": "https://www.gnu.ac.kr/foodnutri/na/ntt/selectNttList.do?mi=7069&bbsId=2439",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "cloth-1735",
+      "name": "의류학과 공지사항",
+      "scope": "학과",
+      "unit": "의류학과",
+      "college": "자연과학대학",
+      "url": "https://www.gnu.ac.kr/cloth/na/ntt/selectNttList.do?mi=4325&bbsId=1735",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "cloth-1725",
+      "name": "의류학과 학과활동",
+      "scope": "학과",
+      "unit": "의류학과",
+      "college": "자연과학대학",
+      "url": "https://www.gnu.ac.kr/cloth/na/ntt/selectNttList.do?mi=4287&bbsId=1725",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "stat-3753",
+      "name": "정보통계학과 학부 공지사항",
+      "scope": "학과",
+      "unit": "정보통계학과",
+      "college": "자연과학대학",
+      "url": "https://www.gnu.ac.kr/stat/na/ntt/selectNttList.do?mi=12107&bbsId=3753",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "pharmgine-1886",
+      "name": "제약공학과 공지사항",
+      "scope": "학과",
+      "unit": "제약공학과",
+      "college": "자연과학대학",
+      "url": "https://www.gnu.ac.kr/pharmgine/na/ntt/selectNttList.do?mi=4750&bbsId=1886",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "geology-1344",
+      "name": "지질과학과 학부 공지사항",
+      "scope": "학과",
+      "unit": "지질과학과",
+      "college": "자연과학대학",
+      "url": "https://www.gnu.ac.kr/geology/na/ntt/selectNttList.do?mi=2918&bbsId=1344",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "geology-1349",
+      "name": "지질과학과 학과소식",
+      "scope": "학과",
+      "unit": "지질과학과",
+      "college": "자연과학대학",
+      "url": "https://www.gnu.ac.kr/geology/na/ntt/selectNttList.do?mi=2925&bbsId=1349",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "biomat-1394",
+      "name": "항노화신소재과학과 공지사항",
+      "scope": "학과",
+      "unit": "항노화신소재과학과",
+      "college": "자연과학대학",
+      "url": "https://www.gnu.ac.kr/biomat/na/ntt/selectNttList.do?mi=3071&bbsId=1394",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "biz-1293",
+      "name": "경영대학 새소식",
+      "scope": "단과대",
+      "unit": "경영대학",
+      "college": null,
+      "url": "https://www.gnu.ac.kr/biz/na/ntt/selectNttList.do?mi=2744&bbsId=1293",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "business-2340",
+      "name": "경영학부 공지사항",
+      "scope": "학과",
+      "unit": "경영학부",
+      "college": "경영대학",
+      "url": "https://www.gnu.ac.kr/business/na/ntt/selectNttList.do?mi=6632&bbsId=2340",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "accounting-2172",
+      "name": "회계세무학부 공지사항",
+      "scope": "학과",
+      "unit": "회계세무학부",
+      "college": "경영대학",
+      "url": "https://www.gnu.ac.kr/accounting/na/ntt/selectNttList.do?mi=6067&bbsId=2172",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "mis-5353",
+      "name": "경영정보학과 학과소식",
+      "scope": "학과",
+      "unit": "경영정보학과",
+      "college": "경영대학",
+      "url": "https://www.gnu.ac.kr/mis/na/ntt/selectNttList.do?mi=19183&bbsId=5353",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "mis-1441",
+      "name": "경영정보학과 공지사항",
+      "scope": "학과",
+      "unit": "경영정보학과",
+      "college": "경영대학",
+      "url": "https://www.gnu.ac.kr/mis/na/ntt/selectNttList.do?mi=3208&bbsId=1441",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "mis-1433",
+      "name": "경영정보학과 공지사항",
+      "scope": "학과",
+      "unit": "경영정보학과",
+      "college": "경영대학",
+      "url": "https://www.gnu.ac.kr/mis/na/ntt/selectNttList.do?mi=3198&bbsId=1433",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "industry-2222",
+      "name": "산업경영학과 공지사항",
+      "scope": "학과",
+      "unit": "산업경영학과",
+      "college": "경영대학",
+      "url": "https://www.gnu.ac.kr/industry/na/ntt/selectNttList.do?mi=6231&bbsId=2222",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "smart-2157",
+      "name": "스마트유통물류학과 공지사항",
+      "scope": "학과",
+      "unit": "스마트유통물류학과",
+      "college": "경영대학",
+      "url": "https://www.gnu.ac.kr/smart/na/ntt/selectNttList.do?mi=6003&bbsId=2157",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "ce-1201",
+      "name": "공과대학 공지사항",
+      "scope": "단과대",
+      "unit": "공과대학",
+      "college": null,
+      "url": "https://www.gnu.ac.kr/ce/na/ntt/selectNttList.do?mi=2275&bbsId=1201",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "archeng-2361",
+      "name": "건축공학부 학부공지사항",
+      "scope": "학과",
+      "unit": "건축공학부",
+      "college": "공과대학",
+      "url": "https://www.gnu.ac.kr/archeng/na/ntt/selectNttList.do?mi=6763&bbsId=2361",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "archeng-2378",
+      "name": "건축공학부 공지사항",
+      "scope": "학과",
+      "unit": "건축공학부",
+      "college": "공과대학",
+      "url": "https://www.gnu.ac.kr/archeng/na/ntt/selectNttList.do?mi=6804&bbsId=2378",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "archeng-2644",
+      "name": "건축공학부 전공소식란",
+      "scope": "학과",
+      "unit": "건축공학부",
+      "college": "공과대학",
+      "url": "https://www.gnu.ac.kr/archeng/na/ntt/selectNttList.do?mi=7881&bbsId=2644",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "me-2201",
+      "name": "기계공학부 학부 공지사항",
+      "scope": "학과",
+      "unit": "기계공학부",
+      "college": "공과대학",
+      "url": "https://www.gnu.ac.kr/me/na/ntt/selectNttList.do?mi=6148&bbsId=2201",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "me-6186",
+      "name": "기계공학부 학과소식",
+      "scope": "학과",
+      "unit": "기계공학부",
+      "college": "공과대학",
+      "url": "https://www.gnu.ac.kr/me/na/ntt/selectNttList.do?mi=24390&bbsId=6186",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "polymer-2592",
+      "name": "신소재공학부 고분자공학전공 학과소식",
+      "scope": "학과",
+      "unit": "신소재공학부 고분자공학전공",
+      "college": "공과대학",
+      "url": "https://www.gnu.ac.kr/polymer/na/ntt/selectNttList.do?mi=7664&bbsId=2592",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "polymer-1675",
+      "name": "신소재공학부 고분자공학전공 공지사항",
+      "scope": "학과",
+      "unit": "신소재공학부 고분자공학전공",
+      "college": "공과대학",
+      "url": "https://www.gnu.ac.kr/polymer/na/ntt/selectNttList.do?mi=7665&bbsId=1675",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "polymer-3229",
+      "name": "신소재공학부 고분자공학전공 학부 공지사항",
+      "scope": "학과",
+      "unit": "신소재공학부 고분자공학전공",
+      "college": "공과대학",
+      "url": "https://www.gnu.ac.kr/polymer/na/ntt/selectNttList.do?mi=10337&bbsId=3229",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "metals-1357",
+      "name": "신소재공학부 금속재료공학전공 공지사항",
+      "scope": "학과",
+      "unit": "신소재공학부 금속재료공학전공",
+      "college": "공과대학",
+      "url": "https://www.gnu.ac.kr/metals/na/ntt/selectNttList.do?mi=3565&bbsId=1357",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "metals-1359",
+      "name": "신소재공학부 금속재료공학전공 학교프로그램공지",
+      "scope": "학과",
+      "unit": "신소재공학부 금속재료공학전공",
+      "college": "공과대학",
+      "url": "https://www.gnu.ac.kr/metals/na/ntt/selectNttList.do?mi=3566&bbsId=1359",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "ise-4944",
+      "name": "산업시스템공학부 공지사항",
+      "scope": "학과",
+      "unit": "산업시스템공학부",
+      "college": "공과대학",
+      "url": "https://www.gnu.ac.kr/ise/na/ntt/selectNttList.do?mi=17758&bbsId=4944",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "ise-1368",
+      "name": "산업시스템공학부 학부공지",
+      "scope": "학과",
+      "unit": "산업시스템공학부",
+      "college": "공과대학",
+      "url": "https://www.gnu.ac.kr/ise/na/ntt/selectNttList.do?mi=2998&bbsId=1368",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "ise-4477",
+      "name": "산업시스템공학부 학사공지",
+      "scope": "학과",
+      "unit": "산업시스템공학부",
+      "college": "공과대학",
+      "url": "https://www.gnu.ac.kr/ise/na/ntt/selectNttList.do?mi=16367&bbsId=4477",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "ise-1375",
+      "name": "산업시스템공학부 학부소식",
+      "scope": "학과",
+      "unit": "산업시스템공학부",
+      "college": "공과대학",
+      "url": "https://www.gnu.ac.kr/ise/na/ntt/selectNttList.do?mi=3005&bbsId=1375",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "arch-2083",
+      "name": "건축학과 Notice(공지사항)",
+      "scope": "학과",
+      "unit": "건축학과",
+      "college": "공과대학",
+      "url": "https://www.gnu.ac.kr/arch/na/ntt/selectNttList.do?mi=5709&bbsId=2083",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "arch-2084",
+      "name": "건축학과 SA News(학과소식)",
+      "scope": "학과",
+      "unit": "건축학과",
+      "college": "공과대학",
+      "url": "https://www.gnu.ac.kr/arch/na/ntt/selectNttList.do?mi=5710&bbsId=2084",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "mce-1889",
+      "name": "기계융합공학과 학과 공지사항",
+      "scope": "학과",
+      "unit": "기계융합공학과",
+      "college": "공과대학",
+      "url": "https://www.gnu.ac.kr/mce/na/ntt/selectNttList.do?mi=4782&bbsId=1889",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "mce-14407",
+      "name": "기계융합공학과 GNU 소식",
+      "scope": "학과",
+      "unit": "기계융합공학과",
+      "college": "공과대학",
+      "url": "https://www.gnu.ac.kr/mce/na/ntt/selectNttList.do?mi=56685&bbsId=14407",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "urban-1397",
+      "name": "도시공학과 기타공지",
+      "scope": "학과",
+      "unit": "도시공학과",
+      "college": "공과대학",
+      "url": "https://www.gnu.ac.kr/urban/na/ntt/selectNttList.do?mi=3094&bbsId=1397",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "urban-16566",
+      "name": "도시공학과 학사공지(교육과정 및 졸업)",
+      "scope": "학과",
+      "unit": "도시공학과",
+      "college": "공과대학",
+      "url": "https://www.gnu.ac.kr/urban/na/ntt/selectNttList.do?mi=62609&bbsId=16566",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "car-2131",
+      "name": "미래자동차공학과 학과사무실알림",
+      "scope": "학과",
+      "unit": "미래자동차공학과",
+      "college": "공과대학",
+      "url": "https://www.gnu.ac.kr/car/na/ntt/selectNttList.do?mi=5865&bbsId=2131",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "energyeng-2142",
+      "name": "에너지공학과 공지사항",
+      "scope": "학과",
+      "unit": "에너지공학과",
+      "college": "공과대학",
+      "url": "https://www.gnu.ac.kr/energyeng/na/ntt/selectNttList.do?mi=5895&bbsId=2142",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "energyeng-2144",
+      "name": "에너지공학과 에너지소식",
+      "scope": "학과",
+      "unit": "에너지공학과",
+      "college": "공과대학",
+      "url": "https://www.gnu.ac.kr/energyeng/na/ntt/selectNttList.do?mi=5898&bbsId=2144",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "civil-2289",
+      "name": "토목공학과 학부공지사항",
+      "scope": "학과",
+      "unit": "토목공학과",
+      "college": "공과대학",
+      "url": "https://www.gnu.ac.kr/civil/na/ntt/selectNttList.do?mi=6423&bbsId=2289",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "chemeng-1636",
+      "name": "화학공학과 공지사항",
+      "scope": "학과",
+      "unit": "화학공학과",
+      "college": "공과대학",
+      "url": "https://www.gnu.ac.kr/chemeng/na/ntt/selectNttList.do?mi=3894&bbsId=1636",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "cals-1173",
+      "name": "농업생명과학대학 공지사항 및 교육일정",
+      "scope": "단과대",
+      "unit": "농업생명과학대학",
+      "college": null,
+      "url": "https://www.gnu.ac.kr/cals/na/ntt/selectNttList.do?mi=2001&bbsId=1173",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "cals-1165",
+      "name": "농업생명과학대학 새소식",
+      "scope": "단과대",
+      "unit": "농업생명과학대학",
+      "college": null,
+      "url": "https://www.gnu.ac.kr/cals/na/ntt/selectNttList.do?mi=1984&bbsId=1165",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "frecon-1684",
+      "name": "식품자원경제학과 학과소식",
+      "scope": "학과",
+      "unit": "식품자원경제학과",
+      "college": "농업생명과학대학",
+      "url": "https://www.gnu.ac.kr/frecon/na/ntt/selectNttList.do?mi=4121&bbsId=1684",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "frecon-1685",
+      "name": "식품자원경제학과 학부공지사항",
+      "scope": "학과",
+      "unit": "식품자원경제학과",
+      "college": "농업생명과학대학",
+      "url": "https://www.gnu.ac.kr/frecon/na/ntt/selectNttList.do?mi=4122&bbsId=1685",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "abit-2331",
+      "name": "동물생명융합학부 공지사항",
+      "scope": "학과",
+      "unit": "동물생명융합학부",
+      "college": "농업생명과학대학",
+      "url": "https://www.gnu.ac.kr/abit/na/ntt/selectNttList.do?mi=6599&bbsId=2331",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "foodsci-3190",
+      "name": "식품공학부 공지사항",
+      "scope": "학과",
+      "unit": "식품공학부",
+      "college": "농업생명과학대학",
+      "url": "https://www.gnu.ac.kr/foodsci/na/ntt/selectNttList.do?mi=10198&bbsId=3190",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "hortic-2028",
+      "name": "원예과학부 학과소식",
+      "scope": "학과",
+      "unit": "원예과학부",
+      "college": "농업생명과학대학",
+      "url": "https://www.gnu.ac.kr/hortic/na/ntt/selectNttList.do?mi=5460&bbsId=2028",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "hortic-2029",
+      "name": "원예과학부 공지사항",
+      "scope": "학과",
+      "unit": "원예과학부",
+      "college": "농업생명과학대학",
+      "url": "https://www.gnu.ac.kr/hortic/na/ntt/selectNttList.do?mi=7496&bbsId=2029",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "as-2040",
+      "name": "축산과학부 공지사항",
+      "scope": "학과",
+      "unit": "축산과학부",
+      "college": "농업생명과학대학",
+      "url": "https://www.gnu.ac.kr/as/na/ntt/selectNttList.do?mi=5519&bbsId=2040",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "fr-2071",
+      "name": "환경산림과학부 공지사항",
+      "scope": "학과",
+      "unit": "환경산림과학부",
+      "college": "농업생명과학대학",
+      "url": "https://www.gnu.ac.kr/fr/na/ntt/selectNttList.do?mi=5651&bbsId=2071",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "agronomy-2468",
+      "name": "농학과 공지사항",
+      "scope": "학과",
+      "unit": "농학과",
+      "college": "농업생명과학대학",
+      "url": "https://www.gnu.ac.kr/agronomy/na/ntt/selectNttList.do?mi=7181&bbsId=2468",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "agronomy-2470",
+      "name": "농학과 학과소식",
+      "scope": "학과",
+      "unit": "농학과",
+      "college": "농업생명과학대학",
+      "url": "https://www.gnu.ac.kr/agronomy/na/ntt/selectNttList.do?mi=7183&bbsId=2470",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "smartagro-1899",
+      "name": "스마트농산업학과 공지사항",
+      "scope": "학과",
+      "unit": "스마트농산업학과",
+      "college": "농업생명과학대학",
+      "url": "https://www.gnu.ac.kr/smartagro/na/ntt/selectNttList.do?mi=4810&bbsId=1899",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "ab-1682",
+      "name": "식물의학과 공지사항",
+      "scope": "학과",
+      "unit": "식물의학과",
+      "college": "농업생명과학대학",
+      "url": "https://www.gnu.ac.kr/ab/na/ntt/selectNttList.do?mi=4116&bbsId=1682",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "ab-2464",
+      "name": "식물의학과 학과소식",
+      "scope": "학과",
+      "unit": "식물의학과",
+      "college": "농업생명과학대학",
+      "url": "https://www.gnu.ac.kr/ab/na/ntt/selectNttList.do?mi=7141&bbsId=2464",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "alc-2616",
+      "name": "환경생명화학과 학과소식",
+      "scope": "학과",
+      "unit": "환경생명화학과",
+      "college": "농업생명과학대학",
+      "url": "https://www.gnu.ac.kr/alc/na/ntt/selectNttList.do?mi=7713&bbsId=2616",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "alc-1557",
+      "name": "환경생명화학과 공지사항",
+      "scope": "학과",
+      "unit": "환경생명화학과",
+      "college": "농업생명과학대학",
+      "url": "https://www.gnu.ac.kr/alc/na/ntt/selectNttList.do?mi=3515&bbsId=1557",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "ems-2427",
+      "name": "환경재료과학과 공지사항",
+      "scope": "학과",
+      "unit": "환경재료과학과",
+      "college": "농업생명과학대학",
+      "url": "https://www.gnu.ac.kr/ems/na/ntt/selectNttList.do?mi=7000&bbsId=2427",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "bime-14111",
+      "name": "생물산업기계공학과 학과 공지사항",
+      "scope": "학과",
+      "unit": "생물산업기계공학과",
+      "college": "농업생명과학대학",
+      "url": "https://www.gnu.ac.kr/bime/na/ntt/selectNttList.do?mi=4223&bbsId=14111",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "agrieng-1997",
+      "name": "지역시스템공학과 공지사항",
+      "scope": "학과",
+      "unit": "지역시스템공학과",
+      "college": "농업생명과학대학",
+      "url": "https://www.gnu.ac.kr/agrieng/na/ntt/selectNttList.do?mi=5288&bbsId=1997",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "law-1275",
+      "name": "법과대학 법학부 공지사항",
+      "scope": "단과대",
+      "unit": "법과대학",
+      "college": null,
+      "url": "https://www.gnu.ac.kr/law/na/ntt/selectNttList.do?mi=17409&bbsId=1275",
+      "default_category": null,
+      "aliases": [
+        "법학부"
+      ]
+    },
+    {
+      "id": "law-2422",
+      "name": "법과대학 기관 및 외부공지",
+      "scope": "단과대",
+      "unit": "법과대학",
+      "college": null,
+      "url": "https://www.gnu.ac.kr/law/na/ntt/selectNttList.do?mi=17408&bbsId=2422",
+      "default_category": null,
+      "aliases": [
+        "법학부"
+      ]
+    },
+    {
+      "id": "law-4854",
+      "name": "법과대학 게시판",
+      "scope": "단과대",
+      "unit": "법과대학",
+      "college": null,
+      "url": "https://www.gnu.ac.kr/law/na/ntt/selectNttList.do?mi=6969&bbsId=4854",
+      "default_category": null,
+      "aliases": [
+        "법학부"
+      ]
+    },
+    {
+      "id": "sadae-1246",
+      "name": "사범대학 공지사항",
+      "scope": "단과대",
+      "unit": "사범대학",
+      "college": null,
+      "url": "https://www.gnu.ac.kr/sadae/na/ntt/selectNttList.do?mi=9042&bbsId=1246",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "sadae-1614",
+      "name": "사범대학 열린광장",
+      "scope": "단과대",
+      "unit": "사범대학",
+      "college": null,
+      "url": "https://www.gnu.ac.kr/sadae/na/ntt/selectNttList.do?mi=3781&bbsId=1614",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "sadae-2907",
+      "name": "사범대학 열린광장",
+      "scope": "단과대",
+      "unit": "사범대학",
+      "college": null,
+      "url": "https://www.gnu.ac.kr/sadae/na/ntt/selectNttList.do?mi=9210&bbsId=2907",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "sadae-1616",
+      "name": "사범대학 열린광장",
+      "scope": "단과대",
+      "unit": "사범대학",
+      "college": null,
+      "url": "https://www.gnu.ac.kr/sadae/na/ntt/selectNttList.do?mi=3792&bbsId=1616",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "pedagogy-1830",
+      "name": "교육학과 학부 공지사항",
+      "scope": "학과",
+      "unit": "교육학과",
+      "college": "사범대학",
+      "url": "https://www.gnu.ac.kr/pedagogy/na/ntt/selectNttList.do?mi=4609&bbsId=1830",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "pedagogy-1850",
+      "name": "교육학과 학생회 공지",
+      "scope": "학과",
+      "unit": "교육학과",
+      "college": "사범대학",
+      "url": "https://www.gnu.ac.kr/pedagogy/na/ntt/selectNttList.do?mi=4634&bbsId=1850",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "korlan-2261",
+      "name": "국어교육과 공지사항",
+      "scope": "학과",
+      "unit": "국어교육과",
+      "college": "사범대학",
+      "url": "https://www.gnu.ac.kr/korlan/na/ntt/selectNttList.do?mi=6347&bbsId=2261",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "korlan-2274",
+      "name": "국어교육과 게시판",
+      "scope": "학과",
+      "unit": "국어교육과",
+      "college": "사범대학",
+      "url": "https://www.gnu.ac.kr/korlan/na/ntt/selectNttList.do?mi=6371&bbsId=2274",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "history-1708",
+      "name": "역사교육과 공지사항",
+      "scope": "학과",
+      "unit": "역사교육과",
+      "college": "사범대학",
+      "url": "https://www.gnu.ac.kr/history/na/ntt/selectNttList.do?mi=4265&bbsId=1708",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "history-1704",
+      "name": "역사교육과 학부",
+      "scope": "학과",
+      "unit": "역사교육과",
+      "college": "사범대학",
+      "url": "https://www.gnu.ac.kr/history/na/ntt/selectNttList.do?mi=4256&bbsId=1704",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "englishedu-1738",
+      "name": "영어교육과 학부공지",
+      "scope": "학과",
+      "unit": "영어교육과",
+      "college": "사범대학",
+      "url": "https://www.gnu.ac.kr/englishedu/na/ntt/selectNttList.do?mi=4329&bbsId=1738",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "englishedu-1742",
+      "name": "영어교육과 기타공지",
+      "scope": "학과",
+      "unit": "영어교육과",
+      "college": "사범대학",
+      "url": "https://www.gnu.ac.kr/englishedu/na/ntt/selectNttList.do?mi=4333&bbsId=1742",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "englishedu-1768",
+      "name": "영어교육과 영교소식",
+      "scope": "학과",
+      "unit": "영어교육과",
+      "college": "사범대학",
+      "url": "https://www.gnu.ac.kr/englishedu/na/ntt/selectNttList.do?mi=4377&bbsId=1768",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "ecedu-1316",
+      "name": "유아교육과 공지사항",
+      "scope": "학과",
+      "unit": "유아교육과",
+      "college": "사범대학",
+      "url": "https://www.gnu.ac.kr/ecedu/na/ntt/selectNttList.do?mi=2820&bbsId=1316",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "ecedu-1321",
+      "name": "유아교육과 학과소식",
+      "scope": "학과",
+      "unit": "유아교육과",
+      "college": "사범대학",
+      "url": "https://www.gnu.ac.kr/ecedu/na/ntt/selectNttList.do?mi=2833&bbsId=1321",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "ethics-3381",
+      "name": "윤리교육과 학과공지",
+      "scope": "학과",
+      "unit": "윤리교육과",
+      "college": "사범대학",
+      "url": "https://www.gnu.ac.kr/ethics/na/ntt/selectNttList.do?mi=10938&bbsId=3381",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "ethics-2243",
+      "name": "윤리교육과 공지사항",
+      "scope": "학과",
+      "unit": "윤리교육과",
+      "college": "사범대학",
+      "url": "https://www.gnu.ac.kr/ethics/na/ntt/selectNttList.do?mi=6275&bbsId=2243",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "ethics-2239",
+      "name": "윤리교육과 공지사항",
+      "scope": "학과",
+      "unit": "윤리교육과",
+      "college": "사범대학",
+      "url": "https://www.gnu.ac.kr/ethics/na/ntt/selectNttList.do?mi=6269&bbsId=2239",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "ethics-3399",
+      "name": "윤리교육과 공지사항",
+      "scope": "학과",
+      "unit": "윤리교육과",
+      "college": "사범대학",
+      "url": "https://www.gnu.ac.kr/ethics/na/ntt/selectNttList.do?mi=10985&bbsId=3399",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "sed-1595",
+      "name": "일반사회교육과 공지사항",
+      "scope": "학과",
+      "unit": "일반사회교육과",
+      "college": "사범대학",
+      "url": "https://www.gnu.ac.kr/sed/na/ntt/selectNttList.do?mi=3709&bbsId=1595",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "edjapan-1928",
+      "name": "일어교육과 학부공지",
+      "scope": "학과",
+      "unit": "일어교육과",
+      "college": "사범대학",
+      "url": "https://www.gnu.ac.kr/edjapan/na/ntt/selectNttList.do?mi=4889&bbsId=1928",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "edjapan-1931",
+      "name": "일어교육과 학과활동",
+      "scope": "학과",
+      "unit": "일어교육과",
+      "college": "사범대학",
+      "url": "https://www.gnu.ac.kr/edjapan/na/ntt/selectNttList.do?mi=4892&bbsId=1931",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "geoedu-1782",
+      "name": "지리교육과 공지사항",
+      "scope": "학과",
+      "unit": "지리교육과",
+      "college": "사범대학",
+      "url": "https://www.gnu.ac.kr/geoedu/na/ntt/selectNttList.do?mi=4415&bbsId=1782",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "geoedu-1777",
+      "name": "지리교육과 학과활동",
+      "scope": "학과",
+      "unit": "지리교육과",
+      "college": "사범대학",
+      "url": "https://www.gnu.ac.kr/geoedu/na/ntt/selectNttList.do?mi=4409&bbsId=1777",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "physed-1582",
+      "name": "물리교육과 새소식",
+      "scope": "학과",
+      "unit": "물리교육과",
+      "college": "사범대학",
+      "url": "https://www.gnu.ac.kr/physed/na/ntt/selectNttList.do?mi=3670&bbsId=1582",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "physed-1583",
+      "name": "물리교육과 공지사항",
+      "scope": "학과",
+      "unit": "물리교육과",
+      "college": "사범대학",
+      "url": "https://www.gnu.ac.kr/physed/na/ntt/selectNttList.do?mi=3671&bbsId=1583",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "physed-1584",
+      "name": "물리교육과 게시판",
+      "scope": "학과",
+      "unit": "물리교육과",
+      "college": "사범대학",
+      "url": "https://www.gnu.ac.kr/physed/na/ntt/selectNttList.do?mi=3672&bbsId=1584",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "bioedu-1773",
+      "name": "생물교육과 공지사항",
+      "scope": "학과",
+      "unit": "생물교육과",
+      "college": "사범대학",
+      "url": "https://www.gnu.ac.kr/bioedu/na/ntt/selectNttList.do?mi=4398&bbsId=1773",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "bioedu-2780",
+      "name": "생물교육과 사범대학 소식",
+      "scope": "학과",
+      "unit": "생물교육과",
+      "college": "사범대학",
+      "url": "https://www.gnu.ac.kr/bioedu/na/ntt/selectNttList.do?mi=8370&bbsId=2780",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "mathedu-1412",
+      "name": "수학교육과 공지사항",
+      "scope": "학과",
+      "unit": "수학교육과",
+      "college": "사범대학",
+      "url": "https://www.gnu.ac.kr/mathedu/na/ntt/selectNttList.do?mi=3123&bbsId=1412",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "mathedu-2637",
+      "name": "수학교육과 열린마당",
+      "scope": "학과",
+      "unit": "수학교육과",
+      "college": "사범대학",
+      "url": "https://www.gnu.ac.kr/mathedu/na/ntt/selectNttList.do?mi=7862&bbsId=2637",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "chemedu-1805",
+      "name": "화학교육과 학과 공지사항",
+      "scope": "학과",
+      "unit": "화학교육과",
+      "college": "사범대학",
+      "url": "https://www.gnu.ac.kr/chemedu/na/ntt/selectNttList.do?mi=4510&bbsId=1805",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "artedu-1876",
+      "name": "미술교육과 학과공지",
+      "scope": "학과",
+      "unit": "미술교육과",
+      "college": "사범대학",
+      "url": "https://www.gnu.ac.kr/artedu/na/ntt/selectNttList.do?mi=4695&bbsId=1876",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "musicedu-1790",
+      "name": "음악교육과 공지사항",
+      "scope": "학과",
+      "unit": "음악교육과",
+      "college": "사범대학",
+      "url": "https://www.gnu.ac.kr/musicedu/na/ntt/selectNttList.do?mi=4440&bbsId=1790",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "physicaledu-1812",
+      "name": "체육교육과 공지사항 및 자료실",
+      "scope": "학과",
+      "unit": "체육교육과",
+      "college": "사범대학",
+      "url": "https://www.gnu.ac.kr/physicaledu/na/ntt/selectNttList.do?mi=4527&bbsId=1812",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "vet-1184",
+      "name": "수의과대학 공지사항(학부)",
+      "scope": "단과대",
+      "unit": "수의과대학",
+      "college": null,
+      "url": "https://www.gnu.ac.kr/vet/na/ntt/selectNttList.do?mi=2134&bbsId=1184",
+      "default_category": null,
+      "aliases": [
+        "수의예과",
+        "수의학과"
+      ]
+    },
+    {
+      "id": "medicine-2661",
+      "name": "의과대학 의과대학 소식지",
+      "scope": "단과대",
+      "unit": "의과대학",
+      "college": null,
+      "url": "https://www.gnu.ac.kr/medicine/na/ntt/selectNttList.do?mi=8007&bbsId=2661",
+      "default_category": null,
+      "aliases": [
+        "의예과",
+        "의학과"
+      ]
+    },
+    {
+      "id": "medicine-1119",
+      "name": "의과대학 새소식",
+      "scope": "단과대",
+      "unit": "의과대학",
+      "college": null,
+      "url": "https://www.gnu.ac.kr/medicine/na/ntt/selectNttList.do?mi=1716&bbsId=1119",
+      "default_category": null,
+      "aliases": [
+        "의예과",
+        "의학과"
+      ]
+    },
+    {
+      "id": "cap-1101",
+      "name": "간호대학 공지사항",
+      "scope": "단과대",
+      "unit": "간호대학",
+      "college": null,
+      "url": "https://www.gnu.ac.kr/cap/na/ntt/selectNttList.do?mi=13196&bbsId=1101",
+      "default_category": null,
+      "aliases": [
+        "간호학과"
+      ]
+    },
+    {
+      "id": "cap-2805",
+      "name": "간호대학 공지사항",
+      "scope": "단과대",
+      "unit": "간호대학",
+      "college": null,
+      "url": "https://www.gnu.ac.kr/cap/na/ntt/selectNttList.do?mi=8798&bbsId=2805",
+      "default_category": null,
+      "aliases": [
+        "간호학과"
+      ]
+    },
+    {
+      "id": "cap-5379",
+      "name": "간호대학 게시판",
+      "scope": "단과대",
+      "unit": "간호대학",
+      "college": null,
+      "url": "https://www.gnu.ac.kr/cap/na/ntt/selectNttList.do?mi=19293&bbsId=5379",
+      "default_category": null,
+      "aliases": [
+        "간호학과"
+      ]
+    },
+    {
+      "id": "marsci-1225",
+      "name": "해양과학대학 학사공지",
+      "scope": "단과대",
+      "unit": "해양과학대학",
+      "college": null,
+      "url": "https://www.gnu.ac.kr/marsci/na/ntt/selectNttList.do?mi=2479&bbsId=1225",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "fba-1541",
+      "name": "해양수산경영학과 공지사항",
+      "scope": "학과",
+      "unit": "해양수산경영학과",
+      "college": "해양과학대학",
+      "url": "https://www.gnu.ac.kr/fba/na/ntt/selectNttList.do?mi=3450&bbsId=1541",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "seafood-1797",
+      "name": "해양식품생명의학부(해양식품공학전공) 공지사항",
+      "scope": "학과",
+      "unit": "해양식품생명의학부(해양식품공학전공)",
+      "college": "해양과학대학",
+      "url": "https://www.gnu.ac.kr/seafood/na/ntt/selectNttList.do?mi=4486&bbsId=1797",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "dalm-4260",
+      "name": "해양식품생명의학부(수산생명의학전공) 공지사항",
+      "scope": "학과",
+      "unit": "해양식품생명의학부(수산생명의학전공)",
+      "college": "해양과학대학",
+      "url": "https://www.gnu.ac.kr/dalm/na/ntt/selectNttList.do?mi=14017&bbsId=4260",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "mirae-1915",
+      "name": "미래산업융합학과 공지사항",
+      "scope": "학과",
+      "unit": "미래산업융합학과",
+      "college": "해양과학대학",
+      "url": "https://www.gnu.ac.kr/mirae/na/ntt/selectNttList.do?mi=4861&bbsId=1915",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "maripoli-1561",
+      "name": "해양경찰시스템학과 공지사항",
+      "scope": "학과",
+      "unit": "해양경찰시스템학과",
+      "college": "해양과학대학",
+      "url": "https://www.gnu.ac.kr/maripoli/na/ntt/selectNttList.do?mi=3538&bbsId=1561",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "sea-3048",
+      "name": "해양생명과학과 학과소식",
+      "scope": "학과",
+      "unit": "해양생명과학과",
+      "college": "해양과학대학",
+      "url": "https://www.gnu.ac.kr/sea/na/ntt/selectNttList.do?mi=9726&bbsId=3048",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "sea-1405",
+      "name": "해양생명과학과 공지사항",
+      "scope": "학과",
+      "unit": "해양생명과학과",
+      "college": "해양과학대학",
+      "url": "https://www.gnu.ac.kr/sea/na/ntt/selectNttList.do?mi=3112&bbsId=1405",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "gse-1545",
+      "name": "기계시스템공학과 학부생 공지사항",
+      "scope": "학과",
+      "unit": "기계시스템공학과",
+      "college": "해양과학대학",
+      "url": "https://www.gnu.ac.kr/gse/na/ntt/selectNttList.do?mi=3477&bbsId=1545",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "smartam-1389",
+      "name": "스마트에너지기계공학과 공지사항",
+      "scope": "학과",
+      "unit": "스마트에너지기계공학과",
+      "college": "해양과학대학",
+      "url": "https://www.gnu.ac.kr/smartam/na/ntt/selectNttList.do?mi=3057&bbsId=1389",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "naoe-1533",
+      "name": "조선해양공학과 공지사항",
+      "scope": "학과",
+      "unit": "조선해양공학과",
+      "college": "해양과학대학",
+      "url": "https://www.gnu.ac.kr/naoe/na/ntt/selectNttList.do?mi=3419&bbsId=1533",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "oce-1454",
+      "name": "해양토목공학과 공지사항",
+      "scope": "학과",
+      "unit": "해양토목공학과",
+      "college": "해양과학대학",
+      "url": "https://www.gnu.ac.kr/oce/na/ntt/selectNttList.do?mi=3239&bbsId=1454",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "marenv-1818",
+      "name": "해양환경공학과 공지사항",
+      "scope": "학과",
+      "unit": "해양환경공학과",
+      "college": "해양과학대학",
+      "url": "https://www.gnu.ac.kr/marenv/na/ntt/selectNttList.do?mi=4546&bbsId=1818",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "pharm-1154",
+      "name": "약학대학 공지사항",
+      "scope": "단과대",
+      "unit": "약학대학",
+      "college": null,
+      "url": "https://www.gnu.ac.kr/pharm/na/ntt/selectNttList.do?mi=1925&bbsId=1154",
+      "default_category": null,
+      "aliases": [
+        "약학과"
+      ]
+    },
+    {
+      "id": "pharm-1156",
+      "name": "약학대학 공지사항",
+      "scope": "단과대",
+      "unit": "약학대학",
+      "college": null,
+      "url": "https://www.gnu.ac.kr/pharm/na/ntt/selectNttList.do?mi=1931&bbsId=1156",
+      "default_category": null,
+      "aliases": [
+        "약학과"
+      ]
+    },
+    {
+      "id": "cee-1188",
+      "name": "건설환경공과대학 공지사항",
+      "scope": "단과대",
+      "unit": "건설환경공과대학",
+      "college": null,
+      "url": "https://www.gnu.ac.kr/cee/na/ntt/selectNttList.do?mi=2188&bbsId=1188",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "cee-1189",
+      "name": "건설환경공과대학 새소식",
+      "scope": "단과대",
+      "unit": "건설환경공과대학",
+      "college": null,
+      "url": "https://www.gnu.ac.kr/cee/na/ntt/selectNttList.do?mi=2189&bbsId=1189",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "civilinfra-2344",
+      "name": "건설시스템공학과 공지사항",
+      "scope": "학과",
+      "unit": "건설시스템공학과",
+      "college": "건설환경공과대학",
+      "url": "https://www.gnu.ac.kr/civilinfra/na/ntt/selectNttList.do?mi=6653&bbsId=2344",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "im-1840",
+      "name": "인테리어재료공학과 공지사항",
+      "scope": "학과",
+      "unit": "인테리어재료공학과",
+      "college": "건설환경공과대학",
+      "url": "https://www.gnu.ac.kr/im/na/ntt/selectNttList.do?mi=4620&bbsId=1840",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "im-1844",
+      "name": "인테리어재료공학과 학과소식",
+      "scope": "학과",
+      "unit": "인테리어재료공학과",
+      "college": "건설환경공과대학",
+      "url": "https://www.gnu.ac.kr/im/na/ntt/selectNttList.do?mi=4625&bbsId=1844",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "landscape-2303",
+      "name": "조경학과 학부 공지사항",
+      "scope": "학과",
+      "unit": "조경학과",
+      "college": "건설환경공과대학",
+      "url": "https://www.gnu.ac.kr/landscape/na/ntt/selectNttList.do?mi=6474&bbsId=2303",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "landscape-16985",
+      "name": "조경학과 공지시항",
+      "scope": "학과",
+      "unit": "조경학과",
+      "college": "건설환경공과대학",
+      "url": "https://www.gnu.ac.kr/landscape/na/ntt/selectNttList.do?mi=63332&bbsId=16985",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "env-2281",
+      "name": "환경공학과 공지사항",
+      "scope": "학과",
+      "unit": "환경공학과",
+      "college": "건설환경공과대학",
+      "url": "https://www.gnu.ac.kr/env/na/ntt/selectNttList.do?mi=6394&bbsId=2281",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "design-1993",
+      "name": "디자인비즈니스학과 공지사항",
+      "scope": "학과",
+      "unit": "디자인비즈니스학과",
+      "college": "건설환경공과대학",
+      "url": "https://www.gnu.ac.kr/design/na/ntt/selectNttList.do?mi=5257&bbsId=1993",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "design-1994",
+      "name": "디자인비즈니스학과 학과소식",
+      "scope": "학과",
+      "unit": "디자인비즈니스학과",
+      "college": "건설환경공과대학",
+      "url": "https://www.gnu.ac.kr/design/na/ntt/selectNttList.do?mi=5258&bbsId=1994",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "it-4280",
+      "name": "IT공과대학 공지사항",
+      "scope": "단과대",
+      "unit": "IT공과대학",
+      "college": null,
+      "url": "https://www.gnu.ac.kr/it/na/ntt/selectNttList.do?mi=17174&bbsId=4280",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "mecha-1331",
+      "name": "메카트로닉스공학부 공지사항",
+      "scope": "학과",
+      "unit": "메카트로닉스공학부",
+      "college": "IT공과대학",
+      "url": "https://www.gnu.ac.kr/mecha/na/ntt/selectNttList.do?mi=2853&bbsId=1331",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "see-4247",
+      "name": "전자공학부 학부공지",
+      "scope": "학과",
+      "unit": "전자공학부",
+      "college": "IT공과대학",
+      "url": "https://www.gnu.ac.kr/see/na/ntt/selectNttList.do?mi=13997&bbsId=4247",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "cse-4753",
+      "name": "컴퓨터공학부 공지사항",
+      "scope": "학과",
+      "unit": "컴퓨터공학부",
+      "college": "IT공과대학",
+      "url": "https://www.gnu.ac.kr/cse/na/ntt/selectNttList.do?mi=17093&bbsId=4753",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "cse-4783",
+      "name": "컴퓨터공학부 학과소식",
+      "scope": "학과",
+      "unit": "컴퓨터공학부",
+      "college": "IT공과대학",
+      "url": "https://www.gnu.ac.kr/cse/na/ntt/selectNttList.do?mi=17233&bbsId=4783",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "se-2116",
+      "name": "반도체공학과 공지사항",
+      "scope": "학과",
+      "unit": "반도체공학과",
+      "college": "IT공과대학",
+      "url": "https://www.gnu.ac.kr/se/na/ntt/selectNttList.do?mi=5837&bbsId=2116",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "se-2117",
+      "name": "반도체공학과 교과목공지",
+      "scope": "학과",
+      "unit": "반도체공학과",
+      "college": "IT공과대학",
+      "url": "https://www.gnu.ac.kr/se/na/ntt/selectNttList.do?mi=5838&bbsId=2117",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "soft-4222",
+      "name": "소프트웨어공학과 학부 학사공지",
+      "scope": "학과",
+      "unit": "소프트웨어공학과",
+      "college": "IT공과대학",
+      "url": "https://www.gnu.ac.kr/soft/na/ntt/selectNttList.do?mi=13805&bbsId=4222",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "el-1574",
+      "name": "전기공학과 공지사항",
+      "scope": "학과",
+      "unit": "전기공학과",
+      "college": "IT공과대학",
+      "url": "https://www.gnu.ac.kr/el/na/ntt/selectNttList.do?mi=3649&bbsId=1574",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "el-1575",
+      "name": "전기공학과 학과소식",
+      "scope": "학과",
+      "unit": "전기공학과",
+      "college": "IT공과대학",
+      "url": "https://www.gnu.ac.kr/el/na/ntt/selectNttList.do?mi=3651&bbsId=1575",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "el-1579",
+      "name": "전기공학과 공지사항",
+      "scope": "학과",
+      "unit": "전기공학과",
+      "college": "IT공과대학",
+      "url": "https://www.gnu.ac.kr/el/na/ntt/selectNttList.do?mi=3660&bbsId=1579",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "control-2147",
+      "name": "제어로봇공학과 공지사항",
+      "scope": "학과",
+      "unit": "제어로봇공학과",
+      "college": "IT공과대학",
+      "url": "https://www.gnu.ac.kr/control/na/ntt/selectNttList.do?mi=5926&bbsId=2147",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "aie-4202",
+      "name": "AI정보공학과 공지사항",
+      "scope": "학과",
+      "unit": "AI정보공학과",
+      "college": "IT공과대학",
+      "url": "https://www.gnu.ac.kr/aie/na/ntt/selectNttList.do?mi=13696&bbsId=4202",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "csa-4873",
+      "name": "우주항공대학 HOT소식",
+      "scope": "단과대",
+      "unit": "우주항공대학",
+      "college": null,
+      "url": "https://www.gnu.ac.kr/csa/na/ntt/selectNttList.do?mi=17453&bbsId=4873",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "csa-4768",
+      "name": "우주항공대학 공지사항",
+      "scope": "단과대",
+      "unit": "우주항공대학",
+      "college": null,
+      "url": "https://www.gnu.ac.kr/csa/na/ntt/selectNttList.do?mi=17183&bbsId=4768",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "aero-4226",
+      "name": "항공우주공학부 학부 공지사항",
+      "scope": "학과",
+      "unit": "항공우주공학부",
+      "college": "우주항공대학",
+      "url": "https://www.gnu.ac.kr/aero/na/ntt/selectNttList.do?mi=13821&bbsId=4226",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "healthcare-2163",
+      "name": "본부대학 학과행사 공지",
+      "scope": "단과대",
+      "unit": "본부대학",
+      "college": null,
+      "url": "https://www.gnu.ac.kr/healthcare/na/ntt/selectNttList.do?mi=6030&bbsId=2163",
+      "default_category": null,
+      "aliases": [
+        "스포츠헬스케어학과"
+      ]
+    },
+    {
+      "id": "healthcare-2166",
+      "name": "본부대학 공지사항",
+      "scope": "단과대",
+      "unit": "본부대학",
+      "college": null,
+      "url": "https://www.gnu.ac.kr/healthcare/na/ntt/selectNttList.do?mi=6033&bbsId=2166",
+      "default_category": null,
+      "aliases": [
+        "스포츠헬스케어학과"
+      ]
+    },
+    {
+      "id": "global-12079",
+      "name": "글로벌자율전공학부 Announcements (공지사항)",
+      "scope": "학과",
+      "unit": "글로벌자율전공학부",
+      "college": "본부대학",
+      "url": "https://www.gnu.ac.kr/global/na/ntt/selectNttList.do?mi=42583&bbsId=12079",
+      "default_category": null,
+      "aliases": []
+    },
+    {
+      "id": "dom-5252",
+      "name": "자율전공학부 공지사항",
+      "scope": "단과대",
+      "unit": "자율전공학부",
+      "college": null,
+      "url": "https://www.gnu.ac.kr/dom/na/ntt/selectNttList.do?mi=18900&bbsId=5252",
+      "default_category": null,
+      "aliases": [
+        "자율전공학부"
+      ]
+    }
+  ]
+}

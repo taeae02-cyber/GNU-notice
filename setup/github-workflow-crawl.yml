@@ -1,0 +1,45 @@
+name: 공지 수집
+
+on:
+  schedule:
+    - cron: "7 * * * *"      # 매시 7분 (UTC 기준, 한국 시간도 매시 7분)
+  workflow_dispatch:          # Actions 탭에서 수동 실행 버튼
+
+permissions:
+  contents: write
+
+concurrency:
+  group: crawl
+  cancel-in-progress: false
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: OCR 도구 설치 (그림으로 된 공지 글자 읽기)
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq tesseract-ocr tesseract-ocr-kor > /dev/null
+
+      - run: pip install -r requirements.txt
+
+      - name: 수집
+        run: python crawl.py --size 30
+
+      - name: 결과 저장
+        run: |
+          git config user.name "gnu-notice-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add docs/data boards.json
+          if git diff --cached --quiet; then
+            echo "변경 없음"
+          else
+            git commit -m "공지 갱신 $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git push
+          fi

@@ -1,0 +1,561 @@
+{
+ "_출처": "경상국립대 홈페이지 단과대학 안내 (2026.3.1 기준). 바뀌면 이 파일을 고치고 tools/find_boards.py 를 다시 실행.",
+ "colleges": [
+  {
+   "name": "인문대학",
+   "url": "https://inmun.gnu.ac.kr",
+   "departments": [
+    {
+     "name": "영어영문학부 영어영문학전공",
+     "url": "https://english.gnu.ac.kr/"
+    },
+    {
+     "name": "영어영문학부 영어전공",
+     "url": "https://e-language.gnu.ac.kr"
+    },
+    {
+     "name": "국어국문학과",
+     "url": "https://korea.gnu.ac.kr"
+    },
+    {
+     "name": "독어독문학과",
+     "url": "https://dokmun.gnu.ac.kr/"
+    },
+    {
+     "name": "러시아학과",
+     "url": "https://russia.gnu.ac.kr"
+    },
+    {
+     "name": "민속예술무용학과",
+     "url": "https://minsok.gnu.ac.kr/"
+    },
+    {
+     "name": "불어불문학과",
+     "url": "https://france.gnu.ac.kr/"
+    },
+    {
+     "name": "사학과",
+     "url": "https://his.gnu.ac.kr/"
+    },
+    {
+     "name": "중어중문학과",
+     "url": "https://china.gnu.ac.kr"
+    },
+    {
+     "name": "철학과",
+     "url": "https://sophia.gnu.ac.kr/"
+    },
+    {
+     "name": "한문학과",
+     "url": "https://hanmun.gnu.ac.kr/"
+    }
+   ]
+  },
+  {
+   "name": "사회과학대학",
+   "url": "https://css.gnu.ac.kr",
+   "departments": [
+    {
+     "name": "경제학부",
+     "url": "https://economics.gnu.ac.kr/"
+    },
+    {
+     "name": "사회복지학부",
+     "url": "https://socialwelfare.gnu.ac.kr/"
+    },
+    {
+     "name": "미디어커뮤니케이션학과",
+     "url": "https://comm.gnu.ac.kr/"
+    },
+    {
+     "name": "사회학과",
+     "url": "https://socio.gnu.ac.kr"
+    },
+    {
+     "name": "심리학과",
+     "url": "https://psychology.gnu.ac.kr/"
+    },
+    {
+     "name": "아동가족학과",
+     "url": "https://cfc.gnu.ac.kr/"
+    },
+    {
+     "name": "정치외교학과",
+     "url": "https://polisci.gnu.ac.kr/"
+    },
+    {
+     "name": "행정학과",
+     "url": "https://pa.gnu.ac.kr/"
+    }
+   ]
+  },
+  {
+   "name": "자연과학대학",
+   "url": "https://cns.gnu.ac.kr/",
+   "departments": [
+    {
+     "name": "생명과학부",
+     "url": "https://ls.gnu.ac.kr"
+    },
+    {
+     "name": "수학물리학부(수학전공)",
+     "url": "https://math.gnu.ac.kr/"
+    },
+    {
+     "name": "수학물리학부(물리전공)",
+     "url": "https://physics.gnu.ac.kr/"
+    },
+    {
+     "name": "식품영양학과",
+     "url": "https://foodnutri.gnu.ac.kr/"
+    },
+    {
+     "name": "의류학과",
+     "url": "https://cloth.gnu.ac.kr/"
+    },
+    {
+     "name": "정보통계학과",
+     "url": "https://stat.gnu.ac.kr/"
+    },
+    {
+     "name": "제약공학과",
+     "url": "https://pharmgine.gnu.ac.kr/"
+    },
+    {
+     "name": "지질과학과",
+     "url": "https://geology.gnu.ac.kr/"
+    },
+    {
+     "name": "항노화신소재과학과",
+     "url": "https://biomat.gnu.ac.kr/"
+    },
+    {
+     "name": "화학과",
+     "url": "https://chem.gnu.ac.kr/"
+    }
+   ]
+  },
+  {
+   "name": "경영대학",
+   "url": "https://biz.gnu.ac.kr",
+   "departments": [
+    {
+     "name": "경영학부",
+     "url": "https://business.gnu.ac.kr/"
+    },
+    {
+     "name": "회계세무학부",
+     "url": "https://accounting.gnu.ac.kr/"
+    },
+    {
+     "name": "경영정보학과",
+     "url": "https://mis.gnu.ac.kr/"
+    },
+    {
+     "name": "국제통상학과",
+     "url": "https://trade.gnu.ac.kr/"
+    },
+    {
+     "name": "산업경영학과",
+     "url": "https://industry.gnu.ac.kr/"
+    },
+    {
+     "name": "스마트유통물류학과",
+     "url": "https://smart.gnu.ac.kr"
+    }
+   ]
+  },
+  {
+   "name": "공과대학",
+   "url": "https://ce.gnu.ac.kr",
+   "departments": [
+    {
+     "name": "건축공학부",
+     "url": "https://archeng.gnu.ac.kr/"
+    },
+    {
+     "name": "기계공학부",
+     "url": "https://me.gnu.ac.kr/"
+    },
+    {
+     "name": "신소재공학부 고분자공학전공",
+     "url": "https://polymer.gnu.ac.kr/"
+    },
+    {
+     "name": "신소재공학부 금속재료공학전공",
+     "url": "https://metals.gnu.ac.kr/"
+    },
+    {
+     "name": "신소재공학부 세라믹공학전공",
+     "url": "http://ceramic.gnu.ac.kr/"
+    },
+    {
+     "name": "산업시스템공학부",
+     "url": "https://ise.gnu.ac.kr/"
+    },
+    {
+     "name": "건축학과",
+     "url": "https://arch.gnu.ac.kr/"
+    },
+    {
+     "name": "기계융합공학과",
+     "url": "https://mce.gnu.ac.kr/"
+    },
+    {
+     "name": "도시공학과",
+     "url": "https://urban.gnu.ac.kr/"
+    },
+    {
+     "name": "미래자동차공학과",
+     "url": "https://car.gnu.ac.kr/"
+    },
+    {
+     "name": "에너지공학과",
+     "url": "https://energyeng.gnu.ac.kr/"
+    },
+    {
+     "name": "토목공학과",
+     "url": "https://civil.gnu.ac.kr/"
+    },
+    {
+     "name": "화학공학과",
+     "url": "https://chemeng.gnu.ac.kr/"
+    }
+   ]
+  },
+  {
+   "name": "농업생명과학대학",
+   "url": "https://cals.gnu.ac.kr",
+   "departments": [
+    {
+     "name": "식품자원경제학과",
+     "url": "https://frecon.gnu.ac.kr/"
+    },
+    {
+     "name": "동물생명융합학부",
+     "url": "https://abit.gnu.ac.kr/"
+    },
+    {
+     "name": "식품공학부",
+     "url": "https://foodsci.gnu.ac.kr/"
+    },
+    {
+     "name": "원예과학부",
+     "url": "https://hortic.gnu.ac.kr/"
+    },
+    {
+     "name": "축산과학부",
+     "url": "https://as.gnu.ac.kr/"
+    },
+    {
+     "name": "환경산림과학부",
+     "url": "https://forest.gnu.ac.kr/"
+    },
+    {
+     "name": "농학과",
+     "url": "https://agronomy.gnu.ac.kr/"
+    },
+    {
+     "name": "스마트농산업학과",
+     "url": "https://smartagro.gnu.ac.kr"
+    },
+    {
+     "name": "식물의학과",
+     "url": "https://ab.gnu.ac.kr/"
+    },
+    {
+     "name": "환경생명화학과",
+     "url": "https://alc.gnu.ac.kr/"
+    },
+    {
+     "name": "환경재료과학과",
+     "url": "https://ems.gnu.ac.kr/"
+    },
+    {
+     "name": "생물산업기계공학과",
+     "url": "https://bime.gnu.ac.kr/"
+    },
+    {
+     "name": "지역시스템공학과",
+     "url": "https://agrieng.gnu.ac.kr/"
+    }
+   ]
+  },
+  {
+   "name": "법과대학",
+   "url": "https://law.gnu.ac.kr",
+   "departments": [
+    {
+     "name": "법학부",
+     "url": "https://law.gnu.ac.kr"
+    }
+   ]
+  },
+  {
+   "name": "사범대학",
+   "url": "https://sadae.gnu.ac.kr",
+   "departments": [
+    {
+     "name": "교육학과",
+     "url": "https://pedagogy.gnu.ac.kr/"
+    },
+    {
+     "name": "국어교육과",
+     "url": "https://korlan.gnu.ac.kr/"
+    },
+    {
+     "name": "역사교육과",
+     "url": "https://history.gnu.ac.kr/"
+    },
+    {
+     "name": "영어교육과",
+     "url": "https://englishedu.gnu.ac.kr/"
+    },
+    {
+     "name": "유아교육과",
+     "url": "https://ecedu.gnu.ac.kr/"
+    },
+    {
+     "name": "윤리교육과",
+     "url": "https://ethics.gnu.ac.kr/"
+    },
+    {
+     "name": "일반사회교육과",
+     "url": "https://sed.gnu.ac.kr/"
+    },
+    {
+     "name": "일어교육과",
+     "url": "https://edjapan.gnu.ac.kr/"
+    },
+    {
+     "name": "지리교육과",
+     "url": "https://geoedu.gnu.ac.kr"
+    },
+    {
+     "name": "물리교육과",
+     "url": "https://physed.gnu.ac.kr/"
+    },
+    {
+     "name": "생물교육과",
+     "url": "https://bioedu.gnu.ac.kr/"
+    },
+    {
+     "name": "수학교육과",
+     "url": "https://mathedu.gnu.ac.kr"
+    },
+    {
+     "name": "화학교육과",
+     "url": "https://chemedu.gnu.ac.kr"
+    },
+    {
+     "name": "미술교육과",
+     "url": "https://artedu.gnu.ac.kr"
+    },
+    {
+     "name": "음악교육과",
+     "url": "https://musicedu.gnu.ac.kr"
+    },
+    {
+     "name": "체육교육과",
+     "url": "https://physicaledu.gnu.ac.kr"
+    }
+   ]
+  },
+  {
+   "name": "수의과대학",
+   "url": "https://vet.gnu.ac.kr",
+   "departments": [
+    {
+     "name": "수의예과",
+     "url": "https://vet.gnu.ac.kr"
+    },
+    {
+     "name": "수의학과",
+     "url": "https://vet.gnu.ac.kr"
+    }
+   ]
+  },
+  {
+   "name": "의과대학",
+   "url": "https://medicine.gnu.ac.kr",
+   "departments": [
+    {
+     "name": "의예과",
+     "url": "https://medicine.gnu.ac.kr"
+    },
+    {
+     "name": "의학과",
+     "url": "https://medicine.gnu.ac.kr"
+    }
+   ]
+  },
+  {
+   "name": "간호대학",
+   "url": "https://cap.gnu.ac.kr",
+   "departments": [
+    {
+     "name": "간호학과",
+     "url": "https://cap.gnu.ac.kr/"
+    }
+   ]
+  },
+  {
+   "name": "해양과학대학",
+   "url": "https://marsci.gnu.ac.kr",
+   "departments": [
+    {
+     "name": "해양수산경영학과",
+     "url": "https://fba.gnu.ac.kr/"
+    },
+    {
+     "name": "해양식품생명의학부(해양식품공학전공)",
+     "url": "https://www.gnu.ac.kr/seafood/main.do"
+    },
+    {
+     "name": "해양식품생명의학부(수산생명의학전공)",
+     "url": "https://www.gnu.ac.kr/dalm/main.do"
+    },
+    {
+     "name": "미래산업융합학과",
+     "url": "https://mirae.gnu.ac.kr/"
+    },
+    {
+     "name": "해양경찰시스템학과",
+     "url": "https://maripoli.gnu.ac.kr/"
+    },
+    {
+     "name": "해양생명과학과",
+     "url": "https://sea.gnu.ac.kr/"
+    },
+    {
+     "name": "기계시스템공학과",
+     "url": "https://gse.gnu.ac.kr/"
+    },
+    {
+     "name": "스마트에너지기계공학과",
+     "url": "https://gnuenergy.gnu.ac.kr/"
+    },
+    {
+     "name": "조선해양공학과",
+     "url": "https://naoe.gnu.ac.kr/"
+    },
+    {
+     "name": "해양토목공학과",
+     "url": "https://oce.gnu.ac.kr"
+    },
+    {
+     "name": "해양환경공학과",
+     "url": "https://marenv.gnu.ac.kr/"
+    }
+   ]
+  },
+  {
+   "name": "약학대학",
+   "url": "https://pharm.gnu.ac.kr",
+   "departments": [
+    {
+     "name": "약학과",
+     "url": "https://pharm.gnu.ac.kr"
+    }
+   ]
+  },
+  {
+   "name": "건설환경공과대학",
+   "url": "https://cee.gnu.ac.kr",
+   "departments": [
+    {
+     "name": "건설시스템공학과",
+     "url": "https://civilinfra.gnu.ac.kr"
+    },
+    {
+     "name": "인테리어재료공학과",
+     "url": "https://im.gnu.ac.kr"
+    },
+    {
+     "name": "조경학과",
+     "url": "https://landscape.gnu.ac.kr"
+    },
+    {
+     "name": "환경공학과",
+     "url": "https://env.gnu.ac.kr"
+    },
+    {
+     "name": "디자인비즈니스학과",
+     "url": "https://design.gnu.ac.kr/"
+    }
+   ]
+  },
+  {
+   "name": "IT공과대학",
+   "url": "https://it.gnu.ac.kr",
+   "departments": [
+    {
+     "name": "메카트로닉스공학부",
+     "url": "https://mecha.gnu.ac.kr/"
+    },
+    {
+     "name": "전자공학부",
+     "url": "https://www.gnu.ac.kr/see/main.do"
+    },
+    {
+     "name": "컴퓨터공학부",
+     "url": "https://cse.gnu.ac.kr/"
+    },
+    {
+     "name": "반도체공학과",
+     "url": "https://se.gnu.ac.kr/"
+    },
+    {
+     "name": "소프트웨어공학과",
+     "url": "https://soft.gnu.ac.kr/"
+    },
+    {
+     "name": "전기공학과",
+     "url": "https://el.gnu.ac.kr/"
+    },
+    {
+     "name": "제어로봇공학과",
+     "url": "https://control.gnu.ac.kr/"
+    },
+    {
+     "name": "AI정보공학과",
+     "url": "https://aie.gnu.ac.kr/"
+    }
+   ]
+  },
+  {
+   "name": "우주항공대학",
+   "url": "https://csa.gnu.ac.kr",
+   "departments": [
+    {
+     "name": "항공우주공학부",
+     "url": "https://aero.gnu.ac.kr/"
+    }
+   ]
+  },
+  {
+   "name": "본부대학",
+   "url": "https://healthcare.gnu.ac.kr/",
+   "departments": [
+    {
+     "name": "스포츠헬스케어학과",
+     "url": "https://healthcare.gnu.ac.kr/"
+    },
+    {
+     "name": "글로벌자율전공학부",
+     "url": "https://www.gnu.ac.kr/global/main.do"
+    }
+   ]
+  },
+  {
+   "name": "자율전공학부",
+   "url": "https://www.gnu.ac.kr/dom/main.do",
+   "departments": [
+    {
+     "name": "자율전공학부",
+     "url": "https://www.gnu.ac.kr/dom/main.do"
+    }
+   ]
+  }
+ ]
+}

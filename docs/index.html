@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>GNU 공지 — 경상국립대 공지 모아보기</title>
+<meta name="description" content="경상국립대학교 흩어진 공지를 한 곳에서. 카테고리·학과·캠퍼스 필터와 D-day, 키워드 알림.">
+<meta name="theme-color" content="#173c7a">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="GNU 공지">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="style.css">
+<script>
+  // 화면 깜빡임 방지: 저장된 테마를 CSS 로드 전에 적용
+  try { var t = JSON.parse(localStorage.getItem("gnu.theme") || '"system"'); if (t === "dark" || (t === "system" && matchMedia("(prefers-color-scheme: dark)").matches)) document.documentElement.dataset.theme = "dark"; } catch (e) {}
+</script>
+</head>
+<body>
+<div id="sample-banner" class="banner" hidden>지금 보이는 글은 <b>예시 데이터</b>예요. <code>run.bat</code>을 실행하면 실제 공지로 바뀝니다.</div>
+<div id="status-banner" class="banner warn" hidden></div>
+
+<header class="top">
+  <a class="brand" href="#/" aria-label="GNU 공지 홈">
+    <span class="logo">G</span>
+    <span class="brand-text"><b>GNU 공지</b><small>경상국립대 공지 모아보기</small></span>
+  </a>
+  <div class="search">
+    <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+    <input id="q" type="search" placeholder="검색 — 장학, 수강정정, ㄱㅎㅎㅅ(초성)도 돼요" autocomplete="off">
+    <label class="mini-switch" title="본문 내용까지 검색"><input type="checkbox" id="body-search"><span>본문</span></label>
+  </div>
+  <div class="top-actions">
+    <button id="btn-theme" class="btn-icon icon-only" title="화면 테마" aria-label="화면 테마 바꾸기">
+      <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9c0-.5 0-1-.1-1.4A5.5 5.5 0 0 1 13.4 3.1C13 3 12.5 3 12 3z"/></svg>
+    </button>
+    <button id="btn-keywords" class="btn-icon" title="내 키워드 알림">
+      <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0v5l2 3H4l2-3z"/><path d="M10 19a2 2 0 0 0 4 0"/></svg>
+      <span>내 키워드</span><span id="kw-badge" class="badge" hidden>0</span>
+    </button>
+  </div>
+</header>
+
+<nav class="tabs" id="tabs" aria-label="카테고리"></nav>
+
+<main class="wrap">
+  <section id="onboard" class="onboard" hidden>
+    <div>
+      <b>내 학과를 고르면 딱 필요한 공지만 보여요</b>
+      <p>전체 공지 + 내 단과대 + 내 학과 공지만 남고, 다른 학과 글은 숨겨져요. 아래 칸에 학과 이름을 쳐 보세요.</p>
+    </div>
+    <button class="btn" id="onboard-skip">학과 없이 볼게요</button>
+  </section>
+
+  <section class="toolbar" id="toolbar">
+    <div class="tb-row">
+      <div class="dept-wrap">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10l9-6 9 6-9 6z"/><path d="M7 12.5V17l5 3 5-3v-4.5"/></svg>
+        <input id="dept-input" placeholder="내 학과 검색 — 예: 전기, 간호, 컴퓨터" autocomplete="off" aria-label="학과 검색">
+        <ul id="dept-suggest" class="suggest" hidden></ul>
+      </div>
+      <div id="scope-chips" class="chips"></div>
+    </div>
+    <button class="tb-more" id="tb-more" aria-expanded="false">캠퍼스 · 정렬 옵션 ▾</button>
+    <div class="tb-row second">
+      <div id="campus-chips" class="chips small"></div>
+      <div class="tb-right">
+        <select id="sort" aria-label="정렬">
+          <option value="new">최신순</option>
+          <option value="dday">마감 임박순</option>
+          <option value="views">많이 본 순</option>
+        </select>
+        <label class="switch"><input type="checkbox" id="hide-expired"><span>마감 지난 글 숨기기</span></label>
+      </div>
+    </div>
+  </section>
+
+  <div id="view-list">
+    <section id="sched-strip" class="sched-strip" hidden></section>
+    <div id="list-head" class="list-head"></div>
+    <ul id="list" class="list"></ul>
+    <p id="empty" class="empty" hidden></p>
+    <div id="more-wrap" class="more-wrap" hidden><button id="more" class="btn">더 보기</button></div>
+  </div>
+  <div id="view-detail" hidden></div>
+  <div id="view-schedule" hidden></div>
+  <div id="view-calendar" hidden></div>
+</main>
+
+<!-- 캘린더 구독 -->
+<div id="sub-panel" class="modal" hidden>
+  <div class="modal-card">
+    <div class="modal-head"><h2>내 캘린더 앱에 구독하기</h2><button class="btn-icon close" data-close aria-label="닫기">✕</button></div>
+    <p class="hint">한 번만 구독해 두면 새 마감일과 학사일정이 구글·아이폰 캘린더에 자동으로 들어와요. 매번 '추가'를 누를 필요가 없어요.</p>
+    <div id="sub-list"></div>
+    <ul class="howto">
+      <li><b>구글 캘린더 (PC)</b> — 왼쪽 '다른 캘린더' 옆 <span class="kbd">+</span> → <span class="kbd">URL로 추가</span> → 주소 붙여넣기</li>
+      <li><b>아이폰·맥</b> — 아래 '애플 캘린더로 열기' 누르면 바로 구독 창이 떠요</li>
+      <li><b>안드로이드</b> — PC 구글 캘린더에서 한 번 추가하면 폰에도 같이 떠요</li>
+    </ul>
+    <p class="hint small">업데이트는 캘린더 앱이 정하는 주기(보통 몇 시간~하루)로 돼요. 사이트를 GitHub에 올린 뒤부터 동작해요.</p>
+  </div>
+</div>
+
+<!-- 키워드 패널 -->
+<div id="kw-panel" class="modal" hidden>
+  <div class="modal-card">
+    <div class="modal-head"><h2>내 키워드 알림</h2><button class="btn-icon close" data-close aria-label="닫기">✕</button></div>
+    <p class="hint">등록한 단어가 제목이나 부서에 들어간 공지를 모아 보여줘요. 사이트를 열었을 때 새로 올라온 글이 있으면 알려드려요.</p>
+    <div class="kw-add">
+      <input id="kw-input" placeholder="예: 장학, 전기공학과, 교환학생" autocomplete="off">
+      <button id="kw-add-btn" class="btn">추가</button>
+    </div>
+    <div id="kw-list" class="chips"></div>
+    <label class="switch sep"><input type="checkbox" id="kw-notify"><span>사이트를 열 때 브라우저 알림 띄우기</span></label>
+    <p class="hint small">사이트를 열지 않아도 오는 푸시 알림은 다음 단계에서 추가될 예정이에요.</p>
+  </div>
+</div>
+
+<!-- 분류 신고 -->
+<div id="report-panel" class="modal" hidden>
+  <div class="modal-card">
+    <div class="modal-head"><h2>분류가 틀렸어요</h2><button class="btn-icon close" data-close aria-label="닫기">✕</button></div>
+    <p id="report-title" class="hint"></p>
+    <label for="report-cat">맞는 카테고리</label>
+    <select id="report-cat"></select>
+    <label for="report-note">메모 (선택)</label>
+    <input id="report-note" placeholder="예: 장학금 공지인데 취업으로 분류됨">
+    <div class="modal-actions">
+      <button id="report-send" class="btn primary">신고 보내기</button>
+    </div>
+    <p id="report-done" class="hint small" hidden></p>
+  </div>
+</div>
+
+<!-- 수집 상태 -->
+<div id="status-panel" class="modal" hidden>
+  <div class="modal-card wide">
+    <div class="modal-head"><h2>수집 상태</h2><button class="btn-icon close" data-close aria-label="닫기">✕</button></div>
+    <div id="status-body"></div>
+  </div>
+</div>
+
+<!-- 앱처럼 쓰기 -->
+<div id="pwa-panel" class="modal" hidden>
+  <div class="modal-card">
+    <div class="modal-head"><h2>홈 화면에 추가하기</h2><button class="btn-icon close" data-close aria-label="닫기">✕</button></div>
+    <p class="hint">앱처럼 아이콘으로 열 수 있어요. 알림 기능이 붙으면 아이폰은 이 방식으로 추가해야 알림이 와요.</p>
+    <ul class="howto">
+      <li><b>아이폰 (Safari)</b> — 아래 <span class="kbd">공유</span> 버튼 → <span class="kbd">홈 화면에 추가</span></li>
+      <li><b>안드로이드 (Chrome)</b> — 오른쪽 위 <span class="kbd">⋮</span> → <span class="kbd">홈 화면에 추가</span> (또는 아래 설치 배너)</li>
+      <li><b>PC (Chrome·Edge)</b> — 주소창 오른쪽 <span class="kbd">설치</span> 아이콘</li>
+    </ul>
+    <div class="modal-actions"><button id="pwa-install" class="btn primary" hidden>지금 설치</button></div>
+  </div>
+</div>
+
+<footer class="foot">
+  <span id="updated"></span>
+  <span class="foot-links"><a href="#" id="link-status">수집 상태</a> · <a href="#" id="link-pwa">앱처럼 쓰기</a> · <a href="https://www.gnu.ac.kr" target="_blank" rel="noopener">학교 홈페이지</a></span>
+  <span>학생이 만든 비공식 서비스예요. 정확한 내용은 학교 홈페이지를 확인하세요.</span>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
