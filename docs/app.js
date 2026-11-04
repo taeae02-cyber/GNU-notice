@@ -4,7 +4,7 @@
 
   // ===== 설정 (저장소 만든 뒤 채우기) =====
   const CONFIG = {
-    reportIssueUrl: "",   // 예: "https://github.com/아이디/gnu-notice/issues/new"
+    reportIssueUrl: "https://github.com/taeae02-cyber/GNU-notice/issues/new",
     reportMail: "",
   };
 
