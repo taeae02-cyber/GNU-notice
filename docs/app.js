@@ -448,7 +448,7 @@
         if (seen.has(k)) continue;
         seen.add(k);
       }
-      ev.push({ kind: marked ? "mark" : "dl", start: n.deadline, end: n.deadline, title: n.title, href: "#/n/" + encodeURIComponent(n.id) });
+      ev.push({ kind: marked ? "mark" : "dl", start: n.deadline, end: n.deadline, title: n.title, href: "#/n/" + encodeURIComponent(n.id), scope: n.scope, unit: n.unit });
     }
     return ev;
   }
@@ -492,8 +492,8 @@
     el.innerHTML = `<div class="cal-head">
         <button class="btn" data-cal="-1">◀</button><h2>${Y}년 ${M}월</h2><button class="btn" data-cal="1">▶</button>
         <button class="btn" data-cal="0">오늘</button>
-        <div class="legend"><span><i class="sch"></i>학사일정</span><span><i class="mark"></i>북마크한 마감</span>
-          <label class="switch"><input type="checkbox" id="cal-all" ${state.calAllDl ? "checked" : ""}><span><i class="dl" style="display:inline-block;width:10px;height:10px;border-radius:3px;background:var(--accent);opacity:.55;margin-right:4px"></i>${me ? me.name + " 범위" : "전체 공지"}의 모든 마감</span></label>
+        <div class="legend"><span><i class="sch"></i>학사일정</span><span><i class="mark"></i>북마크한 일정</span>
+          <label class="switch" title="${me ? `전체 공지 + ${me.college && me.college !== me.unit ? me.college + " + " : ""}${me.unit} 공지의 마감일을 모두 표시` : "전체 공지의 마감일을 모두 표시"}"><input type="checkbox" id="cal-all" ${state.calAllDl ? "checked" : ""}><span><i class="dl" style="display:inline-block;width:10px;height:10px;border-radius:3px;background:var(--accent);opacity:.55;margin-right:4px"></i>${me ? me.name + "의 일정" : "전체 공지 일정"}</span></label>
           <button class="btn" id="cal-sub">📡 캘린더 앱에 구독</button></div>
       </div>
       <div class="cal-grid">${["일", "월", "화", "수", "목", "금", "토"].map(d => `<div class="cal-dow">${d}</div>`).join("")}${cells.join("")}</div>
@@ -503,11 +503,11 @@
   function renderCalDay() {
     const box = $("#cal-day");
     if (!box) return;
-    if (!state.calSel) { box.innerHTML = '<p class="hint" style="text-align:center;margin-top:10px">날짜를 누르면 그날 일정이 아래에 나와요. 공지에 ★를 누르면 마감일이 여기 들어와요.</p>'; return; }
+    if (!state.calSel) { box.innerHTML = '<p class="hint" style="text-align:center;margin-top:10px">날짜를 누르면 그날 일정이 아래에 나와요. 공지에 ★를 누르면 그 공지의 마감일이 달력에 들어와요.</p>'; return; }
     const evs = calEvents().filter(e => e.start <= state.calSel && state.calSel <= e.end);
     const d = parseDate(state.calSel);
     box.innerHTML = `<div class="cal-day-list"><h3>${d.getMonth() + 1}월 ${d.getDate()}일 (${["일", "월", "화", "수", "목", "금", "토"][d.getDay()]})</h3>
-      ${evs.length ? evs.map(e => `<a class="row sched-like" href="${e.href}" style="text-decoration:none;color:inherit"><span class="dd ${e.kind === "sch" ? "" : (ddInfo(e.end).cls)}">${e.kind === "sch" ? "학사" : ddInfo(e.end).label}</span><div class="row-main"><div class="title">${esc(e.title)}</div><div class="meta"><span class="cat">${e.kind === "sch" ? "학사일정" : (e.kind === "mark" ? "북마크한 공지 마감" : "공지 마감")}</span>·<span>${e.start === e.end ? fmtDate(e.start) : fmtDate(e.start) + " ~ " + fmtDate(e.end)}</span></div></div></a>`).join("")
+      ${evs.length ? evs.map(e => `<a class="row sched-like" href="${e.href}" style="text-decoration:none;color:inherit"><span class="dd ${e.kind === "sch" ? "" : (ddInfo(e.end).cls)}">${e.kind === "sch" ? "학사" : ddInfo(e.end).label}</span><div class="row-main"><div class="title">${esc(e.title)}</div><div class="meta"><span class="cat">${e.kind === "sch" ? "학사일정" : (e.kind === "mark" ? "북마크한 공지" : (e.scope === "전체" || !e.unit ? "전체 공지" : esc(e.unit) + " 공지"))}</span>·<span>${e.start === e.end ? fmtDate(e.start) : fmtDate(e.start) + " ~ " + fmtDate(e.end)}</span></div></div></a>`).join("")
         : '<p class="empty">이 날은 일정이 없어요.</p>'}</div>`;
   }
   async function openSubscribe() {
@@ -520,9 +520,9 @@
     const base = new URL(".", location.href).href;
     const me = myUnit();
     const items = [];
-    if (me && state.feeds.units && state.feeds.units[me.name]) items.push({ name: `${me.name} 기준 (전체 공지 + 내 단과대·학과 마감 + 학사일정)`, path: state.feeds.units[me.name] });
+    if (me && state.feeds.units && state.feeds.units[me.name]) items.push({ name: `${me.name}의 일정 (학사일정 + 전체·단과대·${me.name} 공지 마감일)`, path: state.feeds.units[me.name] });
     items.push({ name: "학사일정만 (학부)", path: state.feeds.schedule });
-    items.push({ name: "전체 공지 마감 + 학사일정", path: state.feeds.all });
+    items.push({ name: "전체 공지 일정 (학사일정 + 전체 공지 마감일)", path: state.feeds.all });
     list.innerHTML = items.map(it => {
       const url = base + it.path;
       const webcal = url.replace(/^https?:/, "webcal:");
