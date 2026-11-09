@@ -8,8 +8,138 @@ X-WR-TIMEZONE:Asia/Seoul
 REFRESH-INTERVAL;VALUE=DURATION:PT1H
 X-PUBLISHED-TTL:PT1H
 BEGIN:VEVENT
+UID:dl-main-event-9183581@gnu-notice
+DTSTAMP:20261109T144954Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+SUMMARY:[마감] [여성연구소 * 동물자유연대] 동물권 교육
+  특별강연회 (3차)
+DESCRIPTION:경상국립대학교 여성연구소 · 행사·특강
+URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?nttSn=9183581
+END:VEVENT
+BEGIN:VEVENT
+UID:dl-main-external-9219526@gnu-notice
+DTSTAMP:20261109T144954Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:[마감] [한국체육산업개발㈜] 2026년 공공데이터 
+ 활용 경진대회
+DESCRIPTION:한국체육산업개발주식회사 · 외부기관
+URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1132&bbsId=103
+ 3&nttSn=9219526
+END:VEVENT
+BEGIN:VEVENT
+UID:dl-main-external-9219581@gnu-notice
+DTSTAMP:20261109T144954Z
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20261116
+SUMMARY:[마감] [한국보건복지인재원] 이런(e-Learn) 한 컷\,
+  영상 공모전
+DESCRIPTION:한국보건복지인재원 · 외부기관
+URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1132&bbsId=103
+ 3&nttSn=9219581
+END:VEVENT
+BEGIN:VEVENT
+UID:dl-main-chaeyong-9220061@gnu-notice
+DTSTAMP:20261109T144954Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:[마감] 경남야생동물센터 직원(진료 수의사) 채
+ 용 공고
+DESCRIPTION:경남야생동물센터 · 취업·창업
+URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1129&bbsId=103
+ 0&nttSn=9220061
+END:VEVENT
+BEGIN:VEVENT
+UID:dl-main-haksa-9221082@gnu-notice
+DTSTAMP:20261109T144954Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:[마감] 2026학년도 동계 계절학기 1 수강신청 현황
+ (폐강공고일 2026. 11. 12.목 10:00 예정)
+DESCRIPTION:학사지원과 · 수강·학사
+URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1127&bbsId=102
+ 9&nttSn=9221082
+END:VEVENT
+BEGIN:VEVENT
+UID:dl-main-notice-9222886@gnu-notice
+DTSTAMP:20261109T144954Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+SUMMARY:[마감] 2026년 제18회 개척언론인의 날 개최 및 참
+ 여 안내
+DESCRIPTION:홍보실 · 행사·특강
+URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1126&bbsId=102
+ 8&nttSn=9222886
+END:VEVENT
+BEGIN:VEVENT
+UID:dl-main-notice-9227861@gnu-notice
+DTSTAMP:20261109T144954Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:[마감] 2026학년도 동계 GP-자율탐방(GPP) 1차 서류 
+ 심사결과 및 2차 발표영상 심사 안내
+DESCRIPTION:학생과 · 국제·교환
+URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1126&bbsId=102
+ 8&nttSn=9227861
+END:VEVENT
+BEGIN:VEVENT
+UID:dl-main-chaeyong-9190423@gnu-notice
+DTSTAMP:20261109T144954Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:[마감] 2027학년도 1학기 전임교원(기금교수 포함)
+  공개채용 서류심사 합격 안내
+DESCRIPTION:교무과 · 취업·창업
+URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1129&bbsId=103
+ 0&nttSn=9190423
+END:VEVENT
+BEGIN:VEVENT
+UID:dl-main-notice-9190244@gnu-notice
+DTSTAMP:20261109T144954Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:[마감] [AI융합원] 2026 GNU AI 전문강사 양성과정 교
+ 육생 모집 안내(~11. 20.)
+DESCRIPTION:경상국립대학교 AI융합원 · 취업·창업
+URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1126&bbsId=102
+ 8&nttSn=9190244
+END:VEVENT
+BEGIN:VEVENT
+UID:dl-main-janghak-9180403@gnu-notice
+DTSTAMP:20261109T144954Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:[마감] 2026년 주택관리공단 이음-ON 장학생 모집 
+ 안내
+DESCRIPTION:학생과 · 장학·등록금
+URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1376&bbsId=107
+ 5&nttSn=9180403
+END:VEVENT
+BEGIN:VEVENT
+UID:dl-main-notice-9178248@gnu-notice
+DTSTAMP:20261109T144954Z
+DTSTART;VALUE=DATE:20261122
+DTEND;VALUE=DATE:20261123
+SUMMARY:[마감] [홍보]「2027년도 정책연구과제 수요조사
+ 」참여 안내
+DESCRIPTION:진주시탄소중립지원센터 · 외부기관
+URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1126&bbsId=102
+ 8&nttSn=9178248
+END:VEVENT
+BEGIN:VEVENT
+UID:dl-main-haksa-9167683@gnu-notice
+DTSTAMP:20261109T144954Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:[마감] 2027학년도 1학기 재입학 모집 공고
+DESCRIPTION:학사지원과 · 수강·학사
+URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1127&bbsId=102
+ 9&nttSn=9167683
+END:VEVENT
+BEGIN:VEVENT
 UID:dl-main-external-9166061@gnu-notice
-DTSTAMP:20261109T135032Z
+DTSTAMP:20261109T144954Z
 DTSTART;VALUE=DATE:20261118
 DTEND;VALUE=DATE:20261119
 SUMMARY:[마감] [화성시] 「화성시마을공동체지원센터 운
@@ -20,7 +150,7 @@ URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1132&bbsId=103
 END:VEVENT
 BEGIN:VEVENT
 UID:dl-main-external-9163967@gnu-notice
-DTSTAMP:20261109T135032Z
+DTSTAMP:20261109T144954Z
 DTSTART;VALUE=DATE:20261115
 DTEND;VALUE=DATE:20261116
 SUMMARY:[마감] [경상남도 관광재단] 2026 K-거상 트레일러
@@ -31,7 +161,7 @@ URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1132&bbsId=103
 END:VEVENT
 BEGIN:VEVENT
 UID:dl-main-janghak-9163003@gnu-notice
-DTSTAMP:20261109T135032Z
+DTSTAMP:20261109T144954Z
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261120
 SUMMARY:[마감] 2027년도 관정재단 재학생 신청 안내
@@ -40,8 +170,19 @@ URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1376&bbsId=107
  5&nttSn=9163003
 END:VEVENT
 BEGIN:VEVENT
+UID:dl-main-external-9150161@gnu-notice
+DTSTAMP:20261109T144954Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:[마감] 2027년 희망이자라는 열린학교(제42기) 봉
+ 사자 모집 안내
+DESCRIPTION:(사)창원시장애인부모회 · 외부기관
+URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1132&bbsId=103
+ 3&nttSn=9150161
+END:VEVENT
+BEGIN:VEVENT
 UID:dl-mce-14407-9151789@gnu-notice
-DTSTAMP:20261109T135032Z
+DTSTAMP:20261109T144954Z
 DTSTART;VALUE=DATE:20261109
 DTEND;VALUE=DATE:20261110
 SUMMARY:[마감] 2026학년도 기초학력증진프로그램(6차) 운
@@ -52,7 +193,7 @@ URL:https://www.gnu.ac.kr/mce/na/ntt/selectNttInfo.do?mi=56685&bbsId=144
 END:VEVENT
 BEGIN:VEVENT
 UID:dl-mce-14407-9151841@gnu-notice
-DTSTAMP:20261109T135032Z
+DTSTAMP:20261109T144954Z
 DTSTART;VALUE=DATE:20261116
 DTEND;VALUE=DATE:20261117
 SUMMARY:[마감] 2026학년도 All About GNU: 전공소개 UCC 기획 
@@ -63,7 +204,7 @@ URL:https://www.gnu.ac.kr/mce/na/ntt/selectNttInfo.do?mi=56685&bbsId=144
 END:VEVENT
 BEGIN:VEVENT
 UID:dl-main-external-9153102@gnu-notice
-DTSTAMP:20261109T135032Z
+DTSTAMP:20261109T144954Z
 DTSTART;VALUE=DATE:20261115
 DTEND;VALUE=DATE:20261116
 SUMMARY:[마감] [목포시] 가을여행도\, 고향사랑도 목포 
@@ -74,7 +215,7 @@ URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1132&bbsId=103
 END:VEVENT
 BEGIN:VEVENT
 UID:dl-main-external-9153052@gnu-notice
-DTSTAMP:20261109T135032Z
+DTSTAMP:20261109T144954Z
 DTSTART;VALUE=DATE:20261116
 DTEND;VALUE=DATE:20261117
 SUMMARY:[마감] [여수시] 여수! 낭만의 길에 서다\, 여행 
@@ -85,7 +226,7 @@ URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1132&bbsId=103
 END:VEVENT
 BEGIN:VEVENT
 UID:dl-main-notice-9154489@gnu-notice
-DTSTAMP:20261109T135032Z
+DTSTAMP:20261109T144954Z
 DTSTART;VALUE=DATE:20261118
 DTEND;VALUE=DATE:20261119
 SUMMARY:[마감] [창업지원단] 2026 동남권 대학생 창업 & 아
@@ -96,7 +237,7 @@ URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1126&bbsId=102
 END:VEVENT
 BEGIN:VEVENT
 UID:dl-main-notice-9151181@gnu-notice
-DTSTAMP:20261109T135032Z
+DTSTAMP:20261109T144954Z
 DTSTART;VALUE=DATE:20261105
 DTEND;VALUE=DATE:20261106
 SUMMARY:[마감] The(더)자람 추가 모의고사(토익 및 NCS) 안
@@ -107,7 +248,7 @@ URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1126&bbsId=102
 END:VEVENT
 BEGIN:VEVENT
 UID:dl-main-notice-9149201@gnu-notice
-DTSTAMP:20261109T135032Z
+DTSTAMP:20261109T144954Z
 DTSTART;VALUE=DATE:20261111
 DTEND;VALUE=DATE:20261112
 SUMMARY:[마감] [언어교육실] 2026학년도 겨울 GNU 영어캠프
@@ -118,7 +259,7 @@ URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1126&bbsId=102
 END:VEVENT
 BEGIN:VEVENT
 UID:dl-main-haksa-9154495@gnu-notice
-DTSTAMP:20261109T135032Z
+DTSTAMP:20261109T144954Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261107
 SUMMARY:[마감] 2026학년도 경상국립대학교 동계 계절학기
@@ -129,8 +270,30 @@ URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1127&bbsId=102
  9&nttSn=9154495
 END:VEVENT
 BEGIN:VEVENT
+UID:dl-main-external-9135954@gnu-notice
+DTSTAMP:20261109T144954Z
+DTSTART;VALUE=DATE:20270109
+DTEND;VALUE=DATE:20270110
+SUMMARY:[마감] [문화체육관광부] 대학생기자단 울림 22기
+  모집
+DESCRIPTION:디지털소통팀 · 외부기관
+URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1132&bbsId=103
+ 3&nttSn=9135954
+END:VEVENT
+BEGIN:VEVENT
+UID:dl-main-external-9138343@gnu-notice
+DTSTAMP:20261109T144954Z
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20261124
+SUMMARY:[마감] [서울시]2027 시드니 글로벌 인재양성 프로
+ 그램 모집 안내
+DESCRIPTION:시립청소년문화교류센터 · 외부기관
+URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1132&bbsId=103
+ 3&nttSn=9138343
+END:VEVENT
+BEGIN:VEVENT
 UID:dl-main-chaeyong-9137931@gnu-notice
-DTSTAMP:20261109T135032Z
+DTSTAMP:20261109T144954Z
 DTSTART;VALUE=DATE:20261111
 DTEND;VALUE=DATE:20261112
 SUMMARY:[마감] 경상국립대학교 산학협력단 직원(대체인
@@ -141,7 +304,7 @@ URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1129&bbsId=103
 END:VEVENT
 BEGIN:VEVENT
 UID:dl-main-chaeyong-9135761@gnu-notice
-DTSTAMP:20261109T135032Z
+DTSTAMP:20261109T144954Z
 DTSTART;VALUE=DATE:20261109
 DTEND;VALUE=DATE:20261110
 SUMMARY:[마감] 경상국립대학교 창업중심대학사업단 직
@@ -152,7 +315,7 @@ URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1129&bbsId=103
 END:VEVENT
 BEGIN:VEVENT
 UID:dl-main-notice-9140443@gnu-notice
-DTSTAMP:20261109T135032Z
+DTSTAMP:20261109T144954Z
 DTSTART;VALUE=DATE:20261130
 DTEND;VALUE=DATE:20261201
 SUMMARY:[마감] [홍보]「2026년 진주시 기후변화·탄소중립
@@ -163,7 +326,7 @@ URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1126&bbsId=102
 END:VEVENT
 BEGIN:VEVENT
 UID:dl-main-notice-9139601@gnu-notice
-DTSTAMP:20261109T135032Z
+DTSTAMP:20261109T144954Z
 DTSTART;VALUE=DATE:20261231
 DTEND;VALUE=DATE:20270101
 SUMMARY:[마감] 2026년 취업활동사례 수기 공모전 안내
@@ -173,7 +336,7 @@ URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1126&bbsId=102
 END:VEVENT
 BEGIN:VEVENT
 UID:dl-main-notice-9134921@gnu-notice
-DTSTAMP:20261109T135032Z
+DTSTAMP:20261109T144954Z
 DTSTART;VALUE=DATE:20261111
 DTEND;VALUE=DATE:20261112
 SUMMARY:[마감] [국립대학육성사업] 2026 GNU 개척리더스 창
@@ -184,7 +347,7 @@ URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1126&bbsId=102
 END:VEVENT
 BEGIN:VEVENT
 UID:dl-main-notice-9134621@gnu-notice
-DTSTAMP:20261109T135032Z
+DTSTAMP:20261109T144954Z
 DTSTART;VALUE=DATE:20261115
 DTEND;VALUE=DATE:20261116
 SUMMARY:[마감] [국립대학육성사업] 2026 GNU 개척리더스 창
@@ -195,7 +358,7 @@ URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1126&bbsId=102
 END:VEVENT
 BEGIN:VEVENT
 UID:dl-mce-1889-9104741@gnu-notice
-DTSTAMP:20261109T135032Z
+DTSTAMP:20261109T144954Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261121
 SUMMARY:[마감] 2026학년도 기계융합공학과 동계방학 해외
@@ -205,8 +368,20 @@ URL:https://www.gnu.ac.kr/mce/na/ntt/selectNttInfo.do?mi=4782&bbsId=1889
  &nttSn=9104741
 END:VEVENT
 BEGIN:VEVENT
+UID:dl-main-notice-9093702@gnu-notice
+DTSTAMP:20261109T144954Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:[마감] [창업교육혁신센터] 2026 동계계절학기(창
+ 업아이템과기회분석 교과목) 연계 교육부 학생유망팀
+  300+ 입문과정 수강생 모집
+DESCRIPTION:창업교육혁신센터 · 수강·학사
+URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1126&bbsId=102
+ 8&nttSn=9093702
+END:VEVENT
+BEGIN:VEVENT
 UID:dl-main-chaeyong-9097003@gnu-notice
-DTSTAMP:20261109T135032Z
+DTSTAMP:20261109T144954Z
 DTSTART;VALUE=DATE:20261029
 DTEND;VALUE=DATE:20261030
 SUMMARY:[마감] 경상국립대학교 국립대학육성사업 기간
@@ -217,7 +392,7 @@ URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1129&bbsId=103
 END:VEVENT
 BEGIN:VEVENT
 UID:dl-main-janghak-9092683@gnu-notice
-DTSTAMP:20261109T135032Z
+DTSTAMP:20261109T144954Z
 DTSTART;VALUE=DATE:20261123
 DTEND;VALUE=DATE:20261124
 SUMMARY:[마감] 2026년도 통영시 저소득 대학생 장학금 지
@@ -228,7 +403,7 @@ URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1376&bbsId=107
 END:VEVENT
 BEGIN:VEVENT
 UID:dl-main-notice-9097424@gnu-notice
-DTSTAMP:20261109T135032Z
+DTSTAMP:20261109T144954Z
 DTSTART;VALUE=DATE:20261102
 DTEND;VALUE=DATE:20261103
 SUMMARY:[마감] [모집홍보](기간연장)2026 G-SCOUT×썸썸 콘 
@@ -239,8 +414,19 @@ URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1126&bbsId=102
  8&nttSn=9097424
 END:VEVENT
 BEGIN:VEVENT
+UID:dl-main-notice-9086383@gnu-notice
+DTSTAMP:20261109T144954Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:[마감] 2026학년도 동계방학 해외파견 영어연수 
+ 시행 및 연수생 모집 공고(모집기한 연장)
+DESCRIPTION:국제협력과 · 국제·교환
+URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1126&bbsId=102
+ 8&nttSn=9086383
+END:VEVENT
+BEGIN:VEVENT
 UID:dl-main-chaeyong-9079132@gnu-notice
-DTSTAMP:20261109T135032Z
+DTSTAMP:20261109T144954Z
 DTSTART;VALUE=DATE:20261103
 DTEND;VALUE=DATE:20261104
 SUMMARY:[마감] 경상국립대학교 실험실특화형창업선도대
@@ -253,7 +439,7 @@ URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1129&bbsId=103
 END:VEVENT
 BEGIN:VEVENT
 UID:dl-main-janghak-9065981@gnu-notice
-DTSTAMP:20261109T135032Z
+DTSTAMP:20261109T144954Z
 DTSTART;VALUE=DATE:20261109
 DTEND;VALUE=DATE:20261110
 SUMMARY:[마감] 2026년도 하반기 강화군 대학생 등록금 지
@@ -263,8 +449,53 @@ URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1376&bbsId=107
  5&nttSn=9065981
 END:VEVENT
 BEGIN:VEVENT
+UID:dl-main-notice-9051104@gnu-notice
+DTSTAMP:20261109T144954Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:[마감] 『2026년 경상국립대학교 인권·성평등 공
+ 모전』 실시 안내
+DESCRIPTION:경상국립대학교 인권센터 · 취업·창업
+URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1126&bbsId=102
+ 8&nttSn=9051104
+END:VEVENT
+BEGIN:VEVENT
+UID:dl-main-chaeyong-9027404@gnu-notice
+DTSTAMP:20261109T144954Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:[마감] 분자제어연구소 초빙교원(학술연구교수) 
+ 채용 공고
+DESCRIPTION:분자제어연구소 · 취업·창업
+URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1129&bbsId=103
+ 0&nttSn=9027404
+END:VEVENT
+BEGIN:VEVENT
+UID:dl-main-notice-9019303@gnu-notice
+DTSTAMP:20261109T144954Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:[마감] 2026학년도 하계 GP-자율탐방(GPP) 참가팀 추
+ 가 모집 안내
+DESCRIPTION:경상국립대학교 학생과 · 국제·교환
+URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1126&bbsId=102
+ 8&nttSn=9019303
+END:VEVENT
+BEGIN:VEVENT
+UID:dl-main-notice-9021401@gnu-notice
+DTSTAMP:20261109T144954Z
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261106
+SUMMARY:[마감] 제12회 창의·융합 3D프린팅 아이디어 경진
+ 대회 개최 안내
+DESCRIPTION:경상국립대학교 공과대학 부속공장 · 취업·
+ 창업
+URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1126&bbsId=102
+ 8&nttSn=9021401
+END:VEVENT
+BEGIN:VEVENT
 UID:dl-mce-14407-9019721@gnu-notice
-DTSTAMP:20261109T135032Z
+DTSTAMP:20261109T144954Z
 DTSTART;VALUE=DATE:20261112
 DTEND;VALUE=DATE:20261113
 SUMMARY:[마감] 2026학년도 국가근로장학금「동계방학 집
@@ -275,7 +506,7 @@ URL:https://www.gnu.ac.kr/mce/na/ntt/selectNttInfo.do?mi=56685&bbsId=144
 END:VEVENT
 BEGIN:VEVENT
 UID:dl-mce-14407-9023751@gnu-notice
-DTSTAMP:20261109T135032Z
+DTSTAMP:20261109T144954Z
 DTSTART;VALUE=DATE:20261105
 DTEND;VALUE=DATE:20261106
 SUMMARY:[마감] 제12회 창의·융합 3D프린팅 아이디어 경진
@@ -286,7 +517,7 @@ URL:https://www.gnu.ac.kr/mce/na/ntt/selectNttInfo.do?mi=56685&bbsId=144
 END:VEVENT
 BEGIN:VEVENT
 UID:dl-ce-1201-9021281@gnu-notice
-DTSTAMP:20261109T135032Z
+DTSTAMP:20261109T144954Z
 DTSTART;VALUE=DATE:20261105
 DTEND;VALUE=DATE:20261106
 SUMMARY:[마감] 제12회 창의·융합 3D프린팅 아이디어 경진
@@ -296,8 +527,41 @@ URL:https://www.gnu.ac.kr/ce/na/ntt/selectNttInfo.do?mi=2275&bbsId=1201&
  nttSn=9021281
 END:VEVENT
 BEGIN:VEVENT
+UID:dl-main-chaeyong-9002323@gnu-notice
+DTSTAMP:20261109T144954Z
+DTSTART;VALUE=DATE:20261029
+DTEND;VALUE=DATE:20261030
+SUMMARY:[마감] 2026학년도 겨울학기 한국어연수과정 한국
+ 어강사 채용 공고
+DESCRIPTION:언어교육실 · 취업·창업
+URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1129&bbsId=103
+ 0&nttSn=9002323
+END:VEVENT
+BEGIN:VEVENT
+UID:dl-main-chaeyong-9005381@gnu-notice
+DTSTAMP:20261109T144954Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+SUMMARY:[마감] 경상국립대학교 창업중심대학사업단 직
+ 원(매니저) 채용 공고(~11.1.(일) 18시 마감)
+DESCRIPTION:창업중심대학사업단 · 취업·창업
+URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1129&bbsId=103
+ 0&nttSn=9005381
+END:VEVENT
+BEGIN:VEVENT
+UID:dl-main-chaeyong-9011323@gnu-notice
+DTSTAMP:20261109T144954Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:[마감] 경상국립대학교 자연과학대학 작물유전
+ 체교정연구실 연구보조원 채용공고
+DESCRIPTION:식물생명공학연구소 · 취업·창업
+URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1129&bbsId=103
+ 0&nttSn=9011323
+END:VEVENT
+BEGIN:VEVENT
 UID:dl-main-janghak-9010370@gnu-notice
-DTSTAMP:20261109T135032Z
+DTSTAMP:20261109T144954Z
 DTSTART;VALUE=DATE:20261112
 DTEND;VALUE=DATE:20261113
 SUMMARY:[마감] ★ 2026년 국가근로장학금 동계방학 집중
@@ -308,7 +572,7 @@ URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1376&bbsId=107
 END:VEVENT
 BEGIN:VEVENT
 UID:dl-main-janghak-9006641@gnu-notice
-DTSTAMP:20261109T135032Z
+DTSTAMP:20261109T144954Z
 DTSTART;VALUE=DATE:20261112
 DTEND;VALUE=DATE:20261113
 SUMMARY:[마감] ★[장학금] 2026년 2학기 푸른등대 기부장
@@ -318,8 +582,52 @@ URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1376&bbsId=107
  5&nttSn=9006641
 END:VEVENT
 BEGIN:VEVENT
+UID:dl-main-chaeyong-8984202@gnu-notice
+DTSTAMP:20261109T144954Z
+DTSTART;VALUE=DATE:20261021
+DTEND;VALUE=DATE:20261022
+SUMMARY:[마감] 경상국립대학교 글로컬대학사업단 자체
+ 직원(연구원급\,사무원급) 채용 최종합격자 공고
+DESCRIPTION:글로컬대학사업단 · 수강·학사
+URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1129&bbsId=103
+ 0&nttSn=8984202
+END:VEVENT
+BEGIN:VEVENT
+UID:dl-main-chaeyong-8987621@gnu-notice
+DTSTAMP:20261109T144954Z
+DTSTART;VALUE=DATE:20270228
+DTEND;VALUE=DATE:20270301
+SUMMARY:[마감] 경상국립대학교 첨단화학연구소 글로컬
+ 랩 신규과제 사무원(기간제계약직) 채용 공고(재공고)
+DESCRIPTION:첨단화학연구소 · 취업·창업
+URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1129&bbsId=103
+ 0&nttSn=8987621
+END:VEVENT
+BEGIN:VEVENT
+UID:dl-main-notice-8989483@gnu-notice
+DTSTAMP:20261109T144954Z
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261023
+SUMMARY:[마감] 2026학년도 2학기(추가) 글로벌자율전공학
+ 부 GNU BUDDY(유학생 도우미) 합격자 발표
+DESCRIPTION:국제협력과 · 국제·교환
+URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1126&bbsId=102
+ 8&nttSn=8989483
+END:VEVENT
+BEGIN:VEVENT
+UID:dl-main-notice-8993450@gnu-notice
+DTSTAMP:20261109T144954Z
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261023
+SUMMARY:[마감] 「2026 제2회 경남 글로벌 혁신 페스타(G-NEX
+ )」 개최 및 참여 안내
+DESCRIPTION:경상국립대학교 앵커사업단 · 국제·교환
+URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1126&bbsId=102
+ 8&nttSn=8993450
+END:VEVENT
+BEGIN:VEVENT
 UID:dl-mce-14407-8984082@gnu-notice
-DTSTAMP:20261109T135032Z
+DTSTAMP:20261109T144954Z
 DTSTART;VALUE=DATE:20261026
 DTEND;VALUE=DATE:20261027
 SUMMARY:[마감] 2027학년도 1학기 학생설계전공 개발 공모 
@@ -330,7 +638,7 @@ URL:https://www.gnu.ac.kr/mce/na/ntt/selectNttInfo.do?mi=56685&bbsId=144
 END:VEVENT
 BEGIN:VEVENT
 UID:dl-mce-14407-8984621@gnu-notice
-DTSTAMP:20261109T135032Z
+DTSTAMP:20261109T144954Z
 DTSTART;VALUE=DATE:20261029
 DTEND;VALUE=DATE:20261030
 SUMMARY:[마감] 2026학년도 GNU AI Pioneer 워크숍 2차 운영 안
@@ -341,7 +649,7 @@ URL:https://www.gnu.ac.kr/mce/na/ntt/selectNttInfo.do?mi=56685&bbsId=144
 END:VEVENT
 BEGIN:VEVENT
 UID:dl-mce-14407-8984741@gnu-notice
-DTSTAMP:20261109T135032Z
+DTSTAMP:20261109T144954Z
 DTSTART;VALUE=DATE:20261104
 DTEND;VALUE=DATE:20261105
 SUMMARY:[마감] 2026학년도 GNU AI Pioneer 특강 4차 운영 안내
@@ -351,7 +659,7 @@ URL:https://www.gnu.ac.kr/mce/na/ntt/selectNttInfo.do?mi=56685&bbsId=144
 END:VEVENT
 BEGIN:VEVENT
 UID:dl-mce-14407-8989303@gnu-notice
-DTSTAMP:20261109T135032Z
+DTSTAMP:20261109T144954Z
 DTSTART;VALUE=DATE:20261028
 DTEND;VALUE=DATE:20261029
 SUMMARY:[마감] 2026학년도 재학생 동계방학 해외파견 영
@@ -362,7 +670,7 @@ URL:https://www.gnu.ac.kr/mce/na/ntt/selectNttInfo.do?mi=56685&bbsId=144
 END:VEVENT
 BEGIN:VEVENT
 UID:dl-mce-1889-8984261@gnu-notice
-DTSTAMP:20261109T135032Z
+DTSTAMP:20261109T144954Z
 DTSTART;VALUE=DATE:20261022
 DTEND;VALUE=DATE:20261023
 SUMMARY:[마감] The(더)자람 필수활동 「 2026학년도 모의토
@@ -373,7 +681,7 @@ URL:https://www.gnu.ac.kr/mce/na/ntt/selectNttInfo.do?mi=4782&bbsId=1889
 END:VEVENT
 BEGIN:VEVENT
 UID:dl-main-janghak-8992122@gnu-notice
-DTSTAMP:20261109T135032Z
+DTSTAMP:20261109T144954Z
 DTSTART;VALUE=DATE:20261110
 DTEND;VALUE=DATE:20261111
 SUMMARY:[마감] 2026년도 진주시 미래세대 행복기금 장학
@@ -384,7 +692,7 @@ URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1376&bbsId=107
 END:VEVENT
 BEGIN:VEVENT
 UID:dl-main-haksa-8985584@gnu-notice
-DTSTAMP:20261109T135032Z
+DTSTAMP:20261109T144954Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261107
 SUMMARY:[마감] 2026학년도 경상국립대학교 동계 계절학기
@@ -396,7 +704,7 @@ URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1127&bbsId=102
 END:VEVENT
 BEGIN:VEVENT
 UID:dl-main-haksa-8943883@gnu-notice
-DTSTAMP:20261109T135032Z
+DTSTAMP:20261109T144954Z
 DTSTART;VALUE=DATE:20270113
 DTEND;VALUE=DATE:20270114
 SUMMARY:[마감] (국내 타 대학 교류) 2026학년도 동계 계절
@@ -408,7 +716,7 @@ URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1127&bbsId=102
 END:VEVENT
 BEGIN:VEVENT
 UID:dl-mce-1889-8927861@gnu-notice
-DTSTAMP:20261109T135032Z
+DTSTAMP:20261109T144954Z
 DTSTART;VALUE=DATE:20261208
 DTEND;VALUE=DATE:20261209
 SUMMARY:[마감] 2026학년도 공과대학 취·창업 활성화를 위
@@ -419,7 +727,7 @@ URL:https://www.gnu.ac.kr/mce/na/ntt/selectNttInfo.do?mi=4782&bbsId=1889
 END:VEVENT
 BEGIN:VEVENT
 UID:dl-main-janghak-8928489@gnu-notice
-DTSTAMP:20261109T135032Z
+DTSTAMP:20261109T144954Z
 DTSTART;VALUE=DATE:20261116
 DTEND;VALUE=DATE:20261117
 SUMMARY:[마감] 2026년 2학기 거창군 지역출신 대학생 등록
@@ -430,7 +738,7 @@ URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1376&bbsId=107
 END:VEVENT
 BEGIN:VEVENT
 UID:dl-main-janghak-8926908@gnu-notice
-DTSTAMP:20261109T135032Z
+DTSTAMP:20261109T144954Z
 DTSTART;VALUE=DATE:20261102
 DTEND;VALUE=DATE:20261103
 SUMMARY:[마감] 2027년도 한국지도자육성장학재단 장학생 
@@ -440,336 +748,8 @@ URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1376&bbsId=107
  5&nttSn=8926908
 END:VEVENT
 BEGIN:VEVENT
-UID:dl-main-haksa-8828210@gnu-notice
-DTSTAMP:20261109T135032Z
-DTSTART;VALUE=DATE:20261016
-DTEND;VALUE=DATE:20261017
-SUMMARY:[마감] 2026학년도 2학기 교원양성과정 이수자 대
- 상 성인지 교육 실시 안내
-DESCRIPTION:학사지원과 · 수강·학사
-URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1127&bbsId=102
- 9&nttSn=8828210
-END:VEVENT
-BEGIN:VEVENT
-UID:dl-main-haksa-8824126@gnu-notice
-DTSTAMP:20261109T135032Z
-DTSTART;VALUE=DATE:20261012
-DTEND;VALUE=DATE:20261013
-SUMMARY:[마감] 2026학년도 2학기 중간 강의평가 실시 안내
-DESCRIPTION:학사지원과 · 수강·학사
-URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1127&bbsId=102
- 9&nttSn=8824126
-END:VEVENT
-BEGIN:VEVENT
-UID:dl-main-haksa-8822804@gnu-notice
-DTSTAMP:20261109T135032Z
-DTSTART;VALUE=DATE:20261223
-DTEND;VALUE=DATE:20261224
-SUMMARY:[마감] 2027학년도 1학기 개척학기제 제안과제 공
- 모 안내
-DESCRIPTION:학사지원과 · 수강·학사
-URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1127&bbsId=102
- 9&nttSn=8822804
-END:VEVENT
-BEGIN:VEVENT
-UID:dl-ce-1201-8809603@gnu-notice
-DTSTAMP:20261109T135032Z
-DTSTART;VALUE=DATE:20261019
-DTEND;VALUE=DATE:20261020
-SUMMARY:[마감] 2026학년도 2학기 조우동장학회 장학금 신
- 청 안내
-DESCRIPTION:공과대학 · 장학·등록금
-URL:https://www.gnu.ac.kr/ce/na/ntt/selectNttInfo.do?mi=2275&bbsId=1201&
- nttSn=8809603
-END:VEVENT
-BEGIN:VEVENT
-UID:dl-ce-1201-8809551@gnu-notice
-DTSTAMP:20261109T135032Z
-DTSTART;VALUE=DATE:20261012
-DTEND;VALUE=DATE:20261013
-SUMMARY:[마감] 화학분석기사·화공기사 실기시험 작업형
-  교육 프로그램 안내
-DESCRIPTION:공과대학 · 행사·특강
-URL:https://www.gnu.ac.kr/ce/na/ntt/selectNttInfo.do?mi=2275&bbsId=1201&
- nttSn=8809551
-END:VEVENT
-BEGIN:VEVENT
-UID:dl-main-haksa-8707902@gnu-notice
-DTSTAMP:20261109T135032Z
-DTSTART;VALUE=DATE:20261013
-DTEND;VALUE=DATE:20261014
-SUMMARY:[마감] 구)경남과기대 2026학년도 2학기 성적포기 
- 및 동일교과목 성적취소 신청안내
-DESCRIPTION:학사지원과 · 수강·학사
-URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1127&bbsId=102
- 9&nttSn=8707902
-END:VEVENT
-BEGIN:VEVENT
-UID:dl-ce-1201-8625462@gnu-notice
-DTSTAMP:20261109T135032Z
-DTSTART;VALUE=DATE:20261030
-DTEND;VALUE=DATE:20261031
-SUMMARY:[마감] 2027 독일 정부초청(DAAD) 섬머코스 장학생 
- 선발 안내
-DESCRIPTION:공과대학 · 장학·등록금
-URL:https://www.gnu.ac.kr/ce/na/ntt/selectNttInfo.do?mi=2275&bbsId=1201&
- nttSn=8625462
-END:VEVENT
-BEGIN:VEVENT
-UID:dl-main-haksa-8560662@gnu-notice
-DTSTAMP:20261109T135032Z
-DTSTART;VALUE=DATE:20270228
-DTEND;VALUE=DATE:20270301
-SUMMARY:[마감] (중요) 경남과학기술대학교 학제 존속기
- 간 만료(’27.2.28.)에 따른 졸업 등 안내
-DESCRIPTION:학사지원과 · 수강·학사
-URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1127&bbsId=102
- 9&nttSn=8560662
-END:VEVENT
-BEGIN:VEVENT
-UID:dl-mce-1889-8525021@gnu-notice
-DTSTAMP:20261109T135032Z
-DTSTART;VALUE=DATE:20261221
-DTEND;VALUE=DATE:20261222
-SUMMARY:[마감] 2026학년도 2학기 외부시험 성적인정 신청 
- 안내
-DESCRIPTION:기계융합공학과 · 수강·학사
-URL:https://www.gnu.ac.kr/mce/na/ntt/selectNttInfo.do?mi=4782&bbsId=1889
- &nttSn=8525021
-END:VEVENT
-BEGIN:VEVENT
-UID:dl-mce-1889-8430223@gnu-notice
-DTSTAMP:20261109T135032Z
-DTSTART;VALUE=DATE:20270119
-DTEND;VALUE=DATE:20270120
-SUMMARY:[마감] 2026학년도 전기(’27.2.25.) 수료졸업 및 조
- 기졸업 신청 안내
-DESCRIPTION:기계융합공학과 · 수강·학사
-URL:https://www.gnu.ac.kr/mce/na/ntt/selectNttInfo.do?mi=4782&bbsId=1889
- &nttSn=8430223
-END:VEVENT
-BEGIN:VEVENT
-UID:dl-main-haksa-8318321@gnu-notice
-DTSTAMP:20261109T135032Z
-DTSTART;VALUE=DATE:20270122
-DTEND;VALUE=DATE:20270123
-SUMMARY:[마감] 구)경남과기대 학생의 경상국립대 졸업을
-  위한 졸업자격인증제 필수인증제 신청 및 이수안내
-DESCRIPTION:학사지원과 · 수강·학사
-URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1127&bbsId=102
- 9&nttSn=8318321
-END:VEVENT
-BEGIN:VEVENT
-UID:dl-main-haksa-8317245@gnu-notice
-DTSTAMP:20261109T135032Z
-DTSTART;VALUE=DATE:20270122
-DTEND;VALUE=DATE:20270123
-SUMMARY:[마감] 졸업자격인증제 (변경)신청 및 이수 안내
-DESCRIPTION:학사지원과 · 수강·학사
-URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1127&bbsId=102
- 9&nttSn=8317245
-END:VEVENT
-BEGIN:VEVENT
-UID:dl-main-janghak-7589086@gnu-notice
-DTSTAMP:20261109T135032Z
-DTSTART;VALUE=DATE:20261117
-DTEND;VALUE=DATE:20261118
-SUMMARY:[마감] 2026학년도 2학기 학자금대출 시행 안내
-DESCRIPTION:학생과 · 장학·등록금
-URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1376&bbsId=107
- 5&nttSn=7589086
-END:VEVENT
-BEGIN:VEVENT
-UID:dl-mce-1889-6573401@gnu-notice
-DTSTAMP:20261109T135032Z
-DTSTART;VALUE=DATE:20261230
-DTEND;VALUE=DATE:20261231
-SUMMARY:[마감] 2026년 법정의무교육 「대학(원)생 폭력예
- 방교육」 온라인 이수 안내
-DESCRIPTION:기계융합공학과 · 수강·학사
-URL:https://www.gnu.ac.kr/mce/na/ntt/selectNttInfo.do?mi=4782&bbsId=1889
- &nttSn=6573401
-END:VEVENT
-BEGIN:VEVENT
-UID:dl-mce-1889-6573343@gnu-notice
-DTSTAMP:20261109T135032Z
-DTSTART;VALUE=DATE:20261229
-DTEND;VALUE=DATE:20261230
-SUMMARY:[마감] 2026년 법정의무교육「사회적 장애인식개
- 선교육」 이수 안내
-DESCRIPTION:기계융합공학과 · 수강·학사
-URL:https://www.gnu.ac.kr/mce/na/ntt/selectNttInfo.do?mi=4782&bbsId=1889
- &nttSn=6573343
-END:VEVENT
-BEGIN:VEVENT
-UID:dl-main-notice-9227861@gnu-notice
-DTSTAMP:20261109T135032Z
-DTSTART;VALUE=DATE:20261110
-DTEND;VALUE=DATE:20261111
-SUMMARY:[마감] 2026학년도 동계 GP-자율탐방(GPP) 1차 서류 
- 심사결과 및 2차 발표영상 심사 안내
-DESCRIPTION:학생과 · 국제·교환
-URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1126&bbsId=102
- 8&nttSn=9227861
-END:VEVENT
-BEGIN:VEVENT
-UID:dl-main-notice-9222886@gnu-notice
-DTSTAMP:20261109T135032Z
-DTSTART;VALUE=DATE:20261116
-DTEND;VALUE=DATE:20261117
-SUMMARY:[마감] 2026년 제18회 개척언론인의 날 개최 및 참
- 여 안내
-DESCRIPTION:홍보실 · 행사·특강
-URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1126&bbsId=102
- 8&nttSn=9222886
-END:VEVENT
-BEGIN:VEVENT
-UID:dl-main-notice-9190244@gnu-notice
-DTSTAMP:20261109T135032Z
-DTSTART;VALUE=DATE:20261120
-DTEND;VALUE=DATE:20261121
-SUMMARY:[마감] [AI융합원] 2026 GNU AI 전문강사 양성과정 교
- 육생 모집 안내(~11. 20.)
-DESCRIPTION:경상국립대학교 AI융합원 · 취업·창업
-URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1126&bbsId=102
- 8&nttSn=9190244
-END:VEVENT
-BEGIN:VEVENT
-UID:dl-main-notice-9178248@gnu-notice
-DTSTAMP:20261109T135032Z
-DTSTART;VALUE=DATE:20261122
-DTEND;VALUE=DATE:20261123
-SUMMARY:[마감] [홍보]「2027년도 정책연구과제 수요조사
- 」참여 안내
-DESCRIPTION:진주시탄소중립지원센터 · 외부기관
-URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1126&bbsId=102
- 8&nttSn=9178248
-END:VEVENT
-BEGIN:VEVENT
-UID:dl-main-notice-9093702@gnu-notice
-DTSTAMP:20261109T135032Z
-DTSTART;VALUE=DATE:20261204
-DTEND;VALUE=DATE:20261205
-SUMMARY:[마감] [창업교육혁신센터] 2026 동계계절학기(창
- 업아이템과기회분석 교과목) 연계 교육부 학생유망팀
-  300+ 입문과정 수강생 모집
-DESCRIPTION:창업교육혁신센터 · 수강·학사
-URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1126&bbsId=102
- 8&nttSn=9093702
-END:VEVENT
-BEGIN:VEVENT
-UID:dl-main-notice-9086383@gnu-notice
-DTSTAMP:20261109T135032Z
-DTSTART;VALUE=DATE:20261104
-DTEND;VALUE=DATE:20261105
-SUMMARY:[마감] 2026학년도 동계방학 해외파견 영어연수 
- 시행 및 연수생 모집 공고(모집기한 연장)
-DESCRIPTION:국제협력과 · 국제·교환
-URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1126&bbsId=102
- 8&nttSn=9086383
-END:VEVENT
-BEGIN:VEVENT
-UID:dl-main-notice-9051104@gnu-notice
-DTSTAMP:20261109T135032Z
-DTSTART;VALUE=DATE:20261130
-DTEND;VALUE=DATE:20261201
-SUMMARY:[마감] 『2026년 경상국립대학교 인권·성평등 공
- 모전』 실시 안내
-DESCRIPTION:경상국립대학교 인권센터 · 취업·창업
-URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1126&bbsId=102
- 8&nttSn=9051104
-END:VEVENT
-BEGIN:VEVENT
-UID:dl-main-notice-9021401@gnu-notice
-DTSTAMP:20261109T135032Z
-DTSTART;VALUE=DATE:20261105
-DTEND;VALUE=DATE:20261106
-SUMMARY:[마감] 제12회 창의·융합 3D프린팅 아이디어 경진
- 대회 개최 안내
-DESCRIPTION:경상국립대학교 공과대학 부속공장 · 취업·
- 창업
-URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1126&bbsId=102
- 8&nttSn=9021401
-END:VEVENT
-BEGIN:VEVENT
-UID:dl-main-notice-9019303@gnu-notice
-DTSTAMP:20261109T135032Z
-DTSTART;VALUE=DATE:20261103
-DTEND;VALUE=DATE:20261104
-SUMMARY:[마감] 2026학년도 하계 GP-자율탐방(GPP) 참가팀 추
- 가 모집 안내
-DESCRIPTION:경상국립대학교 학생과 · 국제·교환
-URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1126&bbsId=102
- 8&nttSn=9019303
-END:VEVENT
-BEGIN:VEVENT
-UID:dl-main-notice-8993450@gnu-notice
-DTSTAMP:20261109T135032Z
-DTSTART;VALUE=DATE:20261022
-DTEND;VALUE=DATE:20261023
-SUMMARY:[마감] 「2026 제2회 경남 글로벌 혁신 페스타(G-NEX
- )」 개최 및 참여 안내
-DESCRIPTION:경상국립대학교 앵커사업단 · 국제·교환
-URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1126&bbsId=102
- 8&nttSn=8993450
-END:VEVENT
-BEGIN:VEVENT
-UID:dl-main-notice-8989483@gnu-notice
-DTSTAMP:20261109T135032Z
-DTSTART;VALUE=DATE:20261022
-DTEND;VALUE=DATE:20261023
-SUMMARY:[마감] 2026학년도 2학기(추가) 글로벌자율전공학
- 부 GNU BUDDY(유학생 도우미) 합격자 발표
-DESCRIPTION:국제협력과 · 국제·교환
-URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1126&bbsId=102
- 8&nttSn=8989483
-END:VEVENT
-BEGIN:VEVENT
-UID:dl-main-haksa-9221082@gnu-notice
-DTSTAMP:20261109T135032Z
-DTSTART;VALUE=DATE:20261112
-DTEND;VALUE=DATE:20261113
-SUMMARY:[마감] 2026학년도 동계 계절학기 1 수강신청 현황
- (폐강공고일 2026. 11. 12.목 10:00 예정)
-DESCRIPTION:학사지원과 · 수강·학사
-URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1127&bbsId=102
- 9&nttSn=9221082
-END:VEVENT
-BEGIN:VEVENT
-UID:dl-main-haksa-9167683@gnu-notice
-DTSTAMP:20261109T135032Z
-DTSTART;VALUE=DATE:20261130
-DTEND;VALUE=DATE:20261201
-SUMMARY:[마감] 2027학년도 1학기 재입학 모집 공고
-DESCRIPTION:학사지원과 · 수강·학사
-URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1127&bbsId=102
- 9&nttSn=9167683
-END:VEVENT
-BEGIN:VEVENT
-UID:dl-main-haksa-8524782@gnu-notice
-DTSTAMP:20261109T135032Z
-DTSTART;VALUE=DATE:20261221
-DTEND;VALUE=DATE:20261222
-SUMMARY:[마감] 2026학년도 2학기 외부시험(영어 공인어학
- 시험 등) 성적인정 신청 안내
-DESCRIPTION:학사지원과 · 수강·학사
-URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1127&bbsId=102
- 9&nttSn=8524782
-END:VEVENT
-BEGIN:VEVENT
-UID:dl-main-janghak-9180403@gnu-notice
-DTSTAMP:20261109T135032Z
-DTSTART;VALUE=DATE:20261125
-DTEND;VALUE=DATE:20261126
-SUMMARY:[마감] 2026년 주택관리공단 이음-ON 장학생 모집 
- 안내
-DESCRIPTION:학생과 · 장학·등록금
-URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1376&bbsId=107
- 5&nttSn=9180403
-END:VEVENT
-BEGIN:VEVENT
 UID:dl-main-janghak-8907405@gnu-notice
-DTSTAMP:20261109T135032Z
+DTSTAMP:20261109T144954Z
 DTSTART;VALUE=DATE:20261022
 DTEND;VALUE=DATE:20261023
 SUMMARY:[마감] 2026. 2학기 (재)남양육영재단 디딤돌장학
@@ -780,7 +760,7 @@ URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1376&bbsId=107
 END:VEVENT
 BEGIN:VEVENT
 UID:dl-main-janghak-8894810@gnu-notice
-DTSTAMP:20261109T135032Z
+DTSTAMP:20261109T144954Z
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261114
 SUMMARY:[마감] 2027년도 두산연강재단 장학생 선발 안내
@@ -789,8 +769,62 @@ URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1376&bbsId=107
  5&nttSn=8894810
 END:VEVENT
 BEGIN:VEVENT
+UID:dl-main-haksa-8828210@gnu-notice
+DTSTAMP:20261109T144954Z
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261017
+SUMMARY:[마감] 2026학년도 2학기 교원양성과정 이수자 대
+ 상 성인지 교육 실시 안내
+DESCRIPTION:학사지원과 · 수강·학사
+URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1127&bbsId=102
+ 9&nttSn=8828210
+END:VEVENT
+BEGIN:VEVENT
+UID:dl-main-haksa-8824126@gnu-notice
+DTSTAMP:20261109T144954Z
+DTSTART;VALUE=DATE:20261012
+DTEND;VALUE=DATE:20261013
+SUMMARY:[마감] 2026학년도 2학기 중간 강의평가 실시 안내
+DESCRIPTION:학사지원과 · 수강·학사
+URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1127&bbsId=102
+ 9&nttSn=8824126
+END:VEVENT
+BEGIN:VEVENT
+UID:dl-main-haksa-8822804@gnu-notice
+DTSTAMP:20261109T144954Z
+DTSTART;VALUE=DATE:20261223
+DTEND;VALUE=DATE:20261224
+SUMMARY:[마감] 2027학년도 1학기 개척학기제 제안과제 공
+ 모 안내
+DESCRIPTION:학사지원과 · 수강·학사
+URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1127&bbsId=102
+ 9&nttSn=8822804
+END:VEVENT
+BEGIN:VEVENT
+UID:dl-ce-1201-8809603@gnu-notice
+DTSTAMP:20261109T144954Z
+DTSTART;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261020
+SUMMARY:[마감] 2026학년도 2학기 조우동장학회 장학금 신
+ 청 안내
+DESCRIPTION:공과대학 · 장학·등록금
+URL:https://www.gnu.ac.kr/ce/na/ntt/selectNttInfo.do?mi=2275&bbsId=1201&
+ nttSn=8809603
+END:VEVENT
+BEGIN:VEVENT
+UID:dl-ce-1201-8809551@gnu-notice
+DTSTAMP:20261109T144954Z
+DTSTART;VALUE=DATE:20261012
+DTEND;VALUE=DATE:20261013
+SUMMARY:[마감] 화학분석기사·화공기사 실기시험 작업형
+  교육 프로그램 안내
+DESCRIPTION:공과대학 · 행사·특강
+URL:https://www.gnu.ac.kr/ce/na/ntt/selectNttInfo.do?mi=2275&bbsId=1201&
+ nttSn=8809551
+END:VEVENT
+BEGIN:VEVENT
 UID:dl-main-janghak-8800783@gnu-notice
-DTSTAMP:20261109T135032Z
+DTSTAMP:20261109T144954Z
 DTSTART;VALUE=DATE:20261026
 DTEND;VALUE=DATE:20261027
 SUMMARY:[마감] 아산사회복지재단 2027년 의생명과학분야 
@@ -800,8 +834,18 @@ URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1376&bbsId=107
  5&nttSn=8800783
 END:VEVENT
 BEGIN:VEVENT
+UID:dl-main-janghak-8744623@gnu-notice
+DTSTAMP:20261109T144954Z
+DTSTART;VALUE=DATE:20270305
+DTEND;VALUE=DATE:20270306
+SUMMARY:[마감] 2027년도 대산농촌재단 장학생 선발 안내
+DESCRIPTION:학생과 · 장학·등록금
+URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1376&bbsId=107
+ 5&nttSn=8744623
+END:VEVENT
+BEGIN:VEVENT
 UID:dl-main-janghak-8748643@gnu-notice
-DTSTAMP:20261109T135032Z
+DTSTAMP:20261109T144954Z
 DTSTART;VALUE=DATE:20261019
 DTEND;VALUE=DATE:20261020
 SUMMARY:[마감] 2026학년도 2학기 조우동장학회 장학금 신
@@ -811,18 +855,19 @@ URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1376&bbsId=107
  5&nttSn=8748643
 END:VEVENT
 BEGIN:VEVENT
-UID:dl-main-janghak-8744623@gnu-notice
-DTSTAMP:20261109T135032Z
-DTSTART;VALUE=DATE:20270305
-DTEND;VALUE=DATE:20270306
-SUMMARY:[마감] 2027년도 대산농촌재단 장학생 선발 안내
-DESCRIPTION:학생과 · 장학·등록금
-URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1376&bbsId=107
- 5&nttSn=8744623
+UID:dl-main-haksa-8707902@gnu-notice
+DTSTAMP:20261109T144954Z
+DTSTART;VALUE=DATE:20261013
+DTEND;VALUE=DATE:20261014
+SUMMARY:[마감] 구)경남과기대 2026학년도 2학기 성적포기 
+ 및 동일교과목 성적취소 신청안내
+DESCRIPTION:학사지원과 · 수강·학사
+URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1127&bbsId=102
+ 9&nttSn=8707902
 END:VEVENT
 BEGIN:VEVENT
 UID:dl-main-janghak-8698421@gnu-notice
-DTSTAMP:20261109T135032Z
+DTSTAMP:20261109T144954Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:[마감] 2026년도 하반기 (재)논산시장학회 학업장
@@ -832,8 +877,19 @@ URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1376&bbsId=107
  5&nttSn=8698421
 END:VEVENT
 BEGIN:VEVENT
+UID:dl-ce-1201-8625462@gnu-notice
+DTSTAMP:20261109T144954Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+SUMMARY:[마감] 2027 독일 정부초청(DAAD) 섬머코스 장학생 
+ 선발 안내
+DESCRIPTION:공과대학 · 장학·등록금
+URL:https://www.gnu.ac.kr/ce/na/ntt/selectNttInfo.do?mi=2275&bbsId=1201&
+ nttSn=8625462
+END:VEVENT
+BEGIN:VEVENT
 UID:dl-main-janghak-8616650@gnu-notice
-DTSTAMP:20261109T135032Z
+DTSTAMP:20261109T144954Z
 DTSTART;VALUE=DATE:20261130
 DTEND;VALUE=DATE:20261201
 SUMMARY:[마감] 2026년 경상국립대학교 헌혈 우수학생 표
@@ -844,7 +900,7 @@ URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1376&bbsId=107
 END:VEVENT
 BEGIN:VEVENT
 UID:dl-main-janghak-8568702@gnu-notice
-DTSTAMP:20261109T135032Z
+DTSTAMP:20261109T144954Z
 DTSTART;VALUE=DATE:20261011
 DTEND;VALUE=DATE:20261012
 SUMMARY:[마감] 2026년 고속도로 장학생 선발 안내
@@ -853,8 +909,52 @@ URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1376&bbsId=107
  5&nttSn=8568702
 END:VEVENT
 BEGIN:VEVENT
+UID:dl-main-haksa-8560662@gnu-notice
+DTSTAMP:20261109T144954Z
+DTSTART;VALUE=DATE:20270228
+DTEND;VALUE=DATE:20270301
+SUMMARY:[마감] (중요) 경남과학기술대학교 학제 존속기
+ 간 만료(’27.2.28.)에 따른 졸업 등 안내
+DESCRIPTION:학사지원과 · 수강·학사
+URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1127&bbsId=102
+ 9&nttSn=8560662
+END:VEVENT
+BEGIN:VEVENT
+UID:dl-main-haksa-8524782@gnu-notice
+DTSTAMP:20261109T144954Z
+DTSTART;VALUE=DATE:20261221
+DTEND;VALUE=DATE:20261222
+SUMMARY:[마감] 2026학년도 2학기 외부시험(영어 공인어학
+ 시험 등) 성적인정 신청 안내
+DESCRIPTION:학사지원과 · 수강·학사
+URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1127&bbsId=102
+ 9&nttSn=8524782
+END:VEVENT
+BEGIN:VEVENT
+UID:dl-mce-1889-8525021@gnu-notice
+DTSTAMP:20261109T144954Z
+DTSTART;VALUE=DATE:20261221
+DTEND;VALUE=DATE:20261222
+SUMMARY:[마감] 2026학년도 2학기 외부시험 성적인정 신청 
+ 안내
+DESCRIPTION:기계융합공학과 · 수강·학사
+URL:https://www.gnu.ac.kr/mce/na/ntt/selectNttInfo.do?mi=4782&bbsId=1889
+ &nttSn=8525021
+END:VEVENT
+BEGIN:VEVENT
+UID:dl-mce-1889-8430223@gnu-notice
+DTSTAMP:20261109T144954Z
+DTSTART;VALUE=DATE:20270119
+DTEND;VALUE=DATE:20270120
+SUMMARY:[마감] 2026학년도 전기(’27.2.25.) 수료졸업 및 조
+ 기졸업 신청 안내
+DESCRIPTION:기계융합공학과 · 수강·학사
+URL:https://www.gnu.ac.kr/mce/na/ntt/selectNttInfo.do?mi=4782&bbsId=1889
+ &nttSn=8430223
+END:VEVENT
+BEGIN:VEVENT
 UID:dl-main-janghak-8347903@gnu-notice
-DTSTAMP:20261109T135032Z
+DTSTAMP:20261109T144954Z
 DTSTART;VALUE=DATE:20261016
 DTEND;VALUE=DATE:20261017
 SUMMARY:[마감] 2026년 하반기 고연장학재단 장학생 선발
@@ -864,161 +964,94 @@ URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1376&bbsId=107
  5&nttSn=8347903
 END:VEVENT
 BEGIN:VEVENT
-UID:dl-main-chaeyong-9220061@gnu-notice
-DTSTAMP:20261109T135032Z
-DTSTART;VALUE=DATE:20261120
-DTEND;VALUE=DATE:20261121
-SUMMARY:[마감] 경남야생동물센터 직원(진료 수의사) 채
- 용 공고
-DESCRIPTION:경남야생동물센터 · 취업·창업
-URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1129&bbsId=103
- 0&nttSn=9220061
+UID:dl-main-haksa-8318321@gnu-notice
+DTSTAMP:20261109T144954Z
+DTSTART;VALUE=DATE:20270122
+DTEND;VALUE=DATE:20270123
+SUMMARY:[마감] 구)경남과기대 학생의 경상국립대 졸업을
+  위한 졸업자격인증제 필수인증제 신청 및 이수안내
+DESCRIPTION:학사지원과 · 수강·학사
+URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1127&bbsId=102
+ 9&nttSn=8318321
 END:VEVENT
 BEGIN:VEVENT
-UID:dl-main-chaeyong-9190423@gnu-notice
-DTSTAMP:20261109T135032Z
-DTSTART;VALUE=DATE:20261110
-DTEND;VALUE=DATE:20261111
-SUMMARY:[마감] 2027학년도 1학기 전임교원(기금교수 포함)
-  공개채용 서류심사 합격 안내
-DESCRIPTION:교무과 · 취업·창업
-URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1129&bbsId=103
- 0&nttSn=9190423
+UID:dl-main-haksa-8317245@gnu-notice
+DTSTAMP:20261109T144954Z
+DTSTART;VALUE=DATE:20270122
+DTEND;VALUE=DATE:20270123
+SUMMARY:[마감] 졸업자격인증제 (변경)신청 및 이수 안내
+DESCRIPTION:학사지원과 · 수강·학사
+URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1127&bbsId=102
+ 9&nttSn=8317245
 END:VEVENT
 BEGIN:VEVENT
-UID:dl-main-chaeyong-9027404@gnu-notice
-DTSTAMP:20261109T135032Z
-DTSTART;VALUE=DATE:20261113
-DTEND;VALUE=DATE:20261114
-SUMMARY:[마감] 분자제어연구소 초빙교원(학술연구교수) 
- 채용 공고
-DESCRIPTION:분자제어연구소 · 취업·창업
-URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1129&bbsId=103
- 0&nttSn=9027404
+UID:dl-main-janghak-7589086@gnu-notice
+DTSTAMP:20261109T144954Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261118
+SUMMARY:[마감] 2026학년도 2학기 학자금대출 시행 안내
+DESCRIPTION:학생과 · 장학·등록금
+URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1376&bbsId=107
+ 5&nttSn=7589086
 END:VEVENT
 BEGIN:VEVENT
-UID:dl-main-chaeyong-9011323@gnu-notice
-DTSTAMP:20261109T135032Z
-DTSTART;VALUE=DATE:20261104
-DTEND;VALUE=DATE:20261105
-SUMMARY:[마감] 경상국립대학교 자연과학대학 작물유전
- 체교정연구실 연구보조원 채용공고
-DESCRIPTION:식물생명공학연구소 · 취업·창업
-URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1129&bbsId=103
- 0&nttSn=9011323
+UID:dl-mce-1889-6573401@gnu-notice
+DTSTAMP:20261109T144954Z
+DTSTART;VALUE=DATE:20261230
+DTEND;VALUE=DATE:20261231
+SUMMARY:[마감] 2026년 법정의무교육 「대학(원)생 폭력예
+ 방교육」 온라인 이수 안내
+DESCRIPTION:기계융합공학과 · 수강·학사
+URL:https://www.gnu.ac.kr/mce/na/ntt/selectNttInfo.do?mi=4782&bbsId=1889
+ &nttSn=6573401
 END:VEVENT
 BEGIN:VEVENT
-UID:dl-main-chaeyong-9005381@gnu-notice
-DTSTAMP:20261109T135032Z
-DTSTART;VALUE=DATE:20261101
-DTEND;VALUE=DATE:20261102
-SUMMARY:[마감] 경상국립대학교 창업중심대학사업단 직
- 원(매니저) 채용 공고(~11.1.(일) 18시 마감)
-DESCRIPTION:창업중심대학사업단 · 취업·창업
-URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1129&bbsId=103
- 0&nttSn=9005381
+UID:dl-mce-1889-6573343@gnu-notice
+DTSTAMP:20261109T144954Z
+DTSTART;VALUE=DATE:20261229
+DTEND;VALUE=DATE:20261230
+SUMMARY:[마감] 2026년 법정의무교육「사회적 장애인식개
+ 선교육」 이수 안내
+DESCRIPTION:기계융합공학과 · 수강·학사
+URL:https://www.gnu.ac.kr/mce/na/ntt/selectNttInfo.do?mi=4782&bbsId=1889
+ &nttSn=6573343
 END:VEVENT
 BEGIN:VEVENT
-UID:dl-main-chaeyong-9002323@gnu-notice
-DTSTAMP:20261109T135032Z
-DTSTART;VALUE=DATE:20261029
-DTEND;VALUE=DATE:20261030
-SUMMARY:[마감] 2026학년도 겨울학기 한국어연수과정 한국
- 어강사 채용 공고
-DESCRIPTION:언어교육실 · 취업·창업
-URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1129&bbsId=103
- 0&nttSn=9002323
-END:VEVENT
-BEGIN:VEVENT
-UID:dl-main-chaeyong-8987621@gnu-notice
-DTSTAMP:20261109T135032Z
-DTSTART;VALUE=DATE:20270228
-DTEND;VALUE=DATE:20270301
-SUMMARY:[마감] 경상국립대학교 첨단화학연구소 글로컬
- 랩 신규과제 사무원(기간제계약직) 채용 공고(재공고)
-DESCRIPTION:첨단화학연구소 · 취업·창업
-URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1129&bbsId=103
- 0&nttSn=8987621
-END:VEVENT
-BEGIN:VEVENT
-UID:dl-main-chaeyong-8984202@gnu-notice
-DTSTAMP:20261109T135032Z
+UID:dl-mce-14407-8790891@gnu-notice
+DTSTAMP:20261109T144954Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
-SUMMARY:[마감] 경상국립대학교 글로컬대학사업단 자체
- 직원(연구원급\,사무원급) 채용 최종합격자 공고
-DESCRIPTION:글로컬대학사업단 · 수강·학사
-URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1129&bbsId=103
- 0&nttSn=8984202
+SUMMARY:[마감] 2026년 10월 ~ 11월 채용설명(상담)회 및 삼
+ 성SSAFY 설명회 안내
+DESCRIPTION:기계융합공학과 · 취업·창업
+URL:https://www.gnu.ac.kr/mce/na/ntt/selectNttInfo.do?mi=56685&bbsId=144
+ 07&nttSn=8790891
 END:VEVENT
 BEGIN:VEVENT
-UID:dl-main-event-9183581@gnu-notice
-DTSTAMP:20261109T135032Z
-DTSTART;VALUE=DATE:20261116
-DTEND;VALUE=DATE:20261117
-SUMMARY:[마감] [여성연구소 * 동물자유연대] 동물권 교육
-  특별강연회 (3차)
-DESCRIPTION:경상국립대학교 여성연구소 · 행사·특강
-URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?nttSn=9183581
+UID:dl-mce-14407-8611423@gnu-notice
+DTSTAMP:20261109T144954Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261024
+SUMMARY:[마감] 『2026년 경상국립대학교 미래차 앵커사업
+  소성가공 경진대회』 참가 안내
+DESCRIPTION:기계융합공학과 · 취업·창업
+URL:https://www.gnu.ac.kr/mce/na/ntt/selectNttInfo.do?mi=56685&bbsId=144
+ 07&nttSn=8611423
 END:VEVENT
 BEGIN:VEVENT
-UID:dl-main-external-9219581@gnu-notice
-DTSTAMP:20261109T135032Z
-DTSTART;VALUE=DATE:20261115
-DTEND;VALUE=DATE:20261116
-SUMMARY:[마감] [한국보건복지인재원] 이런(e-Learn) 한 컷\,
-  영상 공모전
-DESCRIPTION:한국보건복지인재원 · 외부기관
-URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1132&bbsId=103
- 3&nttSn=9219581
-END:VEVENT
-BEGIN:VEVENT
-UID:dl-main-external-9219526@gnu-notice
-DTSTAMP:20261109T135032Z
-DTSTART;VALUE=DATE:20261201
-DTEND;VALUE=DATE:20261202
-SUMMARY:[마감] [한국체육산업개발㈜] 2026년 공공데이터 
- 활용 경진대회
-DESCRIPTION:한국체육산업개발주식회사 · 외부기관
-URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1132&bbsId=103
- 3&nttSn=9219526
-END:VEVENT
-BEGIN:VEVENT
-UID:dl-main-external-9150161@gnu-notice
-DTSTAMP:20261109T135032Z
-DTSTART;VALUE=DATE:20261120
-DTEND;VALUE=DATE:20261121
-SUMMARY:[마감] 2027년 희망이자라는 열린학교(제42기) 봉
- 사자 모집 안내
-DESCRIPTION:(사)창원시장애인부모회 · 외부기관
-URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1132&bbsId=103
- 3&nttSn=9150161
-END:VEVENT
-BEGIN:VEVENT
-UID:dl-main-external-9138343@gnu-notice
-DTSTAMP:20261109T135032Z
-DTSTART;VALUE=DATE:20261123
-DTEND;VALUE=DATE:20261124
-SUMMARY:[마감] [서울시]2027 시드니 글로벌 인재양성 프로
- 그램 모집 안내
-DESCRIPTION:시립청소년문화교류센터 · 외부기관
-URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1132&bbsId=103
- 3&nttSn=9138343
-END:VEVENT
-BEGIN:VEVENT
-UID:dl-main-external-9135954@gnu-notice
-DTSTAMP:20261109T135032Z
-DTSTART;VALUE=DATE:20270109
-DTEND;VALUE=DATE:20270110
-SUMMARY:[마감] [문화체육관광부] 대학생기자단 울림 22기
-  모집
-DESCRIPTION:디지털소통팀 · 외부기관
-URL:https://www.gnu.ac.kr/main/na/ntt/selectNttInfo.do?mi=1132&bbsId=103
- 3&nttSn=9135954
+UID:dl-mce-14407-8332063@gnu-notice
+DTSTAMP:20261109T144954Z
+DTSTART;VALUE=DATE:20270228
+DTEND;VALUE=DATE:20270301
+SUMMARY:[마감] 2026년도 전자자료 시범서비스(Trial) 추가 
+ 안내
+DESCRIPTION:기계융합공학과 · 생활·시설
+URL:https://www.gnu.ac.kr/mce/na/ntt/selectNttInfo.do?mi=56685&bbsId=144
+ 07&nttSn=8332063
 END:VEVENT
 BEGIN:VEVENT
 UID:sch-89c512306915@gnu-notice
-DTSTAMP:20261109T135031Z
+DTSTAMP:20261109T144953Z
 DTSTART;VALUE=DATE:20261020
 DTEND;VALUE=DATE:20261021
 SUMMARY:[학사] 개교기념일
@@ -1026,7 +1059,7 @@ DESCRIPTION:경상국립대 학사일정
 END:VEVENT
 BEGIN:VEVENT
 UID:sch-094b62840aa1@gnu-notice
-DTSTAMP:20261109T135031Z
+DTSTAMP:20261109T144953Z
 DTSTART;VALUE=DATE:20261026
 DTEND;VALUE=DATE:20261031
 SUMMARY:[학사] 2학기 중간시험
@@ -1034,7 +1067,7 @@ DESCRIPTION:경상국립대 학사일정
 END:VEVENT
 BEGIN:VEVENT
 UID:sch-a3dba11e3b61@gnu-notice
-DTSTAMP:20261109T135031Z
+DTSTAMP:20261109T144953Z
 DTSTART;VALUE=DATE:20261102
 DTEND;VALUE=DATE:20261110
 SUMMARY:[학사] 2027학년도 1학기 재입학 신청기간
@@ -1042,7 +1075,7 @@ DESCRIPTION:경상국립대 학사일정
 END:VEVENT
 BEGIN:VEVENT
 UID:sch-4e6843a6f92d@gnu-notice
-DTSTAMP:20261109T135031Z
+DTSTAMP:20261109T144953Z
 DTSTART;VALUE=DATE:20261208
 DTEND;VALUE=DATE:20261215
 SUMMARY:[학사] 2학기 휴업일 보강지정기간
@@ -1050,7 +1083,7 @@ DESCRIPTION:경상국립대 학사일정
 END:VEVENT
 BEGIN:VEVENT
 UID:sch-786e13200904@gnu-notice
-DTSTAMP:20261109T135031Z
+DTSTAMP:20261109T144953Z
 DTSTART;VALUE=DATE:20261215
 DTEND;VALUE=DATE:20261222
 SUMMARY:[학사] 2학기 기말시험
@@ -1058,7 +1091,7 @@ DESCRIPTION:경상국립대 학사일정
 END:VEVENT
 BEGIN:VEVENT
 UID:sch-7c4c8ec78811@gnu-notice
-DTSTAMP:20261109T135031Z
+DTSTAMP:20261109T144953Z
 DTSTART;VALUE=DATE:20261221
 DTEND;VALUE=DATE:20261222
 SUMMARY:[학사] 2학기 종강일
@@ -1066,7 +1099,7 @@ DESCRIPTION:경상국립대 학사일정
 END:VEVENT
 BEGIN:VEVENT
 UID:sch-186032a8da6a@gnu-notice
-DTSTAMP:20261109T135031Z
+DTSTAMP:20261109T144953Z
 DTSTART;VALUE=DATE:20261222
 DTEND;VALUE=DATE:20270123
 SUMMARY:[학사] 동계특별학기
@@ -1074,7 +1107,7 @@ DESCRIPTION:경상국립대 학사일정
 END:VEVENT
 BEGIN:VEVENT
 UID:sch-470959c949f1@gnu-notice
-DTSTAMP:20261109T135031Z
+DTSTAMP:20261109T144953Z
 DTSTART;VALUE=DATE:20261222
 DTEND;VALUE=DATE:20270301
 SUMMARY:[학사] 2학기 동계방학
@@ -1082,7 +1115,7 @@ DESCRIPTION:경상국립대 학사일정
 END:VEVENT
 BEGIN:VEVENT
 UID:sch-ac46ecba59b6@gnu-notice
-DTSTAMP:20261109T135031Z
+DTSTAMP:20261109T144953Z
 DTSTART;VALUE=DATE:20261223
 DTEND;VALUE=DATE:20270119
 SUMMARY:[학사] 동계계절학기
@@ -1090,7 +1123,7 @@ DESCRIPTION:경상국립대 학사일정
 END:VEVENT
 BEGIN:VEVENT
 UID:sch-816c9f8f2522@gnu-notice
-DTSTAMP:20261109T135031Z
+DTSTAMP:20261109T144953Z
 DTSTART;VALUE=DATE:20261223
 DTEND;VALUE=DATE:20270120
 SUMMARY:[학사] 동계특별학기
@@ -1098,7 +1131,7 @@ DESCRIPTION:경상국립대 학사일정
 END:VEVENT
 BEGIN:VEVENT
 UID:sch-dfe543394795@gnu-notice
-DTSTAMP:20261109T135031Z
+DTSTAMP:20261109T144953Z
 DTSTART;VALUE=DATE:20261223
 DTEND;VALUE=DATE:20270301
 SUMMARY:[학사] 2학기 동계방학
@@ -1106,7 +1139,7 @@ DESCRIPTION:경상국립대 학사일정
 END:VEVENT
 BEGIN:VEVENT
 UID:sch-9155e5ddf695@gnu-notice
-DTSTAMP:20261109T135031Z
+DTSTAMP:20261109T144953Z
 DTSTART;VALUE=DATE:20270107
 DTEND;VALUE=DATE:20270108
 SUMMARY:[학사] 2027학년도 1학기 휴·복학 신청(시작일)
@@ -1114,7 +1147,7 @@ DESCRIPTION:경상국립대 학사일정
 END:VEVENT
 BEGIN:VEVENT
 UID:sch-55339f2b964e@gnu-notice
-DTSTAMP:20261109T135031Z
+DTSTAMP:20261109T144953Z
 DTSTART;VALUE=DATE:20270107
 DTEND;VALUE=DATE:20270114
 SUMMARY:[학사] 2027학년도 전과 신청
@@ -1122,7 +1155,7 @@ DESCRIPTION:경상국립대 학사일정
 END:VEVENT
 BEGIN:VEVENT
 UID:sch-63e7b33afeae@gnu-notice
-DTSTAMP:20261109T135031Z
+DTSTAMP:20261109T144953Z
 DTSTART;VALUE=DATE:20270114
 DTEND;VALUE=DATE:20270123
 SUMMARY:[학사] 2026학년도 전기 수료유예 및 학사학위취
@@ -1131,7 +1164,7 @@ DESCRIPTION:경상국립대 학사일정
 END:VEVENT
 BEGIN:VEVENT
 UID:sch-dd289a33ca1a@gnu-notice
-DTSTAMP:20261109T135031Z
+DTSTAMP:20261109T144953Z
 DTSTART;VALUE=DATE:20270115
 DTEND;VALUE=DATE:20270123
 SUMMARY:[학사] 2027학년도 1학기 복수(부)/연계/융합 전공 
@@ -1140,7 +1173,7 @@ DESCRIPTION:경상국립대 학사일정
 END:VEVENT
 BEGIN:VEVENT
 UID:sch-697152df903c@gnu-notice
-DTSTAMP:20261109T135031Z
+DTSTAMP:20261109T144953Z
 DTSTART;VALUE=DATE:20270211
 DTEND;VALUE=DATE:20270218
 SUMMARY:[학사] 2027학년도 1학기 수강신청
@@ -1148,7 +1181,7 @@ DESCRIPTION:경상국립대 학사일정
 END:VEVENT
 BEGIN:VEVENT
 UID:sch-3cf0d5e0d247@gnu-notice
-DTSTAMP:20261109T135031Z
+DTSTAMP:20261109T144953Z
 DTSTART;VALUE=DATE:20270223
 DTEND;VALUE=DATE:20270227
 SUMMARY:[학사] 2027학년도 1학기 재학생 등록금 납부
@@ -1156,7 +1189,7 @@ DESCRIPTION:경상국립대 학사일정
 END:VEVENT
 BEGIN:VEVENT
 UID:sch-f88f3aca3a3f@gnu-notice
-DTSTAMP:20261109T135031Z
+DTSTAMP:20261109T144953Z
 DTSTART;VALUE=DATE:20270225
 DTEND;VALUE=DATE:20270226
 SUMMARY:[학사] 2026학년도 전기 학위수여식
