@@ -62,6 +62,15 @@ def load_index():
     return {n["id"]: n for n in data.get("notices", [])}
 
 
+def load_meta_boards():
+    """지난 실행의 게시판별 상태 (meta.json). 없으면 빈 dict."""
+    f = DATA / "meta.json"
+    try:
+        return json.loads(f.read_text(encoding="utf-8")).get("boards") or {}
+    except (OSError, json.JSONDecodeError, AttributeError):
+        return {}
+
+
 def load_body(notice_id):
     f = BODY_DIR / f"{notice_id}.json"
     if not f.exists():

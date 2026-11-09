@@ -29,8 +29,8 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      - name: 수집
-        run: python crawl.py --size 30
+      - name: 수집 (30분 넘으면 남은 게시판은 다음 시간으로 넘기고 저장)
+        run: python crawl.py --size 30 --max-minutes 30 --backfill 150
 
       - name: 푸시 알림 발송 (PUSH_SERVER 비밀값이 없으면 안에서 건너뜀)
         continue-on-error: true

@@ -41,6 +41,13 @@ RUN_STARTED = None
 BACKFILL = {"left": 400}   # 한 번 실행에서 본문을 뒤늦게 보충할 최대 글 수
 DEBUG_SAVES = {"nosn": 0, "body": 0}
 NEW_IDS = []               # 이번 실행에서 새로 생긴 글 (푸시 알림 발송용)
+DEADLINE = {"at": None}    # 이 시각이 지나면 남은 게시판은 다음 실행으로 넘기고 저장부터 함
+VIEWS_BUDGET = {"left": 80}  # 한 번 실행에서 조회수 갱신을 위해 상세 페이지를 다시 여는 최대 횟수 (전체 게시판 합산)
+
+
+def out_of_time():
+    import time as _t
+    return DEADLINE["at"] is not None and _t.monotonic() > DEADLINE["at"]
 
 
 def setup_logging():
@@ -296,6 +303,9 @@ def _refresh_views(board, index, args):
                and not (RUN_STARTED and (n.get("fetched_at") or "") >= RUN_STARTED)]  # 이번 실행에서 받은 글은 제외
     targets.sort(key=lambda n: n.get("date") or "", reverse=True)
     for n in targets[:VIEWS_REFRESH_MAX]:
+        if VIEWS_BUDGET["left"] <= 0 or out_of_time():
+            break
+        VIEWS_BUDGET["left"] -= 1
         html, final_url = fetch.get(n["url"])
         if not html:
             continue
@@ -317,8 +327,14 @@ def main():
     ap.add_argument("--debug", action="store_true")
     ap.add_argument("--backfill", type=int, default=400, help="본문 없는 옛 글을 한 번에 보충할 최대 개수")
     ap.add_argument("--reclassify", action="store_true", help="수집 없이, 저장된 글 전체를 현재 규칙으로 다시 분류")
+    ap.add_argument("--max-minutes", type=float, default=0, help="이 시간이 지나면 남은 게시판은 건너뛰고 저장 (0=제한 없음). GitHub 자동 실행용")
+    ap.add_argument("--views-refresh", type=int, default=80, help="조회수 갱신용 상세 페이지 재방문 최대 횟수")
     args = ap.parse_args()
     BACKFILL["left"] = args.backfill
+    VIEWS_BUDGET["left"] = args.views_refresh
+    if args.max_minutes > 0:
+        import time as _t
+        DEADLINE["at"] = _t.monotonic() + args.max_minutes * 60
 
     setup_logging()
     global RUN_STARTED
@@ -357,12 +373,32 @@ def main():
         save_calendars(index, sched_items, config.BOARDS)
         print(f"다시 분류 완료: {total}건 중 {changed}건 바뀜")
         return 0
+    # 순서: 본부 게시판 먼저, 나머지는 '가장 오래 전에 성공한 게시판'부터 — 시간이 모자라 뒤를 못 돌아도 매번 같은 곳만 빠지지 않게
+    prev_status = store.load_meta_boards()
+    def _last_ok(b):
+        st = prev_status.get(b["id"]) or {}
+        return st.get("at") or "" if st.get("ok") else ""
+    main_boards = [b for b in boards if b.get("scope") == "전체"]
+    rest = sorted([b for b in boards if b.get("scope") != "전체"], key=_last_ok)
+    boards = main_boards + rest
+
+    skipped = []
     for board in boards:
+        if out_of_time():
+            skipped.append(board)
+            continue
         try:
             crawl_board(board, index, args, status)
         except Exception as e:
             log.exception("[%s] 처리 중 오류: %s", board["id"], e)
             status[board["id"]] = {"name": board["name"], "ok": False, "error": str(e)[:200]}
+        if board["id"] in status:
+            status[board["id"]]["at"] = store.now_iso()
+    if skipped:
+        log.warning("시간 제한(%.0f분)으로 게시판 %d곳은 다음 실행에서 수집", args.max_minutes, len(skipped))
+        for b in skipped:   # 지난 상태를 그대로 유지 (실패로 표시하지 않음)
+            if b["id"] in prev_status:
+                status[b["id"]] = prev_status[b["id"]]
 
     total = store.save_index(index, status)
     store.save_departments(config.BOARDS)
