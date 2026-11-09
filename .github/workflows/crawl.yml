@@ -32,8 +32,7 @@ jobs:
       - name: 수집
         run: python crawl.py --size 30
 
-      - name: 푸시 알림 발송 (PUSH_SERVER 비밀값이 있을 때만)
-        if: ${{ secrets.PUSH_SERVER != '' }}
+      - name: 푸시 알림 발송 (PUSH_SERVER 비밀값이 없으면 안에서 건너뜀)
         continue-on-error: true
         env:
           PUSH_SERVER: ${{ secrets.PUSH_SERVER }}
