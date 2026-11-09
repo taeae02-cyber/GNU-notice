@@ -153,11 +153,12 @@ def crawl_schedule(debug_dir=None):
             if debug_dir:
                 (debug_dir / "schedule.html").write_text(html, encoding="utf-8")
             items = parse_schedule(html, today.year)
-    out, seen = [], set()
+    # 같은 일정이 두 해 페이지(12월·1월)에 걸쳐 두 번 나오면 하나로 (종료일이 더 늦은 쪽을 남김)
+    best = {}
     for it in items:
-        key = (it["start"], it["end"], it["title"], it.get("target"))
-        if key not in seen:
-            seen.add(key)
-            out.append(it)
+        key = (it["start"], it["title"], it.get("target"))
+        if key not in best or it["end"] > best[key]["end"]:
+            best[key] = it
+    out = list(best.values())
     out.sort(key=lambda x: (x["start"], x["end"], x.get("target") or ""))
     return out

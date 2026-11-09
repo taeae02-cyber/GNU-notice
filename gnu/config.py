@@ -6,6 +6,9 @@
 
 SITE = "https://www.gnu.ac.kr"
 
+# 우리 사이트 주소 (푸시 알림을 눌렀을 때 열리는 곳, VAPID 연락처)
+SITE_URL = "https://taeae02-cyber.github.io/GNU-notice/"
+
 # 요청 사이 대기 시간(초). 학교 서버에 부담을 주지 않도록 1초 이상 유지.
 REQUEST_DELAY = 1.0
 REQUEST_TIMEOUT = 15

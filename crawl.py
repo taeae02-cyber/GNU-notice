@@ -14,6 +14,7 @@
 import sys
 import argparse
 import logging
+from datetime import timedelta
 from pathlib import Path
 
 if sys.stdout and hasattr(sys.stdout, "reconfigure"):
@@ -29,7 +30,7 @@ from gnu import config, fetch, parse, store  # noqa: E402
 from gnu.classify import classify, tag_campus  # noqa: E402
 from gnu.dday import find_deadline  # noqa: E402
 from gnu.schedule import crawl_schedule  # noqa: E402
-from gnu import ocr  # noqa: E402
+from gnu import ocr, images as imgstore  # noqa: E402
 from gnu.calendar_feed import save_calendars  # noqa: E402
 
 LOG_FILE = ROOT / "crawl.log"
@@ -39,6 +40,7 @@ VIEWS_REFRESH_MAX = 10
 RUN_STARTED = None
 BACKFILL = {"left": 400}   # 한 번 실행에서 본문을 뒤늦게 보충할 최대 글 수
 DEBUG_SAVES = {"nosn": 0, "body": 0}
+NEW_IDS = []               # 이번 실행에서 새로 생긴 글 (푸시 알림 발송용)
 
 
 def setup_logging():
@@ -143,9 +145,15 @@ def crawl_board(board, index, args, status):
         rows.extend(more)
 
     # 글 처리
+    old_cutoff = (store.today_kst() - timedelta(days=store.RETENTION_DAYS)).isoformat()
+    skipped_old = 0
     for row in rows:
         nid = store.make_id(bid, row.get("ntt_sn"), row["title"], row.get("date"))
         existing = index.get(nid)
+        if not existing and row.get("date") and row["date"] < old_cutoff:
+            # 보관 기간(1년)보다 오래된 글: 저장해도 바로 지워지므로 본문을 받지 않음
+            skipped_old += 1
+            continue
         if not existing and row.get("ntt_sn"):
             # 예전(번호를 못 읽던 때)에 제목+날짜로 저장된 글이면 새 id 로 옮김
             old_id = store.make_id(bid, None, row["title"], row.get("date"))
@@ -213,6 +221,7 @@ def crawl_board(board, index, args, status):
             notice["deadline"], notice["deadline_source"], notice["deadline_text"] = dl, src, snip
         index[nid] = notice
         new_count += 1
+        NEW_IDS.append(nid)
         log.info("[%s] 새 글: %s → %s", bid, notice["title"][:40], notice["category"])
 
     # 최근 글 조회수 갱신 (목록에 조회수가 없는 게시판만)
@@ -221,7 +230,8 @@ def crawl_board(board, index, args, status):
 
     status[bid] = {"name": board["name"], "ok": True, "new": new_count, "updated": updated,
                    "errors": errors, "listed": len(rows)}
-    log.info("[%s] 새 글 %d, 갱신 %d, 오류 %d", bid, new_count, updated, errors)
+    log.info("[%s] 새 글 %d, 갱신 %d, 오류 %d%s", bid, new_count, updated, errors,
+             f", 1년 넘은 글 {skipped_old}건 건너뜀" if skipped_old else "")
 
 
 def _needs_body(nid):
@@ -232,6 +242,9 @@ def _needs_body(nid):
     # 예전 버전으로 받은 글: 본문이 거의 없고 이미지 정보도 없거나, 본문 자리에 사이트 메뉴가 들어갔으면 다시 받아봄
     if "images" not in b and len(body) < 40:
         return True
+    # 이미지가 있는데 아직 우리 저장소에 복사해 두지 않은 글 (예전 버전으로 받은 글)
+    if any(isinstance(i, dict) and "local" not in i for i in (b.get("images") or [])):
+        return True
     return any(m in body for m in parse.CHROME_MARKS)
 
 
@@ -239,8 +252,12 @@ def _apply_detail(notice, det, board):
     body = det.get("body") or ""
     images = det.get("images") or []
     ocr_text = ""
-    if images and len(body.replace("[이미지]", "").strip()) < 80:
-        ocr_text = ocr.read_images(images)
+    pil_list = []
+    if images:
+        images, pil_list = imgstore.fetch_and_store(notice["id"], images)
+    if pil_list and len(body.replace("[이미지]", "").strip()) < 80:
+        # 글자는 검색용으로만 읽어 둠 (화면에는 그림을 보여주고 글자는 접어 둠)
+        ocr_text = ocr.read_pil(pil_list)
         if ocr_text:
             body = (body + "\n\n[이미지 글자 자동 인식 — 오타가 있을 수 있어요]\n" + ocr_text).strip()
     if det.get("date") and not notice.get("date"):
@@ -349,6 +366,18 @@ def main():
 
     total = store.save_index(index, status)
     store.save_departments(config.BOARDS)
+    try:
+        n_img = imgstore.prune(set(index.keys()))
+        if n_img:
+            log.info("주인 없는 이미지 %d개 정리", n_img)
+    except Exception as e:
+        log.warning("이미지 정리 실패: %s", e)
+    try:
+        DEBUG_DIR.mkdir(exist_ok=True)
+        import json as _json
+        (DEBUG_DIR / "new_ids.json").write_text(_json.dumps([i for i in NEW_IDS if i in index], ensure_ascii=False), encoding="utf-8")
+    except Exception as e:
+        log.warning("새 글 목록 저장 실패: %s", e)
 
     sched_items = None
     if not args.no_schedule:

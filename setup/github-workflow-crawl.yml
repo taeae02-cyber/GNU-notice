@@ -15,7 +15,7 @@ concurrency:
 jobs:
   crawl:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
 
@@ -32,11 +32,19 @@ jobs:
       - name: 수집
         run: python crawl.py --size 30
 
+      - name: 푸시 알림 발송 (PUSH_SERVER 비밀값이 있을 때만)
+        if: ${{ secrets.PUSH_SERVER != '' }}
+        continue-on-error: true
+        env:
+          PUSH_SERVER: ${{ secrets.PUSH_SERVER }}
+          PUSH_TOKEN: ${{ secrets.PUSH_TOKEN }}
+        run: python tools/push_send.py
+
       - name: 결과 저장
         run: |
           git config user.name "gnu-notice-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add docs/data boards.json
+          git add docs/data docs/calendar boards.json
           if git diff --cached --quiet; then
             echo "변경 없음"
           else

@@ -98,9 +98,20 @@ def _drop_stale_hash_entries(index):
                 bf = BODY_DIR / f"{nid}.json"
                 if bf.exists():
                     bf.unlink()
+                _remove_images(nid)
                 del index[nid]
                 removed += 1
     return removed
+
+
+def _remove_images(nid):
+    img_dir = DATA / "img"
+    if img_dir.exists():
+        for f in img_dir.glob(f"{nid}-*.jpg"):
+            try:
+                f.unlink()
+            except OSError:
+                pass
 
 
 def _drop_orphans(index):
@@ -119,6 +130,7 @@ def _drop_orphans(index):
             bf = BODY_DIR / f"{nid}.json"
             if bf.exists():
                 bf.unlink()
+            _remove_images(nid)
             del index[nid]
             removed += 1
     return removed
@@ -137,6 +149,7 @@ def save_index(index, boards_status):
             bf = BODY_DIR / f"{n['id']}.json"
             if bf.exists():
                 bf.unlink()
+            _remove_images(n["id"])
             continue
         n["dup_key"] = dup_key(n.get("title"))
         n["flags"] = title_flags(n.get("title"))

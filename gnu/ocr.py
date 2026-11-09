@@ -34,6 +34,27 @@ def available():
     return _available
 
 
+def read_pil(pil_images):
+    """이미 내려받은 PIL 이미지 목록 → 인식한 글자 (없으면 '')"""
+    if not available() or not pil_images:
+        return ""
+    import pytesseract
+    texts = []
+    for im in pil_images[:MAX_IMAGES]:
+        try:
+            g = im.convert("L")
+            if g.width > 1800:
+                g = g.resize((1800, int(g.height * 1800 / g.width)))
+            txt = pytesseract.image_to_string(g, lang="kor+eng", config="--psm 6")
+        except Exception as e:
+            log.warning("OCR 실패: %s", e)
+            continue
+        txt = "\n".join(ln.strip() for ln in txt.splitlines() if len(ln.strip()) >= 2)
+        if len(txt) >= 20:
+            texts.append(txt)
+    return "\n\n".join(texts)[:MAX_CHARS]
+
+
 def read_images(images):
     """이미지 URL 목록 → 인식한 글자 (없으면 '')"""
     if not available() or not images:

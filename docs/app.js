@@ -6,6 +6,7 @@
   const CONFIG = {
     reportIssueUrl: "https://github.com/taeae02-cyber/GNU-notice/issues/new",
     reportMail: "",
+    pushServer: "",       // 푸시 알림 서버(Cloudflare Worker) 주소. 예: "https://gnu-push.아이디.workers.dev"
   };
 
   const CATEGORIES = ["수강·학사", "장학·등록금", "취업·창업", "국제·교환", "생활·시설", "행사·특강", "외부기관"];
@@ -23,6 +24,8 @@
     scopeOn: Object.assign({ all: true, college: true, dept: true, others: false }, load("scopeOn", {})),
     keywords: load("keywords", []),
     notify: load("notify", false),
+    push: Object.assign({ on: false, deptNew: true }, load("push", {})),
+    kwPrefill: "",
     read: new Set(load("read", [])),
     marks: new Set(load("marks", [])),
     lastVisit: load("lastVisit", null),
@@ -30,6 +33,7 @@
     onboarded: load("onboarded", false),
     theme: load("theme", "system"),
     showGrad: load("showGrad", false),
+    homeMode: load("homeMode", "cat"),   // 전체 탭 보기 방식: cat(카테고리별) | time(시간순)
     calMonth: null, calSel: null, calAllDl: load("calAllDl", false), feeds: null,
   };
   const today = startOfDay(new Date());
@@ -133,13 +137,18 @@
     const tabs = ["전체", ...CATEGORIES];
     $("#tabs").innerHTML = tabs.map(t => {
       const c = t === "전체" ? Object.values(counts).reduce((a, b) => a + b, 0) : (counts[t] || 0);
-      return `<button data-tab="${esc(t)}" class="${state.tab === t ? "on" : ""}">${esc(t)}<span class="cnt">${c}</span></button>`;
+      return `<button data-tab="${esc(t)}" class="ctab ${state.tab === t ? "on" : ""}">${esc(t)}<span class="cnt">${c}</span></button>`;
     }).join("") +
       `<span class="spacer"></span>` +
-      `<button data-tab="북마크" class="${state.tab === "북마크" ? "on" : ""}">★ 북마크<span class="cnt">${state.marks.size}</span></button>` +
-      `<button data-tab="내 달력" class="${state.tab === "내 달력" ? "on" : ""}">📅 내 달력</button>` +
-      `<button data-tab="내 키워드" class="${state.tab === "내 키워드" ? "on" : ""}">내 키워드<span class="cnt">${kwCount}</span></button>` +
-      `<button data-tab="학사일정" class="${state.tab === "학사일정" ? "on" : ""}">학사일정</button>`;
+      `<button data-tab="북마크" class="ptab ${state.tab === "북마크" ? "on" : ""}">★ 북마크<span class="cnt">${state.marks.size}</span></button>` +
+      `<button data-tab="내 달력" class="ptab ${state.tab === "내 달력" ? "on" : ""}">📅 내 달력</button>` +
+      `<button data-tab="내 키워드" class="ptab ${state.tab === "내 키워드" ? "on" : ""}">내 키워드<span class="cnt">${kwCount}</span></button>` +
+      `<button data-tab="학사일정" class="ptab ${state.tab === "학사일정" ? "on" : ""}">학사일정</button>`;
+    // 폰 아래 메뉴: 카테고리 탭이면 "공지"가 켜짐
+    const catTab = tabs.includes(state.tab);
+    $$("#bottom-nav button").forEach(b => b.classList.toggle("on", catTab ? b.dataset.tab === "전체" : b.dataset.tab === state.tab));
+    const newKw = state.notices.filter(n => matchKeywords(n).length && isNew(n)).length;
+    const dot = $("#bn-kw-dot"); if (dot) dot.hidden = newKw === 0;
   }
 
   // ===== 툴바 =====
@@ -237,6 +246,7 @@
     state.onboarded = true; save("onboarded", true);
     state.scopeOn = { all: true, college: true, dept: true, others: false }; save("scopeOn", state.scopeOn);
     $("#dept-input").value = ""; $("#dept-suggest").hidden = true;
+    pushSyncLater();
     refresh();
   }
 
@@ -252,7 +262,7 @@
         else if (state.tab === "북마크") { if (!state.marks.has(n.id)) return false; }
         else if (state.tab !== "전체" && n.category !== state.tab) return false;
       }
-      if (state.tab !== "북마크") {
+      if (state.tab !== "북마크" && state.tab !== "내 키워드") {
         if (n.scope === "전체") { if (!state.scopeOn.all) return false; }
         else if (me) {
           const mine = (n.scope === "학과" && n.unit === me.unit) || (me.scope === "단과대" && n.scope === "단과대" && n.unit === me.unit);
@@ -347,7 +357,9 @@
   // ===== 목록 =====
   function keywordSchedHtml() {
     if (state.tab !== "내 키워드" || !state.keywords.length) return "";
-    const hits = schedVisible().filter(s => daysUntil(s.end) >= 0 && state.keywords.some(k => s.title.toLowerCase().includes(k.toLowerCase())));
+    const seen = new Set();
+    const hits = schedVisible().filter(s => daysUntil(s.end) >= 0 && daysUntil(s.start) <= 200 && state.keywords.some(k => s.title.toLowerCase().includes(k.toLowerCase())))
+      .filter(s => { const k = s.title + s.start; if (seen.has(k)) return false; seen.add(k); return true; });
     if (!hits.length) return "";
     return `<li class="group-head">키워드에 걸린 학사일정</li>` + hits.slice(0, 6).map(s => {
       const n = daysUntil(s.start);
@@ -361,13 +373,30 @@
     const me = myUnit();
     const scopeText = state.tab === "북마크" ? "내 북마크" : (me ? `${me.name} 기준` : "전체 학과");
     const sortText = { new: "최신순", dday: "마감 임박순", views: "많이 본 순" }[state.sort];
-    $("#list-head").innerHTML = `<span>${all.length}건 · ${esc(scopeText)}</span><span>${state.tab === "내 키워드" ? "키워드: " + esc(state.keywords.join(", ") || "없음") : sortText}</span>`;
-    const shown = all.slice(0, state.limit);
-    let lastGroup = null, html = "";
-    for (const n of shown) {
-      const g = groupLabel(n);
-      if (g && g !== lastGroup) { html += `<li class="group-head">${esc(g)}</li>`; lastGroup = g; }
-      html += rowHtml(n);
+    const homeGrouped = state.tab === "전체" && !state.q && state.homeMode === "cat";
+    const right = state.tab === "내 키워드" ? "키워드: " + esc(state.keywords.join(", ") || "없음")
+      : state.tab === "전체" && !state.q ? `<span class="mode-toggle"><button data-mode="cat" class="${state.homeMode === "cat" ? "on" : ""}">카테고리별</button><button data-mode="time" class="${state.homeMode !== "cat" ? "on" : ""}">시간순</button></span>`
+      : sortText;
+    $("#list-head").innerHTML = `<span>${all.length}건 · ${state.tab === "내 키워드" ? "모든 학과·게시판에서" : esc(scopeText)}</span><span>${right}</span>`;
+    let html = "";
+    if (homeGrouped) {
+      // 카테고리별로 최신 몇 개씩 — 한눈에 훑고, 더 보려면 그 카테고리 탭으로
+      const byCat = {};
+      for (const n of all) (byCat[n.category] = byCat[n.category] || []).push(n);
+      const PER = 4;
+      for (const c of [...CATEGORIES, "기타"]) {
+        const list = byCat[c]; if (!list) continue;
+        html += `<li class="group-head cat-head">${catIcon(c)}<span class="cat-name">${esc(c)}</span><span class="cnt">${list.length}</span>${list.length > PER ? `<a class="more-link" href="#/tab/${encodeURIComponent(c)}">전체 보기 →</a>` : ""}</li>`;
+        html += list.slice(0, PER).map(rowHtml).join("");
+      }
+    } else {
+      const shown = all.slice(0, state.limit);
+      let lastGroup = null;
+      for (const n of shown) {
+        const g = groupLabel(n);
+        if (g && g !== lastGroup) { html += `<li class="group-head">${esc(g)}</li>`; lastGroup = g; }
+        html += rowHtml(n);
+      }
     }
     const schedHtml = keywordSchedHtml();
     $("#list").innerHTML = schedHtml + html;
@@ -375,18 +404,18 @@
     empty.hidden = all.length > 0 || !!schedHtml;
     if (!all.length) {
       empty.innerHTML = state.tab === "북마크" ? "아직 북마크한 공지가 없어요.<br>목록에서 ★ 를 누르면 여기에 모여요."
-        : state.tab === "내 키워드" ? "키워드에 맞는 공지가 없어요.<br>오른쪽 위 '내 키워드'에서 단어를 등록해 보세요."
+        : state.tab === "내 키워드" ? (state.keywords.length ? "키워드에 맞는 공지가 아직 없어요.<br>새로 올라오면 여기에 모여요." : "위 칸에 단어를 등록해 보세요.<br>예: 장학, 교환학생, 계절학기, 간호학과")
         : state.q ? `"${esc(state.q)}" 에 맞는 공지가 없어요.${state.bodySearch ? "" : "<br>검색창 옆 '본문'을 켜면 내용까지 찾아요."}`
         : "조건에 맞는 공지가 없어요.<br>위 칩에서 범위를 넓혀 보세요.";
     }
-    $("#more-wrap").hidden = all.length <= state.limit;
-    if (all.length > state.limit) $("#more").textContent = `더 보기 (${all.length - state.limit}건 남음)`;
+    $("#more-wrap").hidden = homeGrouped || all.length <= state.limit;
+    if (!homeGrouped && all.length > state.limit) $("#more").textContent = `더 보기 (${all.length - state.limit}건 남음)`;
     renderSchedStrip();
   }
   function rowHtml(n) {
     const dd = ddInfo(n.deadline);
     const kws = matchKeywords(n);
-    const scope = n.scope === "전체" ? "" : `<span class="scope-dept">${esc(n.unit || n.scope)}</span>`;
+    const scope = (n.scope === "전체" || (n.unit && n.unit === (n.dept || n.board))) ? "" : `<span class="scope-dept">${esc(n.unit || n.scope)}</span>`;
     const flags = (n.flags || []).map(f => `<span class="flag ${f === "중요" ? "imp" : "chg"}">${f}</span>`).join("");
     const dup = n.dups && n.dups.length ? `<span class="sep">·</span><span class="dup" title="${esc(n.dups.map(d => d.unit || d.board).join(", "))}">+${n.dups.length} 게시판</span>` : "";
     return `<li class="row ${state.read.has(n.id) ? "read" : ""}" data-id="${esc(n.id)}">
@@ -604,14 +633,26 @@
       const b = await fetch(`data/body/${encodeURIComponent(id)}.json`).then(r => { if (!r.ok) throw new Error(); return r.json(); });
       const body = $("#d-body");
       body.classList.remove("loading");
-      const imgs = (b.images || []).map(i => `<figure class="bimg"><img src="${esc(i.src)}" alt="${esc(i.alt || "공지 이미지")}" loading="lazy"><figcaption>${i.alt ? esc(i.alt) + " · " : ""}<a href="${esc(i.src)}" target="_blank" rel="noopener">원본 크기로 보기</a></figcaption></figure>`).join("");
-      const text = (b.body || "").replace(/^\[이미지\][^\n]*\n?/gm, "").trim();
+      // 그림: 우리 저장소 사본(local)을 먼저 쓰고, 없으면 학교 서버 원본
+      const imgs = (b.images || []).filter(i => i && i.src).map(i => {
+        const src = i.local ? i.local : i.src;
+        const size = i.w && i.h ? ` width="${i.w}" height="${i.h}"` : "";
+        return `<figure class="bimg"><a href="${esc(i.src)}" target="_blank" rel="noopener" title="원본 크기로 보기"><img src="${esc(src)}" alt="${esc(i.alt || "공지 이미지")}" loading="lazy" referrerpolicy="no-referrer"${size}${i.local ? ` data-fallback="${esc(i.src)}"` : ""}></a></figure>`;
+      }).join("");
+      // 본문 글자: OCR(그림에서 자동 인식)로 얻은 부분은 접어 둠 — 오타가 많아 그림을 보는 게 나음
+      const raw = (b.body || "").replace(/^\[이미지\][^\n]*\n?/gm, "").trim();
+      const OCR_MARK = "[이미지 글자 자동 인식 — 오타가 있을 수 있어요]";
+      const cut = raw.indexOf(OCR_MARK);
+      const text = (cut >= 0 ? raw.slice(0, cut) : raw).trim();
+      const ocrText = cut >= 0 ? raw.slice(cut + OCR_MARK.length).trim() : "";
       let html = "";
-      if (imgs && !text) html += '<p class="hint" style="margin:0 0 10px">본문이 이미지로 올라온 공지예요.</p>';
+      if (imgs && !text) html += '<p class="hint" style="margin:0 0 10px">그림으로 올라온 공지예요. 그림을 누르면 원본 크기로 열려요.</p>';
       html += imgs;
-      if (text) html += (imgs ? '<div class="btext">' : "") + linkify(text).replace(/\[이미지 글자 자동 인식 — 오타가 있을 수 있어요\]/, '<span class="ocr-label">이미지 글자 자동 인식 — 오타가 있을 수 있어요</span>') + (imgs ? "</div>" : "");
+      if (text) html += (imgs ? '<div class="btext">' : "") + linkify(text) + (imgs ? "</div>" : "");
+      if (ocrText) html += `<details class="ocr-box"><summary>그림 속 글자를 텍스트로 보기 <span class="hint small">(자동 인식이라 오타가 있어요 · 복사용)</span></summary><div class="btext">${linkify(ocrText)}</div></details>`;
       if (!html) html = '<span class="hint">본문을 가져오지 못했어요. 학교 홈페이지에서 확인해 주세요.</span>';
       body.innerHTML = html;
+      $$("img[data-fallback]", body).forEach(im => im.addEventListener("error", () => { if (im.src !== im.dataset.fallback) im.src = im.dataset.fallback; }, { once: true }));
       if (b.contact) $("#d-contact").textContent = b.contact;
       if (b.attachments && b.attachments.length) {
         $("#d-attach").innerHTML = `<div class="attach"><h4>첨부파일 ${b.attachments.length}</h4>${b.attachments.map(a => {
@@ -626,7 +667,7 @@
     }
     $$('[data-act]', el).forEach(btn => btn.addEventListener("click", () => {
       const act = btn.dataset.act;
-      if (act === "keyword") openKeywords(suggestKeyword(n));
+      if (act === "keyword") { state.kwPrefill = suggestKeyword(n); location.hash = "#/tab/" + encodeURIComponent("내 키워드"); }
       if (act === "report") openReport(n);
       if (act === "ics") downloadIcs("[마감] " + n.title, n.deadline, n.deadline, n.dept || "", n.url);
       if (act === "mark") { toggleMark(id); btn.textContent = state.marks.has(id) ? "★ 북마크됨" : "☆ 북마크"; }
@@ -642,25 +683,98 @@
     return words.find(w => n.title.includes(w)) || "";
   }
 
-  // ===== 키워드 =====
-  function openKeywords(prefill) {
-    renderKeywords();
-    $("#kw-input").value = prefill || "";
-    $("#kw-notify").checked = !!state.notify;
-    $("#kw-panel").hidden = false;
-    setTimeout(() => $("#kw-input").focus(), 0);
-  }
-  function renderKeywords() {
-    $("#kw-list").innerHTML = state.keywords.length
-      ? state.keywords.map(k => `<span class="chip kw-chip">${esc(k)}<button data-rm="${esc(k)}" title="삭제">✕</button></span>`).join("")
-      : '<span class="hint">아직 등록한 키워드가 없어요.</span>';
+  // ===== 키워드 (내 키워드 탭의 입력줄) =====
+  function renderKwBar() {
+    const bar = $("#kw-bar");
+    $("#kwb-list").innerHTML = state.keywords.length
+      ? state.keywords.map(k => `<span class="chip kw-chip">${esc(k)}<button data-rm="${esc(k)}" title="삭제" aria-label="${esc(k)} 삭제">✕</button></span>`).join("")
+      : '<span class="hint small">아직 등록한 키워드가 없어요. 단어를 넣으면 제목·부서에 그 단어가 들어간 공지를 모든 학과 게시판에서 모아 보여줘요.</span>';
+    const inp = $("#kwb-input");
+    if (state.kwPrefill) { inp.value = state.kwPrefill; state.kwPrefill = ""; setTimeout(() => inp.focus(), 0); }
+    const me = myUnit();
+    $("#kwb-dept-row").hidden = !me;
+    if (me) $("#kwb-dept-label").textContent = `${me.name} 게시판에 새 글이 올라오면 알림`;
+    $("#kwb-dept").checked = state.push.deptNew !== false;
+    renderPushToggle();
+    bar.hidden = false;
   }
   function addKeyword() {
-    const v = $("#kw-input").value.trim();
+    const v = $("#kwb-input").value.trim().replace(/\s+/g, " ");
     if (!v) return;
-    if (!state.keywords.includes(v)) { state.keywords.push(v); save("keywords", state.keywords); }
-    $("#kw-input").value = "";
-    renderKeywords(); refresh();
+    if (v.length > 30) { $("#kwb-input").value = v.slice(0, 30); return; }
+    if (!state.keywords.includes(v)) { state.keywords.push(v); save("keywords", state.keywords); pushSyncLater(); }
+    $("#kwb-input").value = "";
+    renderKwBar(); renderTabs(); renderList();
+  }
+  function removeKeyword(k) {
+    state.keywords = state.keywords.filter(x => x !== k); save("keywords", state.keywords); pushSyncLater();
+    renderKwBar(); renderTabs(); renderList();
+  }
+
+  // ===== 푸시 알림 (사이트를 안 열어도 오는 알림) =====
+  function isIOS() { return /iPhone|iPad|iPod/.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1); }
+  function isStandalone() { return matchMedia("(display-mode: standalone)").matches || navigator.standalone === true; }
+  function pushAvailable() { return !!CONFIG.pushServer && "serviceWorker" in navigator && "PushManager" in window && "Notification" in window; }
+  function b64ToU8(b64) {
+    const pad = "=".repeat((4 - b64.length % 4) % 4);
+    const raw = atob((b64 + pad).replace(/-/g, "+").replace(/_/g, "/"));
+    return Uint8Array.from(raw, c => c.charCodeAt(0));
+  }
+  function renderPushToggle() {
+    const t = $("#kwb-push"), hint = $("#kwb-push-hint");
+    if (!CONFIG.pushServer) { t.disabled = true; t.checked = false; hint.textContent = "푸시 알림 서버가 아직 연결되지 않았어요. (준비 중)"; return; }
+    if (!pushAvailable()) { t.disabled = true; t.checked = false; hint.textContent = "이 브라우저는 푸시 알림을 지원하지 않아요."; return; }
+    if (isIOS() && !isStandalone()) { t.disabled = true; t.checked = false; hint.innerHTML = '아이폰은 <b>홈 화면에 추가</b>한 뒤 그 아이콘으로 열어야 알림을 켤 수 있어요. (공유 버튼 → 홈 화면에 추가)'; return; }
+    t.disabled = false; t.checked = !!state.push.on;
+    hint.textContent = state.push.on
+      ? "켜짐 — 새 공지가 수집될 때(매시간) 조건에 맞는 글만 알림이 와요."
+      : (Notification.permission === "denied" ? "브라우저에서 알림이 차단돼 있어요. 주소창의 자물쇠(설정)에서 알림을 허용해 주세요." : "사이트를 닫아도 조건에 맞는 새 공지를 폰·PC로 알려줘요.");
+  }
+  async function pushSubscriptionBody(sub) {
+    const me = myUnit();
+    return { subscription: sub.toJSON(), keywords: state.keywords, deptNew: state.push.deptNew !== false,
+      dept: me ? { name: me.name, unit: me.unit, college: me.college, scope: me.scope } : null, ua: navigator.userAgent.slice(0, 80) };
+  }
+  async function pushEnable() {
+    if (isIOS() && !isStandalone()) throw new Error("아이폰은 홈 화면에 추가한 뒤 그 아이콘으로 열어야 해요.");
+    const perm = await Notification.requestPermission();
+    if (perm !== "granted") throw new Error("알림 권한이 허용되지 않았어요.");
+    const reg = await navigator.serviceWorker.ready;
+    const key = await fetch(CONFIG.pushServer + "/vapid").then(r => r.json());
+    if (!key || !key.publicKey) throw new Error("서버에서 키를 받지 못했어요.");
+    let sub = await reg.pushManager.getSubscription();
+    if (!sub) sub = await reg.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: b64ToU8(key.publicKey) });
+    const r = await fetch(CONFIG.pushServer + "/subscribe", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(await pushSubscriptionBody(sub)) });
+    if (!r.ok) throw new Error("서버 저장 실패 (" + r.status + ")");
+    state.push.on = true; save("push", state.push);
+    state.notify = true; save("notify", true);
+  }
+  async function pushDisable() {
+    try {
+      const reg = await navigator.serviceWorker.ready;
+      const sub = await reg.pushManager.getSubscription();
+      if (sub) {
+        fetch(CONFIG.pushServer + "/unsubscribe", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ endpoint: sub.endpoint }) }).catch(() => {});
+        await sub.unsubscribe();
+      }
+    } catch (e) { /* 무시 */ }
+    state.push.on = false; save("push", state.push);
+  }
+  // 키워드·학과가 바뀌면 서버에 저장된 조건도 갱신
+  let pushSyncTimer = null;
+  function pushSyncLater() {
+    if (!state.push.on || !pushAvailable()) return;
+    clearTimeout(pushSyncTimer);
+    pushSyncTimer = setTimeout(pushSyncNow, 800);
+  }
+  async function pushSyncNow() {
+    if (!state.push.on || !pushAvailable()) return;
+    try {
+      const reg = await navigator.serviceWorker.ready;
+      const sub = await reg.pushManager.getSubscription();
+      if (!sub) { state.push.on = false; save("push", state.push); renderPushToggle(); return; }
+      await fetch(CONFIG.pushServer + "/subscribe", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(await pushSubscriptionBody(sub)) });
+    } catch (e) { /* 다음에 다시 */ }
   }
 
   // ===== 분류 신고 =====
@@ -708,7 +822,7 @@
     const mDetail = h.match(/^#\/n\/(.+)$/);
     const mTab = h.match(/^#\/tab\/(.+)$/);
     $("#view-list").hidden = true; $("#view-detail").hidden = true; $("#view-schedule").hidden = true; $("#view-calendar").hidden = true;
-    $("#toolbar").hidden = !!mDetail; $("#onboard").hidden = true;
+    $("#toolbar").hidden = !!mDetail; $("#onboard").hidden = true; $("#kw-bar").hidden = true;
     if (mDetail) {
       $("#view-detail").hidden = false;
       renderDetail(decodeURIComponent(mDetail[1]));
@@ -720,6 +834,7 @@
     renderToolbar(); renderTabs();
     if (state.tab === "학사일정") { $("#view-schedule").hidden = false; $("#toolbar").hidden = true; $("#onboard").hidden = true; renderSchedule(); }
     else if (state.tab === "내 달력") { $("#view-calendar").hidden = false; $("#toolbar").hidden = true; $("#onboard").hidden = true; renderCalendar(); }
+    else if (state.tab === "내 키워드") { $("#view-list").hidden = false; $("#toolbar").hidden = true; $("#onboard").hidden = true; renderKwBar(); renderList(); }
     else { $("#view-list").hidden = false; renderList(); }
   }
 
@@ -728,6 +843,18 @@
     $("#tabs").addEventListener("click", e => {
       const b = e.target.closest("button[data-tab]"); if (!b) return;
       state.tab = b.dataset.tab; location.hash = "#/tab/" + encodeURIComponent(state.tab);
+    });
+    $("#bottom-nav").addEventListener("click", e => {
+      const b = e.target.closest("button[data-tab]"); if (!b) return;
+      const target = b.dataset.tab;
+      const catTabs = ["전체", ...CATEGORIES];
+      if (target === "전체" && catTabs.includes(state.tab) && !location.hash.startsWith("#/n/")) { window.scrollTo({ top: 0, behavior: "smooth" }); return; }
+      location.hash = "#/tab/" + encodeURIComponent(target);
+      window.scrollTo({ top: 0 });
+    });
+    $("#list-head").addEventListener("click", e => {
+      const m = e.target.closest("[data-mode]"); if (!m) return;
+      state.homeMode = m.dataset.mode; save("homeMode", state.homeMode); state.limit = PAGE; renderList();
     });
     $("#list").addEventListener("click", e => {
       const star = e.target.closest("[data-mark]");
@@ -782,7 +909,7 @@
         e.stopPropagation();
         state.myDept = null; save("myDept", null);
         state.scopeOn = { all: true, college: true, dept: true, others: false }; save("scopeOn", state.scopeOn);
-        refresh(); return;
+        pushSyncLater(); refresh(); return;
       }
       const b = e.target.closest("[data-scope]"); if (!b) return;
       state.scopeOn[b.dataset.scope] = !state.scopeOn[b.dataset.scope]; save("scopeOn", state.scopeOn);
@@ -797,20 +924,16 @@
     $("#sort").addEventListener("change", e => { state.sort = e.target.value; state.limit = PAGE; renderList(); });
     $("#hide-expired").addEventListener("change", e => { state.hideExpired = e.target.checked; refresh(); });
 
-    $("#btn-keywords").addEventListener("click", () => openKeywords(""));
-    $("#kw-add-btn").addEventListener("click", addKeyword);
-    $("#kw-input").addEventListener("keydown", e => { if (e.key === "Enter") addKeyword(); });
-    $("#kw-list").addEventListener("click", e => {
-      const b = e.target.closest("[data-rm]"); if (!b) return;
-      state.keywords = state.keywords.filter(k => k !== b.dataset.rm); save("keywords", state.keywords);
-      renderKeywords(); refresh();
-    });
-    $("#kw-notify").addEventListener("change", async e => {
-      if (e.target.checked && "Notification" in window && Notification.permission !== "granted") {
-        const p = await Notification.requestPermission();
-        if (p !== "granted") { e.target.checked = false; return; }
-      }
-      state.notify = e.target.checked; save("notify", state.notify);
+    $("#btn-keywords").addEventListener("click", () => { location.hash = "#/tab/" + encodeURIComponent("내 키워드"); });
+    $("#kwb-add").addEventListener("click", addKeyword);
+    $("#kwb-input").addEventListener("keydown", e => { if (e.key === "Enter") { e.preventDefault(); addKeyword(); } });
+    $("#kwb-list").addEventListener("click", e => { const b = e.target.closest("[data-rm]"); if (b) removeKeyword(b.dataset.rm); });
+    $("#kwb-dept").addEventListener("change", e => { state.push.deptNew = e.target.checked; save("push", state.push); pushSyncLater(); });
+    $("#kwb-push").addEventListener("change", async e => {
+      const t = e.target; t.disabled = true;
+      try { if (t.checked) await pushEnable(); else await pushDisable(); }
+      catch (err) { t.checked = false; $("#kwb-push-hint").textContent = "켜지 못했어요: " + (err && err.message ? err.message : err); t.disabled = false; return; }
+      renderPushToggle();
     });
     $("#report-send").addEventListener("click", sendReport);
     $("#view-calendar").addEventListener("click", e => {
@@ -847,7 +970,7 @@
     await loadData();
     route();
     notifyNew();
-    if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {});
+    if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").then(() => { if (state.push.on) pushSyncNow(); }).catch(() => {});
     const nowIso = new Date().toISOString();
     window.addEventListener("pagehide", () => save("lastVisit", nowIso));
     setTimeout(() => save("lastVisit", nowIso), 60000);
