@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-09T23:49:52+09:00",
-  "count": 3327,
+  "generated_at": "2026-11-10T01:06:51+09:00",
+  "count": 3446,
   "boards": {
     "main-notice": {
       "name": "공지사항(교내기관)",
@@ -9,7 +9,7 @@
       "updated": 0,
       "errors": 0,
       "listed": 30,
-      "at": "2026-11-09T23:19:39+09:00"
+      "at": "2026-11-10T00:59:37+09:00"
     },
     "main-haksa": {
       "name": "학사",
@@ -17,8 +17,8 @@
       "new": 0,
       "updated": 0,
       "errors": 0,
-      "listed": 42,
-      "at": "2026-11-09T23:19:43+09:00"
+      "listed": 41,
+      "at": "2026-11-10T00:59:42+09:00"
     },
     "main-janghak": {
       "name": "장학",
@@ -27,7 +27,7 @@
       "updated": 0,
       "errors": 0,
       "listed": 38,
-      "at": "2026-11-09T23:19:47+09:00"
+      "at": "2026-11-10T00:59:45+09:00"
     },
     "main-chaeyong": {
       "name": "교내채용",
@@ -36,7 +36,7 @@
       "updated": 0,
       "errors": 0,
       "listed": 30,
-      "at": "2026-11-09T23:19:54+09:00"
+      "at": "2026-11-10T00:59:52+09:00"
     },
     "main-event": {
       "name": "학술/행사",
@@ -45,1245 +45,52 @@
       "updated": 0,
       "errors": 0,
       "listed": 6,
-      "at": "2026-11-09T23:20:00+09:00"
+      "at": "2026-11-10T00:59:57+09:00"
     },
     "main-external": {
       "name": "외부기관",
       "ok": true,
       "new": 0,
-      "updated": 28,
-      "errors": 0,
-      "listed": 30,
-      "at": "2026-11-09T23:20:02+09:00"
-    },
-    "geology-1349": {
-      "name": "지질과학과 학과소식",
-      "ok": true,
-      "new": 0,
-      "updated": 10,
-      "errors": 0,
-      "listed": 30,
-      "at": "2026-11-09T23:20:05+09:00"
-    },
-    "biomat-1394": {
-      "name": "항노화신소재과학과 공지사항",
-      "ok": true,
-      "new": 20,
-      "updated": 10,
-      "errors": 0,
-      "listed": 30,
-      "at": "2026-11-09T23:21:43+09:00"
-    },
-    "biz-1293": {
-      "name": "경영대학 새소식",
-      "ok": true,
-      "new": 20,
-      "updated": 10,
-      "errors": 0,
-      "listed": 30,
-      "at": "2026-11-09T23:22:04+09:00"
-    },
-    "business-2340": {
-      "name": "경영학부 공지사항",
-      "ok": true,
-      "new": 21,
-      "updated": 25,
-      "errors": 0,
-      "listed": 51,
-      "at": "2026-11-09T23:22:27+09:00"
-    },
-    "accounting-2172": {
-      "name": "회계세무학부 공지사항",
-      "ok": true,
-      "new": 9,
-      "updated": 29,
-      "errors": 0,
-      "listed": 40,
-      "at": "2026-11-09T23:22:37+09:00"
-    },
-    "mis-5353": {
-      "name": "경영정보학과 학과소식",
-      "ok": true,
-      "new": 0,
-      "updated": 6,
-      "errors": 0,
-      "listed": 18,
-      "at": "2026-11-09T23:22:52+09:00"
-    },
-    "mis-1441": {
-      "name": "경영정보학과 공지사항",
-      "ok": true,
-      "new": 20,
-      "updated": 16,
-      "errors": 0,
-      "listed": 40,
-      "at": "2026-11-09T23:23:24+09:00"
-    },
-    "mis-1433": {
-      "name": "경영정보학과 공지사항",
-      "ok": true,
-      "new": 0,
-      "updated": 0,
-      "errors": 0,
-      "listed": 11,
-      "at": "2026-11-09T23:23:25+09:00"
-    },
-    "industry-2222": {
-      "name": "산업경영학과 공지사항",
-      "ok": true,
-      "new": 20,
-      "updated": 29,
-      "errors": 0,
-      "listed": 51,
-      "at": "2026-11-09T23:23:47+09:00"
-    },
-    "smart-2157": {
-      "name": "스마트유통물류학과 공지사항",
-      "ok": true,
-      "new": 20,
-      "updated": 15,
-      "errors": 0,
-      "listed": 35,
-      "at": "2026-11-09T23:24:09+09:00"
-    },
-    "ce-1201": {
-      "name": "공과대학 공지사항",
-      "ok": true,
-      "new": 2,
-      "updated": 10,
-      "errors": 0,
-      "listed": 30,
-      "at": "2026-11-09T23:24:12+09:00"
-    },
-    "archeng-2361": {
-      "name": "건축공학부 학부공지사항",
-      "ok": true,
-      "new": 20,
-      "updated": 17,
-      "errors": 0,
-      "listed": 53,
-      "at": "2026-11-09T23:24:35+09:00"
-    },
-    "archeng-2378": {
-      "name": "건축공학부 공지사항",
-      "ok": true,
-      "new": 0,
-      "updated": 1,
-      "errors": 0,
-      "listed": 30,
-      "at": "2026-11-09T23:24:36+09:00"
-    },
-    "archeng-2644": {
-      "name": "건축공학부 전공소식란",
-      "ok": true,
-      "new": 0,
-      "updated": 1,
-      "errors": 0,
-      "listed": 8,
-      "at": "2026-11-09T23:24:37+09:00"
-    },
-    "me-2201": {
-      "name": "기계공학부 학부 공지사항",
-      "ok": true,
-      "new": 21,
-      "updated": 17,
-      "errors": 0,
-      "listed": 40,
-      "at": "2026-11-09T23:25:03+09:00"
-    },
-    "me-6186": {
-      "name": "기계공학부 학과소식",
-      "ok": true,
-      "new": 0,
-      "updated": 1,
-      "errors": 0,
-      "listed": 2,
-      "at": "2026-11-09T23:25:04+09:00"
-    },
-    "polymer-2592": {
-      "name": "신소재공학부 고분자공학전공 학과소식",
-      "ok": true,
-      "new": 14,
-      "updated": 8,
-      "errors": 0,
-      "listed": 30,
-      "at": "2026-11-09T23:25:41+09:00"
-    },
-    "polymer-1675": {
-      "name": "신소재공학부 고분자공학전공 공지사항",
-      "ok": true,
-      "new": 0,
-      "updated": 0,
-      "errors": 0,
-      "listed": 0,
-      "at": "2026-11-09T23:25:41+09:00"
-    },
-    "polymer-3229": {
-      "name": "신소재공학부 고분자공학전공 학부 공지사항",
-      "ok": true,
-      "new": 21,
-      "updated": 39,
-      "errors": 0,
-      "listed": 74,
-      "at": "2026-11-09T23:26:04+09:00"
-    },
-    "metals-1357": {
-      "name": "신소재공학부 금속재료공학전공 공지사항",
-      "ok": true,
-      "new": 0,
-      "updated": 12,
-      "errors": 0,
-      "listed": 39,
-      "at": "2026-11-09T23:26:10+09:00"
-    },
-    "metals-1359": {
-      "name": "신소재공학부 금속재료공학전공 학교프로그램공지",
-      "ok": true,
-      "new": 18,
-      "updated": 19,
-      "errors": 0,
-      "listed": 38,
-      "at": "2026-11-09T23:26:32+09:00"
-    },
-    "ise-4944": {
-      "name": "산업시스템공학부 공지사항",
-      "ok": true,
-      "new": 0,
-      "updated": 0,
-      "errors": 0,
-      "listed": 3,
-      "at": "2026-11-09T23:26:32+09:00"
-    },
-    "ise-1368": {
-      "name": "산업시스템공학부 학부공지",
-      "ok": true,
-      "new": 20,
-      "updated": 14,
-      "errors": 0,
-      "listed": 34,
-      "at": "2026-11-09T23:26:54+09:00"
-    },
-    "ise-4477": {
-      "name": "산업시스템공학부 학사공지",
-      "ok": true,
-      "new": 0,
-      "updated": 0,
-      "errors": 0,
-      "listed": 5,
-      "at": "2026-11-09T23:26:55+09:00"
-    },
-    "ise-1375": {
-      "name": "산업시스템공학부 학부소식",
-      "ok": true,
-      "new": 0,
-      "updated": 8,
-      "errors": 0,
-      "listed": 30,
-      "at": "2026-11-09T23:26:56+09:00"
-    },
-    "arch-2083": {
-      "name": "건축학과 Notice(공지사항)",
-      "ok": true,
-      "new": 20,
-      "updated": 10,
-      "errors": 0,
-      "listed": 30,
-      "at": "2026-11-09T23:27:22+09:00"
-    },
-    "arch-2084": {
-      "name": "건축학과 SA News(학과소식)",
-      "ok": true,
-      "new": 10,
-      "updated": 10,
-      "errors": 0,
-      "listed": 30,
-      "at": "2026-11-09T23:28:13+09:00"
-    },
-    "mce-1889": {
-      "name": "기계융합공학과 학과 공지사항",
-      "ok": true,
-      "new": 14,
-      "updated": 14,
-      "errors": 0,
-      "listed": 36,
-      "at": "2026-11-09T23:28:49+09:00"
-    },
-    "mce-14407": {
-      "name": "기계융합공학과 GNU 소식",
-      "ok": true,
-      "new": 18,
-      "updated": 10,
-      "errors": 0,
-      "listed": 28,
-      "at": "2026-11-09T23:29:22+09:00"
-    },
-    "urban-1397": {
-      "name": "도시공학과 기타공지",
-      "ok": true,
-      "new": 0,
-      "updated": 1,
-      "errors": 0,
-      "listed": 31,
-      "at": "2026-11-09T23:29:23+09:00"
-    },
-    "urban-16566": {
-      "name": "도시공학과 학사공지(교육과정 및 졸업)",
-      "ok": true,
-      "new": 0,
-      "updated": 7,
-      "errors": 0,
-      "listed": 31,
-      "at": "2026-11-09T23:29:24+09:00"
-    },
-    "car-2131": {
-      "name": "미래자동차공학과 학과사무실알림",
-      "ok": true,
-      "new": 20,
-      "updated": 14,
-      "errors": 0,
-      "listed": 41,
-      "at": "2026-11-09T23:29:49+09:00"
-    },
-    "energyeng-2142": {
-      "name": "에너지공학과 공지사항",
-      "ok": true,
-      "new": 20,
-      "updated": 14,
-      "errors": 0,
-      "listed": 38,
-      "at": "2026-11-09T23:30:45+09:00"
-    },
-    "energyeng-2144": {
-      "name": "에너지공학과 에너지소식",
-      "ok": true,
-      "new": 0,
-      "updated": 0,
-      "errors": 0,
-      "listed": 2,
-      "at": "2026-11-09T23:30:45+09:00"
-    },
-    "civil-2289": {
-      "name": "토목공학과 학부공지사항",
-      "ok": true,
-      "new": 18,
-      "updated": 10,
-      "errors": 0,
-      "listed": 33,
-      "at": "2026-11-09T23:31:05+09:00"
-    },
-    "chemeng-1636": {
-      "name": "화학공학과 공지사항",
-      "ok": true,
-      "new": 20,
-      "updated": 22,
-      "errors": 0,
-      "listed": 46,
-      "at": "2026-11-09T23:31:51+09:00"
-    },
-    "cals-1173": {
-      "name": "농업생명과학대학 공지사항 및 교육일정",
-      "ok": true,
-      "new": 0,
-      "updated": 1,
-      "errors": 0,
-      "listed": 1,
-      "at": "2026-11-09T23:31:52+09:00"
-    },
-    "cals-1165": {
-      "name": "농업생명과학대학 새소식",
-      "ok": true,
-      "new": 0,
-      "updated": 6,
-      "errors": 0,
-      "listed": 30,
-      "at": "2026-11-09T23:31:53+09:00"
-    },
-    "frecon-1684": {
-      "name": "식품자원경제학과 학과소식",
-      "ok": true,
-      "new": 17,
-      "updated": 0,
-      "errors": 0,
-      "listed": 30,
-      "at": "2026-11-09T23:33:37+09:00"
-    },
-    "frecon-1685": {
-      "name": "식품자원경제학과 학부공지사항",
-      "ok": true,
-      "new": 0,
-      "updated": 0,
-      "errors": 0,
-      "listed": 2,
-      "at": "2026-11-09T23:33:38+09:00"
-    },
-    "abit-2331": {
-      "name": "동물생명융합학부 공지사항",
-      "ok": true,
-      "new": 20,
-      "updated": 13,
-      "errors": 0,
-      "listed": 37,
-      "at": "2026-11-09T23:35:09+09:00"
-    },
-    "foodsci-3190": {
-      "name": "식품공학부 공지사항",
-      "ok": true,
-      "new": 0,
-      "updated": 1,
-      "errors": 0,
-      "listed": 9,
-      "at": "2026-11-09T23:35:10+09:00"
-    },
-    "hortic-2028": {
-      "name": "원예과학부 학과소식",
-      "ok": true,
-      "new": 0,
-      "updated": 5,
-      "errors": 0,
-      "listed": 30,
-      "at": "2026-11-09T23:35:11+09:00"
-    },
-    "hortic-2029": {
-      "name": "원예과학부 공지사항",
-      "ok": true,
-      "new": 20,
-      "updated": 13,
-      "errors": 0,
-      "listed": 33,
-      "at": "2026-11-09T23:35:52+09:00"
-    },
-    "as-2040": {
-      "name": "축산과학부 공지사항",
-      "ok": true,
-      "new": 3,
-      "updated": 11,
-      "errors": 0,
-      "listed": 32,
-      "at": "2026-11-09T23:36:03+09:00"
-    },
-    "fr-2071": {
-      "name": "환경산림과학부 공지사항",
-      "ok": true,
-      "new": 0,
-      "updated": 0,
-      "errors": 0,
-      "listed": 32,
-      "at": "2026-11-09T23:36:04+09:00"
-    },
-    "agronomy-2468": {
-      "name": "농학과 공지사항",
-      "ok": true,
-      "new": 20,
-      "updated": 17,
-      "errors": 0,
-      "listed": 41,
-      "at": "2026-11-09T23:36:29+09:00"
-    },
-    "agronomy-2470": {
-      "name": "농학과 학과소식",
-      "ok": true,
-      "new": 0,
-      "updated": 6,
-      "errors": 0,
-      "listed": 13,
-      "at": "2026-11-09T23:37:25+09:00"
-    },
-    "smartagro-1899": {
-      "name": "스마트농산업학과 공지사항",
-      "ok": true,
-      "new": 0,
-      "updated": 9,
-      "errors": 0,
-      "listed": 30,
-      "at": "2026-11-09T23:37:26+09:00"
-    },
-    "ab-1682": {
-      "name": "식물의학과 공지사항",
-      "ok": true,
-      "new": 0,
-      "updated": 3,
-      "errors": 0,
-      "listed": 21,
-      "at": "2026-11-09T23:37:27+09:00"
-    },
-    "ab-2464": {
-      "name": "식물의학과 학과소식",
-      "ok": true,
-      "new": 0,
-      "updated": 5,
-      "errors": 0,
-      "listed": 25,
-      "at": "2026-11-09T23:37:28+09:00"
-    },
-    "alc-2616": {
-      "name": "환경생명화학과 학과소식",
-      "ok": true,
-      "new": 0,
-      "updated": 0,
-      "errors": 0,
-      "listed": 30,
-      "at": "2026-11-09T23:37:29+09:00"
-    },
-    "alc-1557": {
-      "name": "환경생명화학과 공지사항",
-      "ok": true,
-      "new": 0,
-      "updated": 0,
-      "errors": 0,
-      "listed": 8,
-      "at": "2026-11-09T23:37:30+09:00"
-    },
-    "ems-2427": {
-      "name": "환경재료과학과 공지사항",
-      "ok": true,
-      "new": 0,
-      "updated": 0,
-      "errors": 0,
-      "listed": 40,
-      "at": "2026-11-09T23:37:31+09:00"
-    },
-    "bime-14111": {
-      "name": "생물산업기계공학과 학과 공지사항",
-      "ok": true,
-      "new": 20,
-      "updated": 10,
-      "errors": 0,
-      "listed": 30,
-      "at": "2026-11-09T23:37:53+09:00"
-    },
-    "agrieng-1997": {
-      "name": "지역시스템공학과 공지사항",
-      "ok": true,
-      "new": 0,
-      "updated": 1,
-      "errors": 0,
-      "listed": 39,
-      "at": "2026-11-09T23:37:54+09:00"
-    },
-    "law-1275": {
-      "name": "법과대학 법학부 공지사항",
-      "ok": true,
-      "new": 12,
-      "updated": 16,
-      "errors": 0,
-      "listed": 32,
-      "at": "2026-11-09T23:38:12+09:00"
-    },
-    "law-2422": {
-      "name": "법과대학 기관 및 외부공지",
-      "ok": true,
-      "new": 20,
-      "updated": 12,
-      "errors": 0,
-      "listed": 34,
-      "at": "2026-11-09T23:38:36+09:00"
-    },
-    "law-4854": {
-      "name": "법과대학 게시판",
-      "ok": true,
-      "new": 0,
-      "updated": 0,
-      "errors": 0,
-      "listed": 0,
-      "at": "2026-11-09T23:38:37+09:00"
-    },
-    "sadae-1246": {
-      "name": "사범대학 공지사항",
-      "ok": true,
-      "new": 3,
-      "updated": 10,
-      "errors": 0,
-      "listed": 30,
-      "at": "2026-11-09T23:38:44+09:00"
-    },
-    "sadae-1614": {
-      "name": "사범대학 열린광장",
-      "ok": true,
-      "new": 0,
-      "updated": 2,
-      "errors": 0,
-      "listed": 30,
-      "at": "2026-11-09T23:38:45+09:00"
-    },
-    "sadae-2907": {
-      "name": "사범대학 열린광장",
-      "ok": true,
-      "new": 0,
-      "updated": 0,
-      "errors": 0,
-      "listed": 1,
-      "at": "2026-11-09T23:38:46+09:00"
-    },
-    "sadae-1616": {
-      "name": "사범대학 열린광장",
-      "ok": true,
-      "new": 0,
-      "updated": 0,
-      "errors": 0,
-      "listed": 30,
-      "at": "2026-11-09T23:38:47+09:00"
-    },
-    "pedagogy-1830": {
-      "name": "교육학과 학부 공지사항",
-      "ok": true,
-      "new": 20,
-      "updated": 13,
-      "errors": 0,
-      "listed": 34,
-      "at": "2026-11-09T23:39:09+09:00"
-    },
-    "pedagogy-1850": {
-      "name": "교육학과 학생회 공지",
-      "ok": true,
-      "new": 0,
-      "updated": 0,
-      "errors": 0,
-      "listed": 7,
-      "at": "2026-11-09T23:39:10+09:00"
-    },
-    "korlan-2261": {
-      "name": "국어교육과 공지사항",
-      "ok": true,
-      "new": 0,
-      "updated": 0,
-      "errors": 0,
-      "listed": 3,
-      "at": "2026-11-09T23:39:11+09:00"
-    },
-    "korlan-2274": {
-      "name": "국어교육과 게시판",
-      "ok": true,
-      "new": 20,
-      "updated": 10,
-      "errors": 0,
-      "listed": 30,
-      "at": "2026-11-09T23:39:50+09:00"
-    },
-    "history-1708": {
-      "name": "역사교육과 공지사항",
-      "ok": true,
-      "new": 0,
-      "updated": 4,
-      "errors": 0,
-      "listed": 9,
-      "at": "2026-11-09T23:39:50+09:00"
-    },
-    "history-1704": {
-      "name": "역사교육과 학부",
-      "ok": true,
-      "new": 0,
-      "updated": 0,
-      "errors": 0,
-      "listed": 7,
-      "at": "2026-11-09T23:39:51+09:00"
-    },
-    "englishedu-1738": {
-      "name": "영어교육과 학부공지",
-      "ok": true,
-      "new": 19,
-      "updated": 16,
-      "errors": 0,
-      "listed": 37,
-      "at": "2026-11-09T23:40:21+09:00"
-    },
-    "englishedu-1742": {
-      "name": "영어교육과 기타공지",
-      "ok": true,
-      "new": 0,
-      "updated": 0,
-      "errors": 0,
-      "listed": 5,
-      "at": "2026-11-09T23:40:22+09:00"
-    },
-    "englishedu-1768": {
-      "name": "영어교육과 영교소식",
-      "ok": true,
-      "new": 0,
-      "updated": 0,
-      "errors": 0,
-      "listed": 3,
-      "at": "2026-11-09T23:40:23+09:00"
-    },
-    "ecedu-1316": {
-      "name": "유아교육과 공지사항",
-      "ok": true,
-      "new": 0,
-      "updated": 7,
-      "errors": 0,
-      "listed": 30,
-      "at": "2026-11-09T23:40:24+09:00"
-    },
-    "ecedu-1321": {
-      "name": "유아교육과 학과소식",
-      "ok": true,
-      "new": 0,
-      "updated": 0,
-      "errors": 0,
-      "listed": 0,
-      "at": "2026-11-09T23:40:24+09:00"
-    },
-    "ethics-3381": {
-      "name": "윤리교육과 학과공지",
-      "ok": true,
-      "new": 0,
-      "updated": 0,
-      "errors": 0,
-      "listed": 4,
-      "at": "2026-11-09T23:40:26+09:00"
-    },
-    "ethics-2243": {
-      "name": "윤리교육과 공지사항",
-      "ok": true,
-      "new": 0,
-      "updated": 0,
-      "errors": 0,
-      "listed": 18,
-      "at": "2026-11-09T23:40:27+09:00"
-    },
-    "ethics-2239": {
-      "name": "윤리교육과 공지사항",
-      "ok": true,
-      "new": 0,
-      "updated": 0,
-      "errors": 0,
-      "listed": 4,
-      "at": "2026-11-09T23:40:28+09:00"
-    },
-    "ethics-3399": {
-      "name": "윤리교육과 공지사항",
-      "ok": true,
-      "new": 0,
-      "updated": 0,
-      "errors": 0,
-      "listed": 10,
-      "at": "2026-11-09T23:40:29+09:00"
-    },
-    "sed-1595": {
-      "name": "일반사회교육과 공지사항",
-      "ok": true,
-      "new": 22,
       "updated": 18,
       "errors": 0,
-      "listed": 40,
-      "at": "2026-11-09T23:40:53+09:00"
-    },
-    "edjapan-1928": {
-      "name": "일어교육과 학부공지",
-      "ok": true,
-      "new": 20,
-      "updated": 10,
-      "errors": 0,
       "listed": 30,
-      "at": "2026-11-09T23:41:16+09:00"
-    },
-    "edjapan-1931": {
-      "name": "일어교육과 학과활동",
-      "ok": true,
-      "new": 0,
-      "updated": 0,
-      "errors": 0,
-      "listed": 1,
-      "at": "2026-11-09T23:41:17+09:00"
-    },
-    "geoedu-1782": {
-      "name": "지리교육과 공지사항",
-      "ok": true,
-      "new": 0,
-      "updated": 9,
-      "errors": 0,
-      "listed": 15,
-      "at": "2026-11-09T23:41:27+09:00"
-    },
-    "geoedu-1777": {
-      "name": "지리교육과 학과활동",
-      "ok": true,
-      "new": 0,
-      "updated": 0,
-      "errors": 0,
-      "listed": 14,
-      "at": "2026-11-09T23:41:28+09:00"
-    },
-    "physed-1582": {
-      "name": "물리교육과 새소식",
-      "ok": true,
-      "new": 0,
-      "updated": 0,
-      "errors": 0,
-      "listed": 12,
-      "at": "2026-11-09T23:41:29+09:00"
-    },
-    "physed-1583": {
-      "name": "물리교육과 공지사항",
-      "ok": true,
-      "new": 20,
-      "updated": 9,
-      "errors": 0,
-      "listed": 30,
-      "at": "2026-11-09T23:42:03+09:00"
-    },
-    "physed-1584": {
-      "name": "물리교육과 게시판",
-      "ok": true,
-      "new": 0,
-      "updated": 0,
-      "errors": 0,
-      "listed": 28,
-      "at": "2026-11-09T23:42:04+09:00"
-    },
-    "bioedu-1773": {
-      "name": "생물교육과 공지사항",
-      "ok": true,
-      "new": 21,
-      "updated": 16,
-      "errors": 0,
-      "listed": 45,
-      "at": "2026-11-09T23:42:26+09:00"
-    },
-    "bioedu-2780": {
-      "name": "생물교육과 사범대학 소식",
-      "ok": true,
-      "new": 0,
-      "updated": 0,
-      "errors": 0,
-      "listed": 0,
-      "at": "2026-11-09T23:42:27+09:00"
-    },
-    "mathedu-1412": {
-      "name": "수학교육과 공지사항",
-      "ok": true,
-      "new": 20,
-      "updated": 21,
-      "errors": 0,
-      "listed": 43,
-      "at": "2026-11-09T23:42:48+09:00"
-    },
-    "mathedu-2637": {
-      "name": "수학교육과 열린마당",
-      "ok": true,
-      "new": 0,
-      "updated": 0,
-      "errors": 0,
-      "listed": 0,
-      "at": "2026-11-09T23:42:49+09:00"
-    },
-    "chemedu-1805": {
-      "name": "화학교육과 학과 공지사항",
-      "ok": true,
-      "new": 20,
-      "updated": 13,
-      "errors": 0,
-      "listed": 44,
-      "at": "2026-11-09T23:43:31+09:00"
-    },
-    "artedu-1876": {
-      "name": "미술교육과 학과공지",
-      "ok": true,
-      "new": 0,
-      "updated": 3,
-      "errors": 0,
-      "listed": 27,
-      "at": "2026-11-09T23:43:32+09:00"
-    },
-    "musicedu-1790": {
-      "name": "음악교육과 공지사항",
-      "ok": true,
-      "new": 0,
-      "updated": 0,
-      "errors": 0,
-      "listed": 3,
-      "at": "2026-11-09T23:43:33+09:00"
-    },
-    "physicaledu-1812": {
-      "name": "체육교육과 공지사항 및 자료실",
-      "ok": true,
-      "new": 0,
-      "updated": 0,
-      "errors": 0,
-      "listed": 11,
-      "at": "2026-11-09T23:43:34+09:00"
-    },
-    "vet-1184": {
-      "name": "수의과대학 공지사항(학부)",
-      "ok": true,
-      "new": 20,
-      "updated": 10,
-      "errors": 0,
-      "listed": 30,
-      "at": "2026-11-09T23:44:01+09:00"
-    },
-    "medicine-2661": {
-      "name": "의과대학 의과대학 소식지",
-      "ok": true,
-      "new": 1,
-      "updated": 0,
-      "errors": 0,
-      "listed": 22,
-      "at": "2026-11-09T23:44:04+09:00"
-    },
-    "medicine-1119": {
-      "name": "의과대학 새소식",
-      "ok": true,
-      "new": 23,
-      "updated": 24,
-      "errors": 0,
-      "listed": 49,
-      "at": "2026-11-09T23:44:35+09:00"
-    },
-    "cap-1101": {
-      "name": "간호대학 공지사항",
-      "ok": true,
-      "new": 20,
-      "updated": 9,
-      "errors": 0,
-      "listed": 30,
-      "at": "2026-11-09T23:45:00+09:00"
-    },
-    "cap-2805": {
-      "name": "간호대학 공지사항",
-      "ok": true,
-      "new": 0,
-      "updated": 2,
-      "errors": 0,
-      "listed": 14,
-      "at": "2026-11-09T23:45:01+09:00"
-    },
-    "cap-5379": {
-      "name": "간호대학 게시판",
-      "ok": true,
-      "new": 0,
-      "updated": 1,
-      "errors": 0,
-      "listed": 6,
-      "at": "2026-11-09T23:45:02+09:00"
-    },
-    "marsci-1225": {
-      "name": "해양과학대학 학사공지",
-      "ok": true,
-      "new": 2,
-      "updated": 10,
-      "errors": 0,
-      "listed": 30,
-      "at": "2026-11-09T23:45:13+09:00"
-    },
-    "fba-1541": {
-      "name": "해양수산경영학과 공지사항",
-      "ok": true,
-      "new": 20,
-      "updated": 13,
-      "errors": 0,
-      "listed": 34,
-      "at": "2026-11-09T23:45:37+09:00"
-    },
-    "seafood-1797": {
-      "name": "해양식품생명의학부(해양식품공학전공) 공지사항",
-      "ok": true,
-      "new": 0,
-      "updated": 5,
-      "errors": 0,
-      "listed": 30,
-      "at": "2026-11-09T23:45:38+09:00"
-    },
-    "dalm-4260": {
-      "name": "해양식품생명의학부(수산생명의학전공) 공지사항",
-      "ok": true,
-      "new": 10,
-      "updated": 10,
-      "errors": 0,
-      "listed": 24,
-      "at": "2026-11-09T23:45:49+09:00"
-    },
-    "mirae-1915": {
-      "name": "미래산업융합학과 공지사항",
-      "ok": true,
-      "new": 0,
-      "updated": 1,
-      "errors": 0,
-      "listed": 30,
-      "at": "2026-11-09T23:45:50+09:00"
-    },
-    "maripoli-1561": {
-      "name": "해양경찰시스템학과 공지사항",
-      "ok": true,
-      "new": 0,
-      "updated": 1,
-      "errors": 0,
-      "listed": 30,
-      "at": "2026-11-09T23:45:51+09:00"
-    },
-    "sea-3048": {
-      "name": "해양생명과학과 학과소식",
-      "ok": true,
-      "new": 0,
-      "updated": 1,
-      "errors": 0,
-      "listed": 1,
-      "at": "2026-11-09T23:45:52+09:00"
-    },
-    "sea-1405": {
-      "name": "해양생명과학과 공지사항",
-      "ok": true,
-      "new": 8,
-      "updated": 11,
-      "errors": 0,
-      "listed": 35,
-      "at": "2026-11-09T23:46:02+09:00"
-    },
-    "gse-1545": {
-      "name": "기계시스템공학과 학부생 공지사항",
-      "ok": true,
-      "new": 19,
-      "updated": 20,
-      "errors": 0,
-      "listed": 39,
-      "at": "2026-11-09T23:46:22+09:00"
-    },
-    "smartam-1389": {
-      "name": "스마트에너지기계공학과 공지사항",
-      "ok": true,
-      "new": 20,
-      "updated": 10,
-      "errors": 0,
-      "listed": 34,
-      "at": "2026-11-09T23:46:43+09:00"
-    },
-    "naoe-1533": {
-      "name": "조선해양공학과 공지사항",
-      "ok": true,
-      "new": 0,
-      "updated": 2,
-      "errors": 0,
-      "listed": 32,
-      "at": "2026-11-09T23:46:44+09:00"
-    },
-    "oce-1454": {
-      "name": "해양토목공학과 공지사항",
-      "ok": true,
-      "new": 20,
-      "updated": 10,
-      "errors": 0,
-      "listed": 30,
-      "at": "2026-11-09T23:47:08+09:00"
-    },
-    "marenv-1818": {
-      "name": "해양환경공학과 공지사항",
-      "ok": true,
-      "new": 0,
-      "updated": 4,
-      "errors": 0,
-      "listed": 26,
-      "at": "2026-11-09T23:47:09+09:00"
-    },
-    "pharm-1154": {
-      "name": "약학대학 공지사항",
-      "ok": true,
-      "new": 0,
-      "updated": 0,
-      "errors": 0,
-      "listed": 30,
-      "at": "2026-11-09T23:47:10+09:00"
-    },
-    "pharm-1156": {
-      "name": "약학대학 공지사항",
-      "ok": true,
-      "new": 17,
-      "updated": 10,
-      "errors": 0,
-      "listed": 30,
-      "at": "2026-11-09T23:47:33+09:00"
-    },
-    "cee-1188": {
-      "name": "건설환경공과대학 공지사항",
-      "ok": true,
-      "new": 0,
-      "updated": 0,
-      "errors": 0,
-      "listed": 11,
-      "at": "2026-11-09T23:47:34+09:00"
-    },
-    "cee-1189": {
-      "name": "건설환경공과대학 새소식",
-      "ok": true,
-      "new": 0,
-      "updated": 0,
-      "errors": 0,
-      "listed": 21,
-      "at": "2026-11-09T23:47:35+09:00"
-    },
-    "civilinfra-2344": {
-      "name": "건설시스템공학과 공지사항",
-      "ok": true,
-      "new": 20,
-      "updated": 10,
-      "errors": 0,
-      "listed": 30,
-      "at": "2026-11-09T23:47:56+09:00"
-    },
-    "im-1840": {
-      "name": "인테리어재료공학과 공지사항",
-      "ok": true,
-      "new": 0,
-      "updated": 2,
-      "errors": 0,
-      "listed": 33,
-      "at": "2026-11-09T23:47:57+09:00"
-    },
-    "im-1844": {
-      "name": "인테리어재료공학과 학과소식",
-      "ok": true,
-      "new": 0,
-      "updated": 1,
-      "errors": 0,
-      "listed": 15,
-      "at": "2026-11-09T23:47:58+09:00"
-    },
-    "landscape-2303": {
-      "name": "조경학과 학부 공지사항",
-      "ok": true,
-      "new": 0,
-      "updated": 10,
-      "errors": 0,
-      "listed": 34,
-      "at": "2026-11-09T23:48:04+09:00"
-    },
-    "landscape-16985": {
-      "name": "조경학과 공지시항",
-      "ok": true,
-      "new": 0,
-      "updated": 0,
-      "errors": 0,
-      "listed": 0,
-      "at": "2026-11-09T23:48:05+09:00"
-    },
-    "env-2281": {
-      "name": "환경공학과 공지사항",
-      "ok": true,
-      "new": 2,
-      "updated": 10,
-      "errors": 0,
-      "listed": 30,
-      "at": "2026-11-09T23:48:08+09:00"
-    },
-    "design-1993": {
-      "name": "디자인비즈니스학과 공지사항",
-      "ok": true,
-      "new": 0,
-      "updated": 5,
-      "errors": 0,
-      "listed": 30,
-      "at": "2026-11-09T23:48:09+09:00"
-    },
-    "design-1994": {
-      "name": "디자인비즈니스학과 학과소식",
-      "ok": true,
-      "new": 0,
-      "updated": 1,
-      "errors": 0,
-      "listed": 11,
-      "at": "2026-11-09T23:48:14+09:00"
-    },
-    "it-4280": {
-      "name": "IT공과대학 공지사항",
-      "ok": true,
-      "new": 0,
-      "updated": 1,
-      "errors": 0,
-      "listed": 9,
-      "at": "2026-11-09T23:48:18+09:00"
-    },
-    "mecha-1331": {
-      "name": "메카트로닉스공학부 공지사항",
-      "ok": true,
-      "new": 20,
-      "updated": 21,
-      "errors": 0,
-      "listed": 41,
-      "at": "2026-11-09T23:48:47+09:00"
-    },
-    "see-4247": {
-      "name": "전자공학부 학부공지",
-      "ok": true,
-      "new": 2,
-      "updated": 24,
-      "errors": 0,
-      "listed": 34,
-      "at": "2026-11-09T23:48:55+09:00"
-    },
-    "cse-4753": {
-      "name": "컴퓨터공학부 공지사항",
-      "ok": true,
-      "new": 13,
-      "updated": 25,
-      "errors": 0,
-      "listed": 43,
-      "at": "2026-11-09T23:49:10+09:00"
-    },
-    "cse-4783": {
-      "name": "컴퓨터공학부 학과소식",
-      "ok": true,
-      "new": 3,
-      "updated": 1,
-      "errors": 0,
-      "listed": 30,
-      "at": "2026-11-09T23:49:25+09:00"
-    },
-    "se-2116": {
-      "name": "반도체공학과 공지사항",
-      "ok": true,
-      "new": 0,
-      "updated": 7,
-      "errors": 0,
-      "listed": 33,
-      "at": "2026-11-09T23:49:26+09:00"
-    },
-    "se-2117": {
-      "name": "반도체공학과 교과목공지",
-      "ok": true,
-      "new": 0,
-      "updated": 0,
-      "errors": 0,
-      "listed": 0,
-      "at": "2026-11-09T23:49:27+09:00"
-    },
-    "soft-4222": {
-      "name": "소프트웨어공학과 학부 학사공지",
-      "ok": true,
-      "new": 20,
-      "updated": 31,
-      "errors": 0,
-      "listed": 55,
-      "at": "2026-11-09T23:49:52+09:00"
+      "at": "2026-11-10T00:59:59+09:00"
     },
     "el-1574": {
       "name": "전기공학과 공지사항",
       "ok": true,
-      "new": 6,
-      "updated": 0,
+      "new": 20,
+      "updated": 19,
       "errors": 0,
-      "listed": 25
+      "listed": 45,
+      "at": "2026-11-10T01:00:26+09:00"
     },
     "el-1575": {
       "name": "전기공학과 학과소식",
       "ok": true,
-      "new": 3,
-      "updated": 0,
+      "new": 0,
+      "updated": 4,
       "errors": 0,
-      "listed": 7
+      "listed": 7,
+      "at": "2026-11-10T01:00:27+09:00"
     },
     "el-1579": {
       "name": "전기공학과 공지사항",
       "ok": true,
-      "new": 3,
+      "new": 0,
       "updated": 0,
       "errors": 0,
-      "listed": 3
+      "listed": 3,
+      "at": "2026-11-10T01:00:28+09:00"
     },
     "control-2147": {
       "name": "제어로봇공학과 공지사항",
       "ok": true,
-      "new": 0,
-      "updated": 0,
+      "new": 20,
+      "updated": 10,
       "errors": 0,
-      "listed": 10
+      "listed": 30,
+      "at": "2026-11-10T01:00:52+09:00"
     },
     "aie-4202": {
       "name": "AI정보공학과 공지사항",
@@ -1291,31 +98,35 @@
       "new": 0,
       "updated": 0,
       "errors": 0,
-      "listed": 0
+      "listed": 0,
+      "at": "2026-11-10T01:00:53+09:00"
     },
     "csa-4873": {
       "name": "우주항공대학 HOT소식",
       "ok": true,
-      "new": 10,
+      "new": 0,
       "updated": 0,
       "errors": 0,
-      "listed": 10
+      "listed": 19,
+      "at": "2026-11-10T01:00:54+09:00"
     },
     "csa-4768": {
       "name": "우주항공대학 공지사항",
       "ok": true,
-      "new": 0,
-      "updated": 0,
+      "new": 20,
+      "updated": 10,
       "errors": 0,
-      "listed": 10
+      "listed": 30,
+      "at": "2026-11-10T01:01:32+09:00"
     },
     "aero-4226": {
       "name": "항공우주공학부 학부 공지사항",
       "ok": true,
-      "new": 2,
-      "updated": 4,
+      "new": 20,
+      "updated": 15,
       "errors": 0,
-      "listed": 17
+      "listed": 37,
+      "at": "2026-11-10T01:02:22+09:00"
     },
     "healthcare-2163": {
       "name": "본부대학 학과행사 공지",
@@ -1323,76 +134,80 @@
       "new": 0,
       "updated": 0,
       "errors": 0,
-      "listed": 0
+      "listed": 0,
+      "at": "2026-11-10T01:02:23+09:00"
     },
     "healthcare-2166": {
       "name": "본부대학 공지사항",
       "ok": true,
-      "new": 12,
-      "updated": 0,
+      "new": 20,
+      "updated": 30,
       "errors": 0,
-      "listed": 43
+      "listed": 63,
+      "at": "2026-11-10T01:02:44+09:00"
     },
     "global-12079": {
       "name": "글로벌자율전공학부 Announcements (공지사항)",
       "ok": true,
       "new": 0,
-      "updated": 0,
+      "updated": 7,
       "errors": 0,
-      "listed": 9
+      "listed": 9,
+      "at": "2026-11-10T01:02:54+09:00"
     },
     "dom-5252": {
       "name": "자율전공학부 공지사항",
       "ok": true,
-      "new": 0,
-      "updated": 0,
+      "new": 19,
+      "updated": 10,
       "errors": 0,
-      "listed": 10
+      "listed": 30,
+      "at": "2026-11-10T01:03:15+09:00"
     },
     "inmun-1093": {
       "name": "인문대학 공지사항",
       "ok": true,
       "new": 0,
-      "updated": 2,
+      "updated": 1,
       "errors": 0,
       "listed": 30,
-      "at": "2026-11-09T22:27:37+09:00"
+      "at": "2026-11-10T01:03:16+09:00"
     },
     "inmun-1094": {
       "name": "인문대학 인문대학 새소식",
       "ok": true,
-      "new": 2,
-      "updated": 10,
+      "new": 0,
+      "updated": 2,
       "errors": 0,
       "listed": 30,
-      "at": "2026-11-09T22:27:45+09:00"
+      "at": "2026-11-10T01:03:17+09:00"
     },
     "english-2206": {
       "name": "영어영문학부 영어영문학전공 학부 공지사항",
       "ok": true,
-      "new": 19,
-      "updated": 15,
+      "new": 0,
+      "updated": 35,
       "errors": 0,
       "listed": 35,
-      "at": "2026-11-09T22:28:05+09:00"
+      "at": "2026-11-10T01:03:18+09:00"
     },
     "english-4493": {
       "name": "영어영문학부 영어영문학전공 공지사항(장학)",
       "ok": true,
-      "new": 10,
-      "updated": 11,
+      "new": 0,
+      "updated": 21,
       "errors": 0,
       "listed": 31,
-      "at": "2026-11-09T22:28:16+09:00"
+      "at": "2026-11-10T01:03:19+09:00"
     },
     "e-language-2219": {
       "name": "영어영문학부 영어전공 공지사항(학부)",
       "ok": true,
-      "new": 20,
-      "updated": 8,
+      "new": 0,
+      "updated": 20,
       "errors": 0,
       "listed": 34,
-      "at": "2026-11-09T22:28:37+09:00"
+      "at": "2026-11-10T01:03:20+09:00"
     },
     "korea-1340": {
       "name": "국어국문학과 공지 사항",
@@ -1401,16 +216,16 @@
       "updated": 0,
       "errors": 0,
       "listed": 0,
-      "at": "2026-11-09T22:28:38+09:00"
+      "at": "2026-11-10T01:03:21+09:00"
     },
     "russia-1463": {
       "name": "러시아학과 공지사항",
       "ok": true,
-      "new": 20,
-      "updated": 14,
+      "new": 0,
+      "updated": 21,
       "errors": 0,
       "listed": 35,
-      "at": "2026-11-09T22:29:11+09:00"
+      "at": "2026-11-10T01:03:22+09:00"
     },
     "minsok-1629": {
       "name": "민속예술무용학과 공지사항",
@@ -1419,115 +234,115 @@
       "updated": 0,
       "errors": 0,
       "listed": 1,
-      "at": "2026-11-09T22:29:12+09:00"
+      "at": "2026-11-10T01:03:23+09:00"
     },
     "france-1305": {
       "name": "불어불문학과 공지사항",
       "ok": true,
-      "new": 20,
-      "updated": 21,
+      "new": 0,
+      "updated": 22,
       "errors": 0,
       "listed": 50,
-      "at": "2026-11-09T22:29:44+09:00"
+      "at": "2026-11-10T01:03:24+09:00"
     },
     "france-4955": {
       "name": "불어불문학과 학과공지사항",
       "ok": true,
-      "new": 1,
-      "updated": 7,
+      "new": 0,
+      "updated": 1,
       "errors": 0,
       "listed": 35,
-      "at": "2026-11-09T22:29:53+09:00"
+      "at": "2026-11-10T01:03:25+09:00"
     },
     "france-1307": {
       "name": "불어불문학과 기관공지사항",
       "ok": true,
-      "new": 20,
-      "updated": 10,
+      "new": 0,
+      "updated": 23,
       "errors": 0,
       "listed": 34,
-      "at": "2026-11-09T22:32:07+09:00"
+      "at": "2026-11-10T01:03:26+09:00"
     },
     "his-1348": {
       "name": "사학과 학부",
       "ok": true,
       "new": 0,
-      "updated": 23,
+      "updated": 0,
       "errors": 0,
       "listed": 40,
-      "at": "2026-11-09T22:32:08+09:00"
+      "at": "2026-11-10T01:03:27+09:00"
     },
     "china-2019": {
       "name": "중어중문학과 공지사항(학부)",
       "ok": true,
-      "new": 20,
-      "updated": 24,
+      "new": 0,
+      "updated": 22,
       "errors": 0,
       "listed": 46,
-      "at": "2026-11-09T22:32:37+09:00"
+      "at": "2026-11-10T01:03:29+09:00"
     },
     "china-2020": {
       "name": "중어중문학과 학사안내공지",
       "ok": true,
       "new": 0,
-      "updated": 1,
+      "updated": 0,
       "errors": 0,
       "listed": 17,
-      "at": "2026-11-09T22:32:38+09:00"
+      "at": "2026-11-10T01:03:30+09:00"
     },
     "china-2021": {
       "name": "중어중문학과 성적대체공지",
       "ok": true,
       "new": 0,
-      "updated": 2,
+      "updated": 0,
       "errors": 0,
       "listed": 21,
-      "at": "2026-11-09T22:32:39+09:00"
+      "at": "2026-11-10T01:03:30+09:00"
     },
     "china-2026": {
       "name": "중어중문학과 학과소식",
       "ok": true,
       "new": 0,
-      "updated": 4,
+      "updated": 0,
       "errors": 0,
       "listed": 25,
-      "at": "2026-11-09T22:32:40+09:00"
+      "at": "2026-11-10T01:03:32+09:00"
     },
     "sophia-1458": {
       "name": "철학과 공지사항",
       "ok": true,
-      "new": 20,
-      "updated": 11,
+      "new": 0,
+      "updated": 20,
       "errors": 0,
       "listed": 31,
-      "at": "2026-11-09T22:33:13+09:00"
+      "at": "2026-11-10T01:03:32+09:00"
     },
     "sophia-2704": {
       "name": "철학과 학과소식",
       "ok": true,
-      "new": 20,
-      "updated": 3,
+      "new": 0,
+      "updated": 0,
       "errors": 0,
       "listed": 30,
-      "at": "2026-11-09T22:36:26+09:00"
+      "at": "2026-11-10T01:03:33+09:00"
     },
     "hanmun-5082": {
       "name": "한문학과 학과소식",
       "ok": true,
-      "new": 6,
-      "updated": 5,
+      "new": 8,
+      "updated": 0,
       "errors": 0,
       "listed": 16,
-      "at": "2026-11-09T22:37:33+09:00"
+      "at": "2026-11-10T01:04:01+09:00"
     },
     "hanmun-3291": {
       "name": "한문학과 공지사항",
       "ok": true,
-      "new": 20,
-      "updated": 16,
+      "new": 0,
+      "updated": 21,
       "errors": 0,
       "listed": 36,
-      "at": "2026-11-09T22:37:54+09:00"
+      "at": "2026-11-10T01:04:02+09:00"
     },
     "hanmun-1495": {
       "name": "한문학과 학부공지",
@@ -1536,25 +351,25 @@
       "updated": 0,
       "errors": 0,
       "listed": 0,
-      "at": "2026-11-09T22:37:55+09:00"
+      "at": "2026-11-10T01:04:03+09:00"
     },
     "css-1261": {
       "name": "사회과학대학 새소식",
       "ok": true,
       "new": 0,
-      "updated": 3,
+      "updated": 2,
       "errors": 0,
       "listed": 30,
-      "at": "2026-11-09T22:38:02+09:00"
+      "at": "2026-11-10T01:04:04+09:00"
     },
     "economics-2402": {
       "name": "경제학부 공지사항",
       "ok": true,
-      "new": 20,
-      "updated": 15,
+      "new": 0,
+      "updated": 27,
       "errors": 0,
       "listed": 40,
-      "at": "2026-11-09T22:39:55+09:00"
+      "at": "2026-11-10T01:04:06+09:00"
     },
     "economics-2412": {
       "name": "경제학부 공지사항",
@@ -1563,16 +378,16 @@
       "updated": 0,
       "errors": 0,
       "listed": 31,
-      "at": "2026-11-09T22:39:56+09:00"
+      "at": "2026-11-10T01:04:07+09:00"
     },
     "economics-2419": {
       "name": "경제학부 공지사항",
       "ok": true,
-      "new": 4,
-      "updated": 18,
+      "new": 0,
+      "updated": 7,
       "errors": 0,
       "listed": 46,
-      "at": "2026-11-09T22:40:12+09:00"
+      "at": "2026-11-10T01:04:08+09:00"
     },
     "economics-2404": {
       "name": "경제학부 커뮤니티",
@@ -1581,115 +396,115 @@
       "updated": 0,
       "errors": 0,
       "listed": 0,
-      "at": "2026-11-09T22:40:13+09:00"
+      "at": "2026-11-10T01:04:08+09:00"
     },
     "socialwelfare-2252": {
       "name": "사회복지학부 공지사항",
       "ok": true,
-      "new": 16,
-      "updated": 14,
+      "new": 0,
+      "updated": 30,
       "errors": 0,
       "listed": 36,
-      "at": "2026-11-09T22:41:14+09:00"
+      "at": "2026-11-10T01:04:10+09:00"
     },
     "comm-4239": {
       "name": "미디어커뮤니케이션학과 학과공지",
       "ok": true,
-      "new": 20,
-      "updated": 10,
+      "new": 0,
+      "updated": 21,
       "errors": 0,
       "listed": 30,
-      "at": "2026-11-09T22:41:50+09:00"
+      "at": "2026-11-10T01:04:10+09:00"
     },
     "socio-2256": {
       "name": "사회학과 공지사항",
       "ok": true,
-      "new": 20,
-      "updated": 15,
+      "new": 0,
+      "updated": 21,
       "errors": 0,
       "listed": 39,
-      "at": "2026-11-09T22:42:32+09:00"
+      "at": "2026-11-10T01:04:11+09:00"
     },
     "psychology-2061": {
       "name": "심리학과 공지사항",
       "ok": true,
-      "new": 6,
-      "updated": 11,
+      "new": 0,
+      "updated": 7,
       "errors": 0,
       "listed": 32,
-      "at": "2026-11-09T22:42:45+09:00"
+      "at": "2026-11-10T01:04:12+09:00"
     },
     "cfc-1882": {
       "name": "아동가족학과 공지사항",
       "ok": true,
       "new": 0,
-      "updated": 13,
+      "updated": 0,
       "errors": 0,
       "listed": 37,
-      "at": "2026-11-09T22:42:46+09:00"
+      "at": "2026-11-10T01:04:14+09:00"
     },
     "cfc-1029": {
       "name": "아동가족학과 학사공지",
       "ok": true,
-      "new": 20,
-      "updated": 7,
+      "new": 0,
+      "updated": 0,
       "errors": 0,
-      "listed": 42,
-      "at": "2026-11-09T22:44:17+09:00"
+      "listed": 41,
+      "at": "2026-11-10T01:04:19+09:00"
     },
     "polisci-1569": {
       "name": "정치외교학과 공지사항",
       "ok": true,
-      "new": 20,
-      "updated": 15,
+      "new": 0,
+      "updated": 21,
       "errors": 0,
       "listed": 35,
-      "at": "2026-11-09T22:44:40+09:00"
+      "at": "2026-11-10T01:04:20+09:00"
     },
     "pa-1981": {
       "name": "행정학과 공지사항",
       "ok": true,
-      "new": 21,
-      "updated": 11,
+      "new": 0,
+      "updated": 28,
       "errors": 0,
       "listed": 34,
-      "at": "2026-11-09T22:46:19+09:00"
+      "at": "2026-11-10T01:04:21+09:00"
     },
     "pa-3345": {
       "name": "행정학과 교직 관련 공지",
       "ok": true,
       "new": 0,
-      "updated": 8,
+      "updated": 0,
       "errors": 0,
       "listed": 30,
-      "at": "2026-11-09T22:46:20+09:00"
+      "at": "2026-11-10T01:04:22+09:00"
     },
     "cns-1099": {
       "name": "자연과학대학 새소식",
       "ok": true,
       "new": 0,
-      "updated": 1,
+      "updated": 0,
       "errors": 0,
       "listed": 17,
-      "at": "2026-11-09T22:46:21+09:00"
+      "at": "2026-11-10T01:04:23+09:00"
     },
     "ls-4048": {
       "name": "생명과학부 공지사항",
       "ok": true,
-      "new": 20,
-      "updated": 17,
+      "new": 0,
+      "updated": 22,
       "errors": 0,
       "listed": 37,
-      "at": "2026-11-09T22:46:46+09:00"
+      "at": "2026-11-10T01:04:24+09:00"
     },
     "math-1666": {
       "name": "수학물리학부(수학전공) 공지사항",
       "ok": true,
-      "new": 17,
-      "updated": 10,
+      "new": 0,
+      "updated": 17,
       "errors": 0,
       "listed": 30,
-      "at": "2026-11-09T22:47:16+09:00"
+      "at": "2026-11-10T01:04:25+09:00"
     },
     "math-1667": {
       "name": "수학물리학부(수학전공) 재학생게시판",
@@ -1698,61 +513,61 @@
       "updated": 0,
       "errors": 0,
       "listed": 0,
-      "at": "2026-11-09T22:47:17+09:00"
+      "at": "2026-11-10T01:04:26+09:00"
     },
     "physics-1639": {
       "name": "수학물리학부(물리전공) 학사공지",
       "ok": true,
-      "new": 20,
-      "updated": 9,
+      "new": 0,
+      "updated": 24,
       "errors": 0,
       "listed": 36,
-      "at": "2026-11-09T22:47:45+09:00"
+      "at": "2026-11-10T01:04:27+09:00"
     },
     "physics-1644": {
       "name": "수학물리학부(물리전공) 학과소식",
       "ok": true,
       "new": 0,
-      "updated": 7,
+      "updated": 4,
       "errors": 0,
       "listed": 30,
-      "at": "2026-11-09T22:47:46+09:00"
+      "at": "2026-11-10T01:04:28+09:00"
     },
     "foodnutri-2434": {
       "name": "식품영양학과 공지사항",
       "ok": true,
-      "new": 11,
-      "updated": 10,
+      "new": 0,
+      "updated": 12,
       "errors": 0,
       "listed": 30,
-      "at": "2026-11-09T22:48:08+09:00"
+      "at": "2026-11-10T01:04:29+09:00"
     },
     "foodnutri-2435": {
       "name": "식품영양학과 공지사항",
       "ok": true,
       "new": 0,
-      "updated": 1,
+      "updated": 0,
       "errors": 0,
       "listed": 8,
-      "at": "2026-11-09T22:48:09+09:00"
+      "at": "2026-11-10T01:04:30+09:00"
     },
     "foodnutri-2439": {
       "name": "식품영양학과 공지사항",
       "ok": true,
-      "new": 21,
+      "new": 0,
       "updated": 20,
       "errors": 0,
-      "listed": 47,
-      "at": "2026-11-09T22:48:35+09:00"
+      "listed": 46,
+      "at": "2026-11-10T01:04:31+09:00"
     },
     "cloth-1735": {
       "name": "의류학과 공지사항",
       "ok": true,
-      "new": 21,
-      "updated": 16,
+      "new": 0,
+      "updated": 27,
       "errors": 0,
       "listed": 42,
-      "at": "2026-11-09T22:49:17+09:00"
+      "at": "2026-11-10T01:04:32+09:00"
     },
     "cloth-1725": {
       "name": "의류학과 학과활동",
@@ -1761,34 +576,1231 @@
       "updated": 0,
       "errors": 0,
       "listed": 9,
-      "at": "2026-11-09T22:49:18+09:00"
+      "at": "2026-11-10T01:04:33+09:00"
     },
     "stat-3753": {
       "name": "정보통계학과 학부 공지사항",
       "ok": true,
-      "new": 20,
-      "updated": 10,
+      "new": 0,
+      "updated": 23,
       "errors": 0,
       "listed": 30,
-      "at": "2026-11-09T22:49:46+09:00"
+      "at": "2026-11-10T01:04:34+09:00"
     },
     "pharmgine-1886": {
       "name": "제약공학과 공지사항",
       "ok": true,
       "new": 0,
-      "updated": 4,
+      "updated": 1,
       "errors": 0,
       "listed": 30,
-      "at": "2026-11-09T22:49:51+09:00"
+      "at": "2026-11-10T01:04:35+09:00"
     },
     "geology-1344": {
       "name": "지질과학과 학부 공지사항",
       "ok": true,
-      "new": 20,
-      "updated": 32,
+      "new": 0,
+      "updated": 23,
       "errors": 0,
       "listed": 52,
-      "at": "2026-11-09T22:50:30+09:00"
+      "at": "2026-11-10T01:04:37+09:00"
+    },
+    "geology-1349": {
+      "name": "지질과학과 학과소식",
+      "ok": true,
+      "new": 0,
+      "updated": 1,
+      "errors": 0,
+      "listed": 30,
+      "at": "2026-11-10T01:04:38+09:00"
+    },
+    "biomat-1394": {
+      "name": "항노화신소재과학과 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 30,
+      "errors": 0,
+      "listed": 30,
+      "at": "2026-11-10T01:04:39+09:00"
+    },
+    "biz-1293": {
+      "name": "경영대학 새소식",
+      "ok": true,
+      "new": 0,
+      "updated": 20,
+      "errors": 0,
+      "listed": 30,
+      "at": "2026-11-10T01:04:40+09:00"
+    },
+    "business-2340": {
+      "name": "경영학부 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 29,
+      "errors": 0,
+      "listed": 51,
+      "at": "2026-11-10T01:04:41+09:00"
+    },
+    "accounting-2172": {
+      "name": "회계세무학부 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 15,
+      "errors": 0,
+      "listed": 40,
+      "at": "2026-11-10T01:04:42+09:00"
+    },
+    "mis-5353": {
+      "name": "경영정보학과 학과소식",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 18,
+      "at": "2026-11-10T01:04:43+09:00"
+    },
+    "mis-1441": {
+      "name": "경영정보학과 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 22,
+      "errors": 0,
+      "listed": 40,
+      "at": "2026-11-10T01:04:44+09:00"
+    },
+    "mis-1433": {
+      "name": "경영정보학과 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 11,
+      "at": "2026-11-10T01:04:45+09:00"
+    },
+    "industry-2222": {
+      "name": "산업경영학과 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 21,
+      "errors": 0,
+      "listed": 51,
+      "at": "2026-11-10T01:04:46+09:00"
+    },
+    "smart-2157": {
+      "name": "스마트유통물류학과 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 26,
+      "errors": 0,
+      "listed": 35,
+      "at": "2026-11-10T01:04:47+09:00"
+    },
+    "ce-1201": {
+      "name": "공과대학 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 2,
+      "errors": 0,
+      "listed": 30,
+      "at": "2026-11-10T01:04:48+09:00"
+    },
+    "archeng-2361": {
+      "name": "건축공학부 학부공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 22,
+      "errors": 0,
+      "listed": 53,
+      "at": "2026-11-10T01:04:49+09:00"
+    },
+    "archeng-2378": {
+      "name": "건축공학부 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 1,
+      "errors": 0,
+      "listed": 30,
+      "at": "2026-11-10T01:04:50+09:00"
+    },
+    "archeng-2644": {
+      "name": "건축공학부 전공소식란",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 8,
+      "at": "2026-11-10T01:04:51+09:00"
+    },
+    "me-2201": {
+      "name": "기계공학부 학부 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 22,
+      "errors": 0,
+      "listed": 40,
+      "at": "2026-11-10T01:04:52+09:00"
+    },
+    "me-6186": {
+      "name": "기계공학부 학과소식",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 2,
+      "at": "2026-11-10T01:04:53+09:00"
+    },
+    "polymer-2592": {
+      "name": "신소재공학부 고분자공학전공 학과소식",
+      "ok": true,
+      "new": 0,
+      "updated": 14,
+      "errors": 0,
+      "listed": 30,
+      "at": "2026-11-10T01:04:54+09:00"
+    },
+    "polymer-1675": {
+      "name": "신소재공학부 고분자공학전공 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 0,
+      "at": "2026-11-10T01:04:55+09:00"
+    },
+    "polymer-3229": {
+      "name": "신소재공학부 고분자공학전공 학부 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 25,
+      "errors": 0,
+      "listed": 73,
+      "at": "2026-11-10T01:04:56+09:00"
+    },
+    "metals-1357": {
+      "name": "신소재공학부 금속재료공학전공 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 1,
+      "errors": 0,
+      "listed": 39,
+      "at": "2026-11-10T01:04:57+09:00"
+    },
+    "metals-1359": {
+      "name": "신소재공학부 금속재료공학전공 학교프로그램공지",
+      "ok": true,
+      "new": 0,
+      "updated": 20,
+      "errors": 0,
+      "listed": 38,
+      "at": "2026-11-10T01:04:58+09:00"
+    },
+    "ise-4944": {
+      "name": "산업시스템공학부 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 3,
+      "at": "2026-11-10T01:04:59+09:00"
+    },
+    "ise-1368": {
+      "name": "산업시스템공학부 학부공지",
+      "ok": true,
+      "new": 0,
+      "updated": 22,
+      "errors": 0,
+      "listed": 34,
+      "at": "2026-11-10T01:05:00+09:00"
+    },
+    "ise-4477": {
+      "name": "산업시스템공학부 학사공지",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 5,
+      "at": "2026-11-10T01:05:01+09:00"
+    },
+    "ise-1375": {
+      "name": "산업시스템공학부 학부소식",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 30,
+      "at": "2026-11-10T01:05:02+09:00"
+    },
+    "arch-2083": {
+      "name": "건축학과 Notice(공지사항)",
+      "ok": true,
+      "new": 0,
+      "updated": 21,
+      "errors": 0,
+      "listed": 30,
+      "at": "2026-11-10T01:05:03+09:00"
+    },
+    "arch-2084": {
+      "name": "건축학과 SA News(학과소식)",
+      "ok": true,
+      "new": 0,
+      "updated": 10,
+      "errors": 0,
+      "listed": 30,
+      "at": "2026-11-10T01:05:04+09:00"
+    },
+    "mce-1889": {
+      "name": "기계융합공학과 학과 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 14,
+      "errors": 0,
+      "listed": 36,
+      "at": "2026-11-10T01:05:05+09:00"
+    },
+    "mce-14407": {
+      "name": "기계융합공학과 GNU 소식",
+      "ok": true,
+      "new": 0,
+      "updated": 19,
+      "errors": 0,
+      "listed": 28,
+      "at": "2026-11-10T01:05:06+09:00"
+    },
+    "urban-1397": {
+      "name": "도시공학과 기타공지",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 31,
+      "at": "2026-11-10T01:05:07+09:00"
+    },
+    "urban-16566": {
+      "name": "도시공학과 학사공지(교육과정 및 졸업)",
+      "ok": true,
+      "new": 0,
+      "updated": 2,
+      "errors": 0,
+      "listed": 31,
+      "at": "2026-11-10T01:05:08+09:00"
+    },
+    "car-2131": {
+      "name": "미래자동차공학과 학과사무실알림",
+      "ok": true,
+      "new": 0,
+      "updated": 21,
+      "errors": 0,
+      "listed": 41,
+      "at": "2026-11-10T01:05:10+09:00"
+    },
+    "energyeng-2142": {
+      "name": "에너지공학과 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 22,
+      "errors": 0,
+      "listed": 38,
+      "at": "2026-11-10T01:05:11+09:00"
+    },
+    "energyeng-2144": {
+      "name": "에너지공학과 에너지소식",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 2,
+      "at": "2026-11-10T01:05:11+09:00"
+    },
+    "civil-2289": {
+      "name": "토목공학과 학부공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 18,
+      "errors": 0,
+      "listed": 33,
+      "at": "2026-11-10T01:05:12+09:00"
+    },
+    "chemeng-1636": {
+      "name": "화학공학과 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 26,
+      "errors": 0,
+      "listed": 46,
+      "at": "2026-11-10T01:05:13+09:00"
+    },
+    "cals-1173": {
+      "name": "농업생명과학대학 공지사항 및 교육일정",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 1,
+      "at": "2026-11-10T01:05:14+09:00"
+    },
+    "cals-1165": {
+      "name": "농업생명과학대학 새소식",
+      "ok": true,
+      "new": 0,
+      "updated": 1,
+      "errors": 0,
+      "listed": 30,
+      "at": "2026-11-10T01:05:16+09:00"
+    },
+    "frecon-1684": {
+      "name": "식품자원경제학과 학과소식",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 30,
+      "at": "2026-11-10T01:05:16+09:00"
+    },
+    "frecon-1685": {
+      "name": "식품자원경제학과 학부공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 2,
+      "at": "2026-11-10T01:05:17+09:00"
+    },
+    "abit-2331": {
+      "name": "동물생명융합학부 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 31,
+      "errors": 0,
+      "listed": 37,
+      "at": "2026-11-10T01:05:18+09:00"
+    },
+    "foodsci-3190": {
+      "name": "식품공학부 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 9,
+      "at": "2026-11-10T01:05:19+09:00"
+    },
+    "hortic-2028": {
+      "name": "원예과학부 학과소식",
+      "ok": true,
+      "new": 0,
+      "updated": 1,
+      "errors": 0,
+      "listed": 30,
+      "at": "2026-11-10T01:05:20+09:00"
+    },
+    "hortic-2029": {
+      "name": "원예과학부 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 23,
+      "errors": 0,
+      "listed": 33,
+      "at": "2026-11-10T01:05:21+09:00"
+    },
+    "as-2040": {
+      "name": "축산과학부 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 4,
+      "errors": 0,
+      "listed": 32,
+      "at": "2026-11-10T01:05:22+09:00"
+    },
+    "fr-2071": {
+      "name": "환경산림과학부 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 32,
+      "at": "2026-11-10T01:05:23+09:00"
+    },
+    "agronomy-2468": {
+      "name": "농학과 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 20,
+      "errors": 0,
+      "listed": 41,
+      "at": "2026-11-10T01:05:24+09:00"
+    },
+    "agronomy-2470": {
+      "name": "농학과 학과소식",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 13,
+      "at": "2026-11-10T01:05:25+09:00"
+    },
+    "smartagro-1899": {
+      "name": "스마트농산업학과 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 30,
+      "at": "2026-11-10T01:05:26+09:00"
+    },
+    "ab-1682": {
+      "name": "식물의학과 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 21,
+      "at": "2026-11-10T01:05:27+09:00"
+    },
+    "ab-2464": {
+      "name": "식물의학과 학과소식",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 25,
+      "at": "2026-11-10T01:05:28+09:00"
+    },
+    "alc-2616": {
+      "name": "환경생명화학과 학과소식",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 30,
+      "at": "2026-11-10T01:05:29+09:00"
+    },
+    "alc-1557": {
+      "name": "환경생명화학과 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 8,
+      "at": "2026-11-10T01:05:30+09:00"
+    },
+    "ems-2427": {
+      "name": "환경재료과학과 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 40,
+      "at": "2026-11-10T01:05:31+09:00"
+    },
+    "bime-14111": {
+      "name": "생물산업기계공학과 학과 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 21,
+      "errors": 0,
+      "listed": 30,
+      "at": "2026-11-10T01:05:32+09:00"
+    },
+    "agrieng-1997": {
+      "name": "지역시스템공학과 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 39,
+      "at": "2026-11-10T01:05:34+09:00"
+    },
+    "law-1275": {
+      "name": "법과대학 법학부 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 12,
+      "errors": 0,
+      "listed": 32,
+      "at": "2026-11-10T01:05:34+09:00"
+    },
+    "law-2422": {
+      "name": "법과대학 기관 및 외부공지",
+      "ok": true,
+      "new": 0,
+      "updated": 21,
+      "errors": 0,
+      "listed": 34,
+      "at": "2026-11-10T01:05:35+09:00"
+    },
+    "law-4854": {
+      "name": "법과대학 게시판",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 0,
+      "at": "2026-11-10T01:05:36+09:00"
+    },
+    "sadae-1246": {
+      "name": "사범대학 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 3,
+      "errors": 0,
+      "listed": 30,
+      "at": "2026-11-10T01:05:37+09:00"
+    },
+    "sadae-1614": {
+      "name": "사범대학 열린광장",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 30,
+      "at": "2026-11-10T01:05:38+09:00"
+    },
+    "sadae-2907": {
+      "name": "사범대학 열린광장",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 1,
+      "at": "2026-11-10T01:05:39+09:00"
+    },
+    "sadae-1616": {
+      "name": "사범대학 열린광장",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 30,
+      "at": "2026-11-10T01:05:40+09:00"
+    },
+    "pedagogy-1830": {
+      "name": "교육학과 학부 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 20,
+      "errors": 0,
+      "listed": 34,
+      "at": "2026-11-10T01:05:41+09:00"
+    },
+    "pedagogy-1850": {
+      "name": "교육학과 학생회 공지",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 7,
+      "at": "2026-11-10T01:05:42+09:00"
+    },
+    "korlan-2261": {
+      "name": "국어교육과 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 3,
+      "at": "2026-11-10T01:05:43+09:00"
+    },
+    "korlan-2274": {
+      "name": "국어교육과 게시판",
+      "ok": true,
+      "new": 0,
+      "updated": 24,
+      "errors": 0,
+      "listed": 30,
+      "at": "2026-11-10T01:05:44+09:00"
+    },
+    "history-1708": {
+      "name": "역사교육과 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 4,
+      "errors": 0,
+      "listed": 9,
+      "at": "2026-11-10T01:05:45+09:00"
+    },
+    "history-1704": {
+      "name": "역사교육과 학부",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 7,
+      "at": "2026-11-10T01:05:46+09:00"
+    },
+    "englishedu-1738": {
+      "name": "영어교육과 학부공지",
+      "ok": true,
+      "new": 0,
+      "updated": 19,
+      "errors": 0,
+      "listed": 37,
+      "at": "2026-11-10T01:05:47+09:00"
+    },
+    "englishedu-1742": {
+      "name": "영어교육과 기타공지",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 5,
+      "at": "2026-11-10T01:05:48+09:00"
+    },
+    "englishedu-1768": {
+      "name": "영어교육과 영교소식",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 3,
+      "at": "2026-11-10T01:05:49+09:00"
+    },
+    "ecedu-1316": {
+      "name": "유아교육과 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 30,
+      "at": "2026-11-10T01:05:50+09:00"
+    },
+    "ecedu-1321": {
+      "name": "유아교육과 학과소식",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 0,
+      "at": "2026-11-10T01:05:51+09:00"
+    },
+    "ethics-3381": {
+      "name": "윤리교육과 학과공지",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 4,
+      "at": "2026-11-10T01:05:52+09:00"
+    },
+    "ethics-2243": {
+      "name": "윤리교육과 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 18,
+      "at": "2026-11-10T01:05:53+09:00"
+    },
+    "ethics-2239": {
+      "name": "윤리교육과 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 4,
+      "at": "2026-11-10T01:05:54+09:00"
+    },
+    "ethics-3399": {
+      "name": "윤리교육과 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 10,
+      "at": "2026-11-10T01:05:55+09:00"
+    },
+    "sed-1595": {
+      "name": "일반사회교육과 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 26,
+      "errors": 0,
+      "listed": 39,
+      "at": "2026-11-10T01:05:56+09:00"
+    },
+    "edjapan-1928": {
+      "name": "일어교육과 학부공지",
+      "ok": true,
+      "new": 0,
+      "updated": 20,
+      "errors": 0,
+      "listed": 30,
+      "at": "2026-11-10T01:05:57+09:00"
+    },
+    "edjapan-1931": {
+      "name": "일어교육과 학과활동",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 1,
+      "at": "2026-11-10T01:05:58+09:00"
+    },
+    "geoedu-1782": {
+      "name": "지리교육과 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 1,
+      "errors": 0,
+      "listed": 15,
+      "at": "2026-11-10T01:05:59+09:00"
+    },
+    "geoedu-1777": {
+      "name": "지리교육과 학과활동",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 14,
+      "at": "2026-11-10T01:06:00+09:00"
+    },
+    "physed-1582": {
+      "name": "물리교육과 새소식",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 12,
+      "at": "2026-11-10T01:06:01+09:00"
+    },
+    "physed-1583": {
+      "name": "물리교육과 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 20,
+      "errors": 0,
+      "listed": 30,
+      "at": "2026-11-10T01:06:03+09:00"
+    },
+    "physed-1584": {
+      "name": "물리교육과 게시판",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 28,
+      "at": "2026-11-10T01:06:03+09:00"
+    },
+    "bioedu-1773": {
+      "name": "생물교육과 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 35,
+      "errors": 0,
+      "listed": 45,
+      "at": "2026-11-10T01:06:04+09:00"
+    },
+    "bioedu-2780": {
+      "name": "생물교육과 사범대학 소식",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 0,
+      "at": "2026-11-10T01:06:05+09:00"
+    },
+    "mathedu-1412": {
+      "name": "수학교육과 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 20,
+      "errors": 0,
+      "listed": 43,
+      "at": "2026-11-10T01:06:07+09:00"
+    },
+    "mathedu-2637": {
+      "name": "수학교육과 열린마당",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 0,
+      "at": "2026-11-10T01:06:07+09:00"
+    },
+    "chemedu-1805": {
+      "name": "화학교육과 학과 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 23,
+      "errors": 0,
+      "listed": 44,
+      "at": "2026-11-10T01:06:09+09:00"
+    },
+    "artedu-1876": {
+      "name": "미술교육과 학과공지",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 27,
+      "at": "2026-11-10T01:06:09+09:00"
+    },
+    "musicedu-1790": {
+      "name": "음악교육과 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 3,
+      "at": "2026-11-10T01:06:10+09:00"
+    },
+    "physicaledu-1812": {
+      "name": "체육교육과 공지사항 및 자료실",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 11,
+      "at": "2026-11-10T01:06:11+09:00"
+    },
+    "vet-1184": {
+      "name": "수의과대학 공지사항(학부)",
+      "ok": true,
+      "new": 0,
+      "updated": 24,
+      "errors": 0,
+      "listed": 30,
+      "at": "2026-11-10T01:06:12+09:00"
+    },
+    "medicine-2661": {
+      "name": "의과대학 의과대학 소식지",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 22,
+      "at": "2026-11-10T01:06:13+09:00"
+    },
+    "medicine-1119": {
+      "name": "의과대학 새소식",
+      "ok": true,
+      "new": 0,
+      "updated": 25,
+      "errors": 0,
+      "listed": 49,
+      "at": "2026-11-10T01:06:15+09:00"
+    },
+    "cap-1101": {
+      "name": "간호대학 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 20,
+      "errors": 0,
+      "listed": 30,
+      "at": "2026-11-10T01:06:15+09:00"
+    },
+    "cap-2805": {
+      "name": "간호대학 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 3,
+      "errors": 0,
+      "listed": 14,
+      "at": "2026-11-10T01:06:16+09:00"
+    },
+    "cap-5379": {
+      "name": "간호대학 게시판",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 6,
+      "at": "2026-11-10T01:06:17+09:00"
+    },
+    "marsci-1225": {
+      "name": "해양과학대학 학사공지",
+      "ok": true,
+      "new": 0,
+      "updated": 4,
+      "errors": 0,
+      "listed": 30,
+      "at": "2026-11-10T01:06:18+09:00"
+    },
+    "fba-1541": {
+      "name": "해양수산경영학과 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 21,
+      "errors": 0,
+      "listed": 34,
+      "at": "2026-11-10T01:06:19+09:00"
+    },
+    "seafood-1797": {
+      "name": "해양식품생명의학부(해양식품공학전공) 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 2,
+      "errors": 0,
+      "listed": 30,
+      "at": "2026-11-10T01:06:20+09:00"
+    },
+    "dalm-4260": {
+      "name": "해양식품생명의학부(수산생명의학전공) 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 12,
+      "errors": 0,
+      "listed": 24,
+      "at": "2026-11-10T01:06:21+09:00"
+    },
+    "mirae-1915": {
+      "name": "미래산업융합학과 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 30,
+      "at": "2026-11-10T01:06:22+09:00"
+    },
+    "maripoli-1561": {
+      "name": "해양경찰시스템학과 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 30,
+      "at": "2026-11-10T01:06:23+09:00"
+    },
+    "sea-3048": {
+      "name": "해양생명과학과 학과소식",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 1,
+      "at": "2026-11-10T01:06:24+09:00"
+    },
+    "sea-1405": {
+      "name": "해양생명과학과 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 10,
+      "errors": 0,
+      "listed": 35,
+      "at": "2026-11-10T01:06:25+09:00"
+    },
+    "gse-1545": {
+      "name": "기계시스템공학과 학부생 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 22,
+      "errors": 0,
+      "listed": 39,
+      "at": "2026-11-10T01:06:26+09:00"
+    },
+    "smartam-1389": {
+      "name": "스마트에너지기계공학과 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 21,
+      "errors": 0,
+      "listed": 34,
+      "at": "2026-11-10T01:06:27+09:00"
+    },
+    "naoe-1533": {
+      "name": "조선해양공학과 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 32,
+      "at": "2026-11-10T01:06:28+09:00"
+    },
+    "oce-1454": {
+      "name": "해양토목공학과 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 20,
+      "errors": 0,
+      "listed": 30,
+      "at": "2026-11-10T01:06:30+09:00"
+    },
+    "marenv-1818": {
+      "name": "해양환경공학과 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 26,
+      "at": "2026-11-10T01:06:30+09:00"
+    },
+    "pharm-1154": {
+      "name": "약학대학 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 30,
+      "at": "2026-11-10T01:06:31+09:00"
+    },
+    "pharm-1156": {
+      "name": "약학대학 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 17,
+      "errors": 0,
+      "listed": 30,
+      "at": "2026-11-10T01:06:32+09:00"
+    },
+    "cee-1188": {
+      "name": "건설환경공과대학 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 11,
+      "at": "2026-11-10T01:06:33+09:00"
+    },
+    "cee-1189": {
+      "name": "건설환경공과대학 새소식",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 21,
+      "at": "2026-11-10T01:06:34+09:00"
+    },
+    "civilinfra-2344": {
+      "name": "건설시스템공학과 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 20,
+      "errors": 0,
+      "listed": 30,
+      "at": "2026-11-10T01:06:35+09:00"
+    },
+    "im-1840": {
+      "name": "인테리어재료공학과 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 33,
+      "at": "2026-11-10T01:06:36+09:00"
+    },
+    "im-1844": {
+      "name": "인테리어재료공학과 학과소식",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 15,
+      "at": "2026-11-10T01:06:37+09:00"
+    },
+    "landscape-2303": {
+      "name": "조경학과 학부 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 1,
+      "errors": 0,
+      "listed": 34,
+      "at": "2026-11-10T01:06:38+09:00"
+    },
+    "landscape-16985": {
+      "name": "조경학과 공지시항",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 0,
+      "at": "2026-11-10T01:06:39+09:00"
+    },
+    "env-2281": {
+      "name": "환경공학과 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 5,
+      "errors": 0,
+      "listed": 30,
+      "at": "2026-11-10T01:06:40+09:00"
+    },
+    "design-1993": {
+      "name": "디자인비즈니스학과 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 3,
+      "errors": 0,
+      "listed": 30,
+      "at": "2026-11-10T01:06:41+09:00"
+    },
+    "design-1994": {
+      "name": "디자인비즈니스학과 학과소식",
+      "ok": true,
+      "new": 0,
+      "updated": 1,
+      "errors": 0,
+      "listed": 11,
+      "at": "2026-11-10T01:06:42+09:00"
+    },
+    "it-4280": {
+      "name": "IT공과대학 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 1,
+      "errors": 0,
+      "listed": 9,
+      "at": "2026-11-10T01:06:43+09:00"
+    },
+    "mecha-1331": {
+      "name": "메카트로닉스공학부 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 20,
+      "errors": 0,
+      "listed": 41,
+      "at": "2026-11-10T01:06:45+09:00"
+    },
+    "see-4247": {
+      "name": "전자공학부 학부공지",
+      "ok": true,
+      "new": 0,
+      "updated": 7,
+      "errors": 0,
+      "listed": 34,
+      "at": "2026-11-10T01:06:46+09:00"
+    },
+    "cse-4753": {
+      "name": "컴퓨터공학부 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 14,
+      "errors": 0,
+      "listed": 43,
+      "at": "2026-11-10T01:06:47+09:00"
+    },
+    "cse-4783": {
+      "name": "컴퓨터공학부 학과소식",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 30,
+      "at": "2026-11-10T01:06:48+09:00"
+    },
+    "se-2116": {
+      "name": "반도체공학과 공지사항",
+      "ok": true,
+      "new": 0,
+      "updated": 3,
+      "errors": 0,
+      "listed": 33,
+      "at": "2026-11-10T01:06:48+09:00"
+    },
+    "se-2117": {
+      "name": "반도체공학과 교과목공지",
+      "ok": true,
+      "new": 0,
+      "updated": 0,
+      "errors": 0,
+      "listed": 0,
+      "at": "2026-11-10T01:06:49+09:00"
+    },
+    "soft-4222": {
+      "name": "소프트웨어공학과 학부 학사공지",
+      "ok": true,
+      "new": 0,
+      "updated": 24,
+      "errors": 0,
+      "listed": 55,
+      "at": "2026-11-10T01:06:51+09:00"
     }
   }
 }
